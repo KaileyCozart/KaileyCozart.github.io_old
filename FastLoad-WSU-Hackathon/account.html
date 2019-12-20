@@ -1,0 +1,91 @@
+<html>
+        <meta charset="utf-8">
+    <head>
+        <title> Fastload </title>
+        <link rel="shortcut icon" href="icon.png"></link>
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <script src="facebook.js"></script>
+        <script src="fbUpload.js"></script>
+        <script src="scripts.js"></script>
+    </head>
+    <body>
+        <div class = "overlay">
+            <div class="navbar">
+                <a href="index.html"><img src="fastload.png" class="logo"/></a>
+                <div class="navbarButton navbarButtonLast">
+                    <h6> Log In </h6>
+                </div>
+                <div class="navbarButton">
+                    <h6> Upload </h6>
+                </div>
+            </div>
+            <div  id="fade" class="accountContent">
+                <img class="loginText" src="UploadTo.png" />
+                <h3 class="accountHeader"> File Location </h3>
+
+                <!--input input type="file" id="file" class="button" accept="video/*"-->
+                <!--button id="folderButton" class="submitSignin"> Find File </button -->
+                
+                <input class="accountInput" onchange="fileUpdate" placeholder="location path" type="file" id="filesID" name="text" accept="video/*"/>
+                <h3 class="accountHeader"> Upload To </h3>
+                <form class="accountForm">
+                    <div>
+                    <label><input class="accountCheckbox" type="checkbox"> YouTube </label> <br />
+                    <div class=sizing1>
+                    <div style="text-align:center;right:55%;height:50px;width:200px;margin-left:-58px;margin-top:15px;"><span id="signinButton" class="pre-sign-in">
+                        <!-- IMPORTANT: Replace the value of the <code>data-clientid</code>
+                                attribute in the following tag with your project's client ID. -->
+                        <span style="right:50%;"
+                            class="g-signin"
+                            data-callback="signinCallback"
+                            data-clientid="12291928288-bjqft7no9k1phh3fljcggqc0n2obhafr.apps.googleusercontent.com"
+                            data-cookiepolicy="single_host_origin"
+                            data-scope="https://www.googleapis.com/auth/youtube.upload https://www.googleapis.com/auth/youtube">
+                        </span>
+                    </span></div>
+                    </div>
+                    <label><input class="accountCheckbox" type="checkbox"> Facebook </label> <br />
+                    <div class=sizing2>
+                    <div class="fb-login-button" data-max-rows="1" data-size="large" data-button-type="login_with" data-show-faces="true" data-auto-logout-link="true" data-use-continue-as="true" data-scope="publish_actions"></div>
+                    </div>
+                    <label><input class="accountCheckbox" type="checkbox"> Vimeo </label> <br />
+                    <div class="vimeo-login"><h4>Login to Vimeo</h4></div>
+                    </div>
+                </form>
+                <h3 class="accountHeader"> Title </h3>
+                <input id="title" class="accountInput" placeholder="title" type="text" name="text" />
+                <h3 class="accountHeader"> Description </h3>
+                <input id="description" class="accountInput" placeholder="title" type="text" name="text2" />
+                <textarea></textarea>
+                <h3 class="accountHeader"> Tags </h3>
+                <input id="tags" class="accountInput" placeholder="tags" type="text" name="text" />
+                <button id="submitButton" class="submitSignin"> Publish </button>
+                <!--div class="fb-login-button" data-max-rows="1" data-size="large" data-button-type="login_with" data-show-faces="true" data-auto-logout-link="true" data-use-continue-as="true" data-scope="publish_actions"></div-->
+            
+
+            </div>
+            <div class="footer">
+                <h6 class="footerText"> 
+                    <a class="underlineHover" href="privacypolicy.html">Privacy Policy</a> : 
+                    <a class="underlineHover" href="termsofservice.html">Terms of Service</a> : 
+                    <a class="underlineHover" href="contact.html">Contact</a>
+                </h6>
+            </div>
+        </div>
+        <script>
+        var ytToken = null;
+        var fileFinal = null;
+
+        function fileUpdate(){
+            fileFinal = filesID.file;
+            console.log("file-already updated");
+        }
+
+        </script>
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script src="//apis.google.com/js/client:plusone.js"></script>
+        <script src="cors_upload.js"></script>
+        <script src="upload_video.js"></script>
+    </body>
+</html>

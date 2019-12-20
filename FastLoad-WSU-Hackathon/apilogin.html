@@ -1,0 +1,87 @@
+<!doctype html>
+<html>
+    <meta charset="utf-8">
+        <head>
+            <title> Fastload </title>
+            <link rel="shortcut icon" href="icon.png"></link>
+            <link rel="stylesheet" type="text/css" href="styles.css">
+            <script src="facebook.js"></script>
+            <script src="fbUpload.js"></script>
+            <script src="scripts.js"></script>
+        </head>
+
+        <body>
+            <div class = "overlay">
+                <div class="navbar">
+                    <a href="index.html"><img src="fastload.png" class="logo"/></a>
+                    <div class="navbarButton navbarButtonLast">
+                        <h6> Log In </h6>
+                    </div>
+                    <div class="navbarButton">
+                        <h6> Upload </h6>
+                    </div>
+                </div>
+
+                <!--<div class="post-sign-in">
+                    <div>
+                        <img id="channel-thumbnail">
+                        <span id="channel-name"></span>
+                    </div>
+                
+                    <div>
+                        <label for="title">Title:</label>
+                        <input id="title" type="text" value="Default Title">
+                    </div>
+                    <div>
+                        <label for="description">Description:</label>
+                        <textarea id="description">Default description</textarea>
+                    </div>
+                    <div>
+                        <label for="privacy-status">Privacy Status:</label>
+                        <select id="privacy-status">
+                        <option>public</option>
+                        <option>unlisted</option>
+                        <option>private</option>
+                        </select>
+                    </div>
+                
+                    <div>
+                        <input input type="file" id="file" class="button" accept="video/*">
+                        <button id="button">Upload Video</button>
+                    <div class="during-upload">
+                        <p><span id="percent-transferred"></span>% done (<span id="bytes-transferred"></span>/<span id="total-bytes"></span> bytes)</p>
+                        <progress id="upload-progress" max="1" value="0"></progress>
+                </div>-->
+                <div id="fade" class="content loginContent">
+                    <img class="textHeight" src="LogIn.png"/>
+                    <div class="fb-login-button" data-max-rows="1" data-size="large" data-button-type="login_with" data-show-faces="true" data-auto-logout-link="true" data-use-continue-as="true" data-scope="publish_actions"></div>
+                    <!--**************************************************-->    
+                    <div style="text-align:center;position:absolute;right:55%;"><span id="signinButton" class="pre-sign-in">
+                        <!-- IMPORTANT: Replace the value of the <code>data-clientid</code>
+                                attribute in the following tag with your project's client ID. -->
+                        <span style="position:absolute;right:50%;"
+                            class="g-signin"
+                            data-callback="signinCallback"
+                            data-clientid="12291928288-bjqft7no9k1phh3fljcggqc0n2obhafr.apps.googleusercontent.com"
+                            data-cookiepolicy="single_host_origin"
+                            data-scope="https://www.googleapis.com/auth/youtube.upload https://www.googleapis.com/auth/youtube">
+                        </span>
+                    </span></div>
+                    <div class="vimeo-login"><h4>Login to Vimeo</h4></div>
+                    <button id="submitButton" class="submitSignin"> Publish </button>
+                </div>
+                <div class="footer">
+                    <h6 class="footerText"> 
+                        <a class="underlineHover" href="privacypolicy.html">Privacy Policy</a> : 
+                        <a class="underlineHover" href="termsofservice.html">Terms of Service</a> : 
+                        <a class="underlineHover" href="contact.html">Contact</a>
+                    </h6>
+                </div>
+            </div>
+
+            <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+            <script src="//apis.google.com/js/client:plusone.js"></script>
+            <script src="cors_upload.js"></script>
+            <script src="upload_video.js"></script>
+        </body>
+    </html>

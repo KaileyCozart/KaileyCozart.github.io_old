@@ -1,0 +1,388 @@
+/* General CSS */
+
+body {
+    padding: 0px;
+    margin: 0px;
+    background: url(Background.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+h1, h2 {
+    text-align: center;
+    font-weight: lighter;
+}
+
+h1, h2, h3, h4, h6 {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    letter-spacing: 3;
+}
+
+h2 {
+    letter-spacing: 1;
+    margin-top: 10px;
+    font-style: italic;
+}
+
+h3 {
+    display: block;
+    margin-top: 40px;
+    font-weight: lighter;
+}
+
+h4 {
+    margin-bottom: 0px;
+    margin-top: 0px;
+    font-weight: lighter;
+    letter-spacing: 2;
+    margin-left: 50px;
+}
+
+h6 {
+    color: white;
+    text-align: center;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+button, input {
+    height: 37px;
+    width: 200px;
+    border-radius: 50px;
+    color: white;
+    background-color: rgba(0, 0, 0, .5);
+}
+
+textarea {
+    display: block;
+    color: white;
+    background-color: rgba(0, 0, 0, .5);
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 250px;
+    padding: 25px;
+}
+
+textarea:focus {
+    border-color: greenyellow;
+    outline: 0px;
+}
+
+/* Buttons & Inputs */
+
+button:focus, input:focus {
+    outline: 0px;
+}
+
+button:hover {
+    /* background-color: grey; */
+    border: 1px solid yellowgreen;
+}
+
+button.first {
+    margin-left: 29px;
+}
+
+button.last {
+    float: right;
+    margin-right: 29px;
+}
+
+input.signupInput {
+    display: block;
+    float: right;
+    padding-left: 10px;
+    padding-bottom: 3px;
+}
+
+input {
+    border-radius: 0px;
+    margin-top: -52px;
+    border-top: 0px;
+    border-right: 0px;
+    border-left: 0px;
+}
+
+input:focus {
+    border-color: greenyellow;
+}
+
+/* Shared Divs */
+
+.content {
+    color: white;
+    position:fixed;
+    top: 50%;
+    left: 50%;
+    height: 18em;
+    width: 30em;
+    margin-top: -9em;
+    margin-left: -15em;
+    /*
+    background-color: rgba(128, 128, 128, .6);
+    border-radius: 5px;
+    padding: 10px;
+    border: 1px solid white;
+    */
+}
+
+.overlay {
+    height: 100%;
+    background-color: rgba(128, 128, 128, .6);
+}
+
+/* Navbar */
+
+.navbar {
+    background-color: rgba(58, 58, 58, 0.60);
+    height: 60px;
+}
+
+.logo {
+    margin-top: 15px;
+    margin-left: 15px;
+    height: 30px;
+}
+
+.navbarButton {
+    height: 100%;
+    width: 75px;
+    float: right;
+    border-left: .5px solid white;
+}
+
+.navbarButton:hover {
+    background-color: rgba(128, 128, 128, .6);
+}
+
+.navbarButtonLast {
+    border-right: .25px solid white;
+}
+
+/* Footer */
+
+.footer {
+    width: 100%;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+}
+
+.footerText {
+    text-align: center;
+}
+
+.underlineHover:hover {
+    text-decoration: underline;
+}
+
+/* Slidy Effects */
+
+#fade {
+    opacity: 0;
+}
+
+#fade.appear {
+    opacity: 1;
+    transition: opacity 2s;
+}
+
+#fade.disappear {
+    opacity: 0;
+    transition: opacity 2s;
+}
+
+/* Index */
+
+.lineOne {
+    margin-left: 124px;
+}
+
+.lineTwo {
+    margin-left: 110px;
+    margin-bottom: 20px;
+}
+
+.lineOne, .lineTwo {
+    height: 40px;
+}
+
+/* Signup */
+
+.signupContent {
+    height: 18em;
+    width: 30em;
+    margin-top: -15em;
+    margin-left: -15em;
+}
+
+.submitSignin {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+button.submitSignin {
+    margin-top: 55px;
+    margin-bottom: 45px;
+}
+
+.disappearWarning {
+    visibility: hidden;
+}
+
+.displayWarning {
+    visibility: visible;
+    color: greenyellow;
+    margin-top: 5px;
+}
+
+.textHeight {
+    margin-left: 177px;
+    height: 40px;
+}
+
+/* Login & Api Login*/
+
+button.loginbutton {
+    margin-top: 30px;
+}
+
+.loginContent {
+    margin-top: -12em;
+}
+
+.smaller {
+    width: 25em;
+    margin-left: 2.5em;
+}
+
+.loginText {
+    height: 40px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    margin-bottom: 25px;
+}
+
+.fb-login-button {
+    height: 40px;
+    width: 250px;
+    margin: 15px 25% 20px -75px;
+}
+
+.vimeo-login {
+    height: 27px;
+    width: 250px;
+    margin-top: 25px;
+    background-color: purple;
+    padding-top: 13px;
+    border-radius: 3px;
+    margin-left: -84;
+}
+
+/*
+.sizing1 {
+    height: 50px;
+    width: 500px;
+    margin-top: 10px;
+    margin-left: -59px;
+}
+
+.sizing2 {
+    height: 50px;
+    width: 500px;
+    margin-top: 10px;
+    margin-left: -69px;
+    margin-bottom: 30px;
+}
+*/
+
+.sizing2 {
+    margin-bottom: 20px;
+}
+
+/* Account */
+
+.accountContent {
+    height: 83%;
+    overflow: scroll;
+}
+
+.accountCheckbox {
+    margin-top: 0px;
+    width: 10px;
+    height: 12px;
+}
+
+label {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+.accountForm {
+    position: block;
+    width: 100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.accountHeader {
+    color: white;
+    text-align: center;
+}
+
+.accountInput {
+    display: block;
+    margin-top: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 10px;
+    width: 400px;
+}
+
+#folderButton {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+/* Terms of Service & Privacy Policy */
+
+.policyDiv {
+    position:fixed;
+    top: 50%;
+    left: 50%;
+    height: 25em;
+    width: 50em;
+    margin-top: -15em;
+    margin-left: -25em;
+    border:1px solid #ccc;
+    font:16px/26px Georgia, Garamond, Serif;
+    overflow:auto;
+    padding: 25px;
+}
+
+p {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+li {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Contact */
+
+.contactContent {
+    margin-top: -14em;
+}
