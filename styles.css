@@ -72,8 +72,8 @@ body {
  }
  
  .whiteText {
-    color: white;
-    font-weight: 100;
+    color: #80334D;
+    font-weight: bold;
  }
  
  .lessMargin {
@@ -86,14 +86,20 @@ body {
  
  .contactText {
     margin-left: -120px;
+    color: #80334D;
+    font-weight: bold;
  }
  
  .skillsText {
     margin-left: 0px;
+    color: #80334D;
+    font-weight: bold;
  }
  
  .aboutText {
     margin-right: -100px;
+    color: #80334D;
+    font-weight: bold;
  }
  
  .websiteText {
@@ -104,7 +110,7 @@ body {
  /* Hero Div CSS */
  
  .heroDiv {
-    height: 500px;
+    height: 570px;
     width: 100%;
     background: url(images/rainbow.webp) no-repeat center center fixed;
     -webkit-background-size: cover;
@@ -116,6 +122,25 @@ body {
  .navButtons {
     margin-top: 200px;
     text-align: center;
+ }
+ 
+ @font-face {
+   font-family: belgianFont;
+   src: url(belgian/Belgiansignature.woff) format('woff'),
+   url(belgian/Belgiansignature.otf) format('otf'),
+   url(belgian/Belgiansignature.ttf) format('ttf');
+}
+
+@font-face {
+   font-family: cloudFont;
+   src: url(cloud/CloudScript-Regular.otf) format('otf'),
+   url(cloud/CloudScript-Regular.ttf) format('ttf');
+}
+
+ .fancyText {
+   font-family: belgianFont;
+   color: #80334D;
+   font-size: 100px;
  }
  
  /* Bottom Bubble General CSS */
