@@ -2,6 +2,7 @@
 
 body {
     margin: 0px;
+    background-color: #FFB3CC;
  }
  
  h1, h2 {
@@ -55,7 +56,10 @@ body {
  
  .textA {
     color: white;
-    text-decoration: underline;
+ }
+
+ .textA:hover, .textA:visited {
+    color: white;
  }
  
  button {
@@ -102,7 +106,7 @@ body {
  .heroDiv {
     height: 500px;
     width: 100%;
-    background: url(images/blackbackground.jpg) no-repeat center center fixed;
+    background: url(images/rainbow.webp) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -121,14 +125,16 @@ body {
     height: 1050px;
     width: 100%;
     /* background-color: #FF6E6B; */
-    background-color: #909090;
+    background-color: #FFB3CC;
  }
  
  .listItem {
-    background-color: #0F0F0F;
-    height: 300px;
+    background-color: #80334D;
     width: 20%;
     margin-right: 5%; 
+    padding-bottom: 40px;
+    padding-right: 10px;
+    padding-left: 10px;
     float: left;
  }
  
@@ -167,7 +173,7 @@ body {
     height: 0;
     border-left: 50px solid transparent;
     border-right: 50px solid transparent;
-    border-bottom: 30px solid #909090;
+    border-bottom: 30px solid #FFB3CC;
     margin-left: auto;
     margin-right: auto;
     margin-top: -30px;
@@ -175,35 +181,17 @@ body {
  
  .skillsTriangle {
     position: relative;
-    left: 0px;
+    left: -3px;
  }
  
  .contactTriangle {
     position: relative;
-    left: -95px;
+    left: -170px;
  }
  
  .aboutTriangle {
     position: relative;
-    left: 90px;
- }
- 
- /* Footer CSS */
- 
- .footer {
-    background-color: #0F0F0F;
-    height: 150px;
- }
- 
- .aboutFooter, .skillsFooter, .contactFooter {
-    width: 20%;
-    margin-right: 5%;
-    float: left;
-    text-align: center;
- }
- 
- .contactFooter {
-    margin-left: 15%;
+    left: 163px;
  }
  
  /* Skills & About CSS */
@@ -235,7 +223,7 @@ body {
 }
 
  .skillsListItem {
-    background-color: #0F0F0F;
+    background-color: #80334D;
     border-radius: 50%;
     margin-bottom: 50px;
     float: left;
@@ -265,8 +253,8 @@ body {
 }
 
  .experienceListItem {
-    background-color: #0F0F0F;
-    height: 300px;
+    background-color: rgba(128, 51, 76, .5);
+    padding-bottom: 4px;
     width: 45%;
     margin-left: 27.5%;
     margin-right: 27.5%;
@@ -275,17 +263,20 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     line-height: 2;
     color: white;
+    border-radius: 15px;
+    margin-bottom: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
  }
  
  .pinkContainer {
     /* background-color: #FF6E6B; */
-    background-color: #909090;
+    background-color: #FFB3CC;
     height: 550px;
  }
  
  .otherWebsitesListItem {
-    background-color: #0F0F0F;
-    height: 300px;
+    background-color: rgba(128, 51, 76, .5);
     width: 30%;
     float: left;
  }
@@ -300,7 +291,7 @@ body {
  }
  
  .aboutMeListItem {
-    background-color: #0F0F0F;
+    background-color: #80334D;
     height: 300px;
     float: left;
     text-align: center;
@@ -369,7 +360,7 @@ body {
 }
 
  .blackContainer {
-    background: url(images/blackbackground.jpg) no-repeat center center fixed;
+    background: url(images/rainbow.webp) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -399,11 +390,10 @@ body {
  .socialLinkText {
     width: 90%;
     max-height: 25%; 
+    height: 70px;
  }
  
  .fitImg {
-    width: 100%;
-    min-height: 100%;
     margin-top: 0px;
  }
  
@@ -431,4 +421,20 @@ body {
 
  .visible {
      visibility: visible;
+ }
+
+ .experienceListItemHidden {
+    background-color: rgba(128, 51, 76, .5);
+    width: 45%;
+    margin-left: 27.5%;
+    margin-right: 27.5%;
+    padding-top: 10px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 2;
+    color: white;
+    border-radius: 15px;
+    margin-bottom: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
  }
