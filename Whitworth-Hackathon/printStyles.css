@@ -1,0 +1,37 @@
+li {
+    list-style-type: none;
+    text-align: center;
+}
+
+em {
+    font-style: normal;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    text-align: center;
+    padding-bottom: 4px;
+    color: rgb(47, 73, 88);
+}
+
+.printH1 {
+    text-align: center;
+    margin-top: 0px;
+    padding-bottom: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(137, 207, 250);
+}
+
+.printH2 {
+    text-align: center;
+    padding-top: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.printH3 {
+    padding-top: 5px;
+}
+
+.printBkgrd {
+    height: 100%;
+    width: 100%;
+    padding-top: 50px;
+}

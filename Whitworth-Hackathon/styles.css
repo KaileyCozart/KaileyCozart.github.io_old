@@ -1,0 +1,246 @@
+/* General CSS */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(255, 255, 255); 
+    margin: 0px;
+    background-color: black;
+    overflow: hidden;
+}
+
+h1 {
+    margin-top: 0px;
+}
+
+/* Navbar */
+.navbar {
+    height: 65px;
+    background-color: rgba(0, 0, 0, .7) !important;
+    padding: 0px 15px 0px 15px;
+    position: fixed;
+    width: 100vw;
+}
+
+.navbarThemeText, .navbarShoppingText {
+    font-style: normal;
+}
+
+.navbarThemeText {
+    font-size: 30px;
+    color: white;
+}
+
+.navbarImgOne {
+    height: 44px;
+    padding-bottom: 5px;
+    margin-top: 10px;
+}
+
+.navbarImgTwo {
+    height: 30px;
+    margin-bottom: -5px;
+    margin-left: -8px;
+}
+
+.navbarShoppingText {
+    font-size: 15px;
+    padding-left: 10px;
+    color: grey;
+}
+
+.navbarIcon {
+    height: 45px;
+    float: right;
+    margin-top: 10px;
+    margin-right: 55px;
+}
+
+.navbarIcon:hover {
+	box-shadow: 0 0 4px #fff;
+	border-radius: 100%;
+}
+
+/* Navbar Dots and jQuery Classes */
+.navbarImgTwoP1 {
+    padding-bottom: 24px;
+}
+
+.navbarImgTwoP2 {
+    margin-left: -95px;
+    margin-bottom: 7px;
+    height: 18px;
+}
+
+.navbarDotImg {
+    height: 13px;
+    margin-left: 2px;
+    margin-bottom: 7px;
+}
+
+.navbarDotImgTwo {
+    margin-left: 2px;
+}
+
+.selectedTheme {
+    border-radius: 50%;
+    box-shadow: 0 0 10px #fff;
+}
+
+.contentBodyNewTheme {
+    height: 100%;
+    width: 100%;
+    background-image: url('Images/Blue1.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    padding-top: 50px;
+}
+
+.defaultItem {
+    background-color: rgb(137, 207, 250);
+}
+
+/* Content */
+button {
+    height: 70px;
+    border-radius: 50%;
+    border-width: 0px;
+    font-weight: bold;
+}
+
+.addButton {
+    border-width: 0px;
+}
+
+.addButton, .newItemButton {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    font-weight: bold;
+}
+
+.addButton:hover, .newItemButton:hover {
+    box-shadow: 0 0 8px #fff;
+}
+
+.addButton:focus, .newItemButton:focus {
+    outline: 0px;
+}
+
+.inputNewItem {
+    height: 50px;
+    opacity: .9;
+    border-radius: 10px;
+    padding-left: 15px;
+}
+
+.inputNewItem:focus {
+    outline: 0px;
+}
+
+.noOpacity {
+    opacity: 1;
+    font-style: normal;
+    font-weight: bold;
+}
+
+.contentBody {
+    height: 100%;
+    width: 100%;
+    background-image: url('Images/Blue2.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    padding-top: 50px;
+}
+
+.preShoppingListDiv {
+    background-color: rgba(0,0,0,0.5);
+    width: 50%;
+    margin: 80px auto 50px auto;
+    border-radius: 5px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 0 4px #fff;
+    position: relative;
+    z-index: 3;
+}
+
+.shoppingListDiv {
+    background-color: rgba(0,0,0,0.5);
+    width: 20%;
+    margin: 80px 0px 50px 8%;
+    border-radius: 5px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 0 4px #fff;
+    position: relative;
+    z-index: 3;
+    float: left;
+    /* Scrolling After Certain Height */
+    max-height: 500px;
+    overflow-y: scroll;
+}
+
+@media screen and (max-width: 1150px) {
+    .shoppingListDiv {
+        margin-left: 7%;
+    }
+}
+
+@media screen and (max-width: 1050px) {
+    body {
+        overflow: auto
+    }
+    .shoppingListDiv {
+        width: 50%;
+        margin-left: 25%;
+    }
+    .shoppingListDivFirst {
+        margin-top: 70%;
+    }
+}
+
+ul {
+    padding-left: 0px; 
+}
+
+li {
+    height: 60px;
+    border: 2px solid white; 
+    border-radius: 3px;
+    margin-top: 10px; 
+    width: 75%; 
+    margin-left: 12.5%;
+    list-style-type: none;
+    color: black;
+    padding-top: 40px;
+    font-weight: bold;
+}
+
+li:hover {
+    box-shadow: 0 0 8px #fff;
+}
+
+em {
+    color: black !important;
+}
+
+form {
+    margin-top: 10px;   
+}
+
+p.instructions {
+    line-height: 1.5;
+    font-size: 20px;
+}
+
+/* Hide Scrollbars While Preserving Functionality */
+.scrollbarStyle::-webkit-scrollbar { 
+    display: none; 
+}
+
+::-webkit-scrollbar { 
+    display: none; 
+}
+
+::-webkit-scrollbar { 
+    display: block; 
+}
