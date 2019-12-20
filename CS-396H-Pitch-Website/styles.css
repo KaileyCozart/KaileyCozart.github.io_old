@@ -1,0 +1,227 @@
+/* General CSS */
+
+body {
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+.hero {
+    height: calc(100% - 55px);
+    height: -moz-calc(100% - 55px);
+    height: -webkit-calc(100% - 55px);
+    height: -o-calc(100% - 55px);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+h3 {
+    margin-bottom: 8px;
+}
+
+h4 {
+    margin-top: 5px;
+    margin-bottom: 3px;
+}
+
+/* Navbar */
+
+.navbar {
+    background-color: black;
+    height: 55px;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    color: white;
+}
+
+.navbarButton {
+    background-color: black;
+    height: 55px;
+    font-size: 20px;
+    display: inline-block;
+}
+
+.navbarButton:hover {
+    text-shadow: 0 0 10px #fff;
+}
+
+.firstButton {
+    margin-left: -55px;
+    padding-right: 25px;
+}
+
+.secondButton {
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.thirdButton {
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.fourthButton {
+    padding-left: 25px;
+}
+
+/* Multiple Pages */
+
+.detailsDiv, .screenshotsDiv, .teamDiv {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 40em;
+    margin-left: -20em;
+    height: 30em;
+    margin-top: -15.5em;
+    background-color: rgba(255, 255, 255, 0.50);
+    border-radius: 5px;
+    border: 1px solid white;
+}
+
+#fade {
+    opacity: 0;
+}
+
+#fade.appear {
+    opacity: 1;
+    transition: opacity 3s;
+}
+
+.boxShadow:hover {
+    box-shadow: 0 0 10px #fff;
+}
+
+/* Index */
+
+.indexHero {
+    background-image: url("images/cooking7.jpg");
+}
+
+.flavorLogo {
+    width: 40%;
+    margin-right: 30%;
+    margin-left: 30%;
+    margin-top: 225px;
+}
+
+.flavorLogoBlack {
+    margin-top: 325px;
+    width: 30%;
+    margin-left: 60%;
+    margin-right: 10%;
+}
+
+/* Details */
+
+.detailsHero {
+    background-image: url("images/cooking7.jpg");
+}
+
+.detailsLogo {
+    margin-top: 27px;
+    width: 40%;
+}
+
+/* Screenshots */
+
+.screenshotsHero {
+    background-image: url("images/cooking7.jpg");
+}
+
+#screenshotsButton {
+    width: 50px;
+    height: 50px;
+    margin: 15px 15px 0px 0px;
+    float: right;
+    border-radius: 100%;
+    outline: 0px;
+    font-weight: bold;
+    color: #2A2929;
+    border-color: white;
+}
+
+#screenshotsButton:active {
+    border: 0px solid white;
+    box-shadow: 0 0 10px #fff;
+}
+
+.s1, .s2, .s3 {
+    background-size: cover;
+}
+
+.s1 {
+    background-image: url("images/home.jpg");
+}
+
+.s2 {
+    background-image: url("images/addedit.jpg");
+}
+
+.s3 {
+    background-image: url("images/search.jpg");
+}
+
+/* Team */
+
+.teamHero {
+    background-image: url("images/cooking12.jpg");
+}
+
+.teamDiv {
+    background-color: transparent;
+    width: 90em;
+    margin-left: -45em;
+    border: 0px;
+}
+
+.memberOne, .memberTwo {
+    background-color: rgba(255, 255, 255, 0.50);
+    height: 100%;
+    width: 20%;
+    float: left;
+    border-radius: 5px;
+    border: 1px solid white;
+}
+
+.memberOne {
+    margin-left: calc(30% - 12.5px);
+}
+
+.memberTwo {
+    margin-left: 25px;
+}
+
+.avatar {
+    width: 40%;
+    padding-top: 40%;
+    margin-top: 30px;
+    margin-left: 30%;
+    border-radius: 100%;
+}
+
+.avatarOne {
+    background: url('images/kl.jpg');
+    background-size: cover;
+    background-position-x: -13px;
+}
+
+.avatarTwo {
+    background: url('images/kk.jpeg');
+    background-size: cover;
+    background-position-y: -3px;
+}
+
+.teamText {
+    margin-top: 11px;
+    margin-bottom: 0px;
+}
