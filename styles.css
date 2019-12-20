@@ -1,0 +1,434 @@
+/* General CSS */
+
+body {
+    margin: 0px;
+ }
+ 
+ h1, h2 {
+    margin-top: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+    text-align: center;
+    letter-spacing: 1.2px;
+ }
+ 
+ h1 {
+    padding-top: 200px;
+    color: white;
+ }
+ 
+ h2 {
+    padding-top: 50px;
+    padding-bottom: 30px;
+    color: white;
+    font-size: 1.5em;
+ }
+ 
+ h3 {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+    font-size: 12.75px;
+    letter-spacing: 1.2px;
+    display: inline;
+ }
+ 
+ h5 {
+    margin-top: 0px;
+    padding-top: 20px;
+    margin-bottom: 10px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: underline;
+ }
+ 
+ h6 {
+    margin-top: 0px;
+    margin-bottom: 10px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+ }
+ 
+ a {
+    text-decoration: none;
+ }
+ 
+ .textA {
+    color: white;
+    text-decoration: underline;
+ }
+ 
+ button {
+    background-color: transparent;
+    border-width: 0px;
+ }
+ 
+ button:focus {
+    outline: none; 
+ }
+ 
+ .whiteText {
+    color: white;
+    font-weight: 100;
+ }
+ 
+ .lessMargin {
+    margin-bottom: -120px;
+ }
+ 
+ .paddingTop {
+    padding-top: 30px;
+ }
+ 
+ .contactText {
+    margin-left: -120px;
+ }
+ 
+ .skillsText {
+    margin-left: 0px;
+ }
+ 
+ .aboutText {
+    margin-right: -100px;
+ }
+ 
+ .websiteText {
+    margin-top: -37px;
+    font-size: 17px;
+ }
+ 
+ /* Hero Div CSS */
+ 
+ .heroDiv {
+    height: 500px;
+    width: 100%;
+    background: url(images/blackbackground.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+ }
+ 
+ .navButtons {
+    margin-top: 200px;
+    text-align: center;
+ }
+ 
+ /* Bottom Bubble General CSS */
+ 
+ 
+ .bottomBubble {
+    height: 1050px;
+    width: 100%;
+    /* background-color: #FF6E6B; */
+    background-color: #909090;
+ }
+ 
+ .listItem {
+    background-color: #0F0F0F;
+    height: 300px;
+    width: 20%;
+    margin-right: 5%; 
+    float: left;
+ }
+ 
+ .listItemFirst {
+    margin-left: 15%;
+ }
+ 
+ @media screen and (max-width: 970px) {
+    .listItem {
+        width: 40%;
+        margin-left: 30%;
+        margin-right: 30%;
+        margin-bottom: 50px;
+    }
+    .listItemFirst {
+        margin-left: 30%;
+    }
+ }
+ 
+ @media screen and (max-width: 500px) {
+    .listItem {
+        width: 60%;
+        margin-left: 20%;
+        margin-right: 20%;
+        margin-bottom: 50px;
+    }
+    .listItemFirst {
+        margin-left: 20%;
+    }
+ }
+ 
+ /* Triangle */
+ 
+ .bubbleTriangle {
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 30px solid #909090;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -30px;
+ }
+ 
+ .skillsTriangle {
+    position: relative;
+    left: 0px;
+ }
+ 
+ .contactTriangle {
+    position: relative;
+    left: -95px;
+ }
+ 
+ .aboutTriangle {
+    position: relative;
+    left: 90px;
+ }
+ 
+ /* Footer CSS */
+ 
+ .footer {
+    background-color: #0F0F0F;
+    height: 150px;
+ }
+ 
+ .aboutFooter, .skillsFooter, .contactFooter {
+    width: 20%;
+    margin-right: 5%;
+    float: left;
+    text-align: center;
+ }
+ 
+ .contactFooter {
+    margin-left: 15%;
+ }
+ 
+ /* Skills & About CSS */
+ 
+ .skillsOuterWrapper {
+    width: 80%;
+    margin-right: 10%;
+    margin-left: 10%;
+    height: 550px;
+ }
+
+ @media screen and (max-width: 1199px) {
+     .skillsOuterWrapper {
+         height: 1050px;
+         margin-bottom: -100px;
+     }
+ }
+
+ @media screen and (max-width: 767px) {
+    .skillsOuterWrapper {
+        height: 900px;
+    }
+    .blackContainer {
+        margin-top: 950px;
+    }
+    .bottomBubble {
+        height: 1800px;
+    }
+}
+
+ .skillsListItem {
+    background-color: #0F0F0F;
+    border-radius: 50%;
+    margin-bottom: 50px;
+    float: left;
+    width: 150px;
+    height: 150px;
+    margin-left: -webkit-calc(50% - 75px);
+    margin-left:    -moz-calc(50% - 75px);
+    margin-left:         calc(50% - 75px);
+ }
+ 
+ .skillsListItemsWrapper {
+    height: 750px;
+ }
+ 
+@media screen and (max-width: 391px) {
+    .skillsListItem {
+        margin-left: 25%;
+        margin-right: 25%;
+    }
+}
+
+@media screen and (max-width: 589px) {
+    .skillsListItem {
+        margin-left: 31%;
+        margin-right: 31%;
+    }
+}
+
+ .experienceListItem {
+    background-color: #0F0F0F;
+    height: 300px;
+    width: 45%;
+    margin-left: 27.5%;
+    margin-right: 27.5%;
+    padding-top: 10px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 2;
+    color: white;
+ }
+ 
+ .pinkContainer {
+    /* background-color: #FF6E6B; */
+    background-color: #909090;
+    height: 550px;
+ }
+ 
+ .otherWebsitesListItem {
+    background-color: #0F0F0F;
+    height: 300px;
+    width: 30%;
+    float: left;
+ }
+ 
+ .otherWebsitesListItemFirst {
+    margin-left: 18.5%;
+    margin-right: 3%;
+ }
+ 
+ .otherWebsitesListItemLast {
+    margin-right: 18.5%;
+ }
+ 
+ .aboutMeListItem {
+    background-color: #0F0F0F;
+    height: 300px;
+    float: left;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 2;
+    color: white;
+ }
+ 
+ .aboutMeListItemFirst {
+    width: 15%;
+    margin-left: 18.5%;
+    margin-right: 3%;
+ }
+ 
+ .aboutMeListItemLast {
+    width: 45%;
+    margin-right: 18.5%;
+ }
+ 
+ .textContainer {
+    margin: 50px;
+ }
+
+ .otherWebsitesBlackDiv {
+     padding: 0px;
+ }
+ 
+ /* Contact CSS */
+ 
+ .mediaListItemsWrapper {
+    height: 500px;
+ }
+ 
+ @media screen and (max-width: 970px){
+    .mediaListItemsWrapper {
+        height: 700px;
+        margin-bottom: 500px;
+    }
+    .bottomBubbleContact {
+        height: 1200px;
+    }
+    .footerContact {
+        margin-top: 550px;
+    }
+}
+
+@media screen and (max-width: 767px){
+    .mediaListItemsWrapper {
+        height: 250px;
+        margin-bottom: 0px;
+    }
+    .bottomBubbleContact {
+        height: 1650px;
+    }
+    .footerContact {
+        margin-top: 50px;
+    }
+    .specialWhiteText {
+        font-size: 12px;
+    }
+}
+
+.otherWebsitesListItem:hover, .skillsListItem:hover, .mediaListItem:hover {
+    -webkit-box-shadow: 0 0 10px #fff;
+    box-shadow: 0 0 10px #fff;
+}
+
+ .blackContainer {
+    background: url(images/blackbackground.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 550px; 
+ }
+ 
+ .contactListItem {
+    /* background-color: #FF6E6B; */
+    background-color: #909090;
+ }
+ 
+.mediaListItem, .otherWebsitesListItem {
+    border-radius: 10px;
+}
+
+ /* Images CSS */
+ 
+ img {
+    height: 100px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 28px;
+ }
+ 
+ .socialLinkText {
+    width: 90%;
+    max-height: 25%; 
+ }
+ 
+ .fitImg {
+    width: 100%;
+    min-height: 100%;
+    margin-top: 0px;
+ }
+ 
+ .fitImg2 {
+    width: 250px;
+    height: 125px;
+    margin-top: 0px;
+ }
+ 
+ .logo {
+    margin-top: 0px;
+    margin-bottom: -60px;
+ }
+ 
+.arrowImg {
+    margin-top: 0px;
+    height: 20px;
+}
+
+ /* Javascript Classes */
+
+ .hidden {
+     visibility: hidden;
+ }
+
+ .visible {
+     visibility: visible;
+ }
