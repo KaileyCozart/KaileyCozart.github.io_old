@@ -132,13 +132,16 @@ body {
 }
 
 @font-face {
-   font-family: cloudFont;
-   src: url(cloud/CloudScript-Regular.otf) format('otf'),
-   url(cloud/CloudScript-Regular.ttf) format('ttf');
+   font-family: showtime;
+   src: url(showtime/Showtime-Regular.otf) format('otf'),
+   url(showtime/Showtime-Regular.woff) format('woff'),
+   url(showtime/Showtime-Regular.woff2) format('woff2'),
+   url(showtime/Showtime-Regular.ttf) format('ttf');
 }
 
  .fancyText {
-   font-family: belgianFont;
+   font-family: showtime;
+   font-weight: bold;
    color: #80334D;
    font-size: 100px;
  }
