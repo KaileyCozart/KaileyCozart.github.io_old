@@ -1,158 +1,205 @@
 <!DOCTYPE html>
 
 <html>
-
-<head>
-    <title>Kailey's Portfolio</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="Stylesheet" href="styles.css" />
-</head>
-
-<body>
-    <div class="heroDiv">
-        <!--h1><img src="images/logo.png" class="logo"/></!--h1-->
-        <h1 class="fancyText">&lt;Kailey's Portfolio /&gt;</h1>
-        <div class="navButtons">
-            <a href="contact.html"><button><h3 class="contactText">Contact Info</h3></button></a>
-            <button><h3 class="skillsText">Experience & Skills</h3></button>
-            <a href="codesamples.html"><button><h3 class="aboutText">Code Samples</h3></button></a>
-        </div>
-    </div>
-    <div class="bubbleTriangle skillsTriangle"></div>
-    <div class="bottomBubble">
-        <div id="skills" class="skillsOuterWrapper">
-            <div class="skillsListItemsWrapper">
-                <h2>Skills</h2>
-
-                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
-                    <div class="skillsListItem">
-                        <a href="https://www.oracle.com/technetwork/java/index-138747.html" title="About Java" target="blank">
-                        <img src="images/java.png" />
-                    </a>
-                    </div>
-                </div>
-
-                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
-                    <div class="skillsListItem">
-                        <a href="https://jquery.com/" title="About jQuery" target="blank">
-                        <img src="images/jquery.png" />
-                    </a>
-                    </div>
-                </div>
-
-                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
-                    <div class="skillsListItem">
-                        <a href="https://isocpp.org/" title="About C Plus Plus" target="blank">
-                        <img src="images/cpp.png" />
-                    </a>
-                    </div>
-                </div>
-
-                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
-                    <div class="skillsListItem">
-                        <a href="https://www.python.org/about/" title="About Python" target="blank">
-                        <img src="images/python.png" />
-                    </a>
-                    </div>
-                </div>
-
-                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
-                    <div class="skillsListItem">
-                        <a href="https://www.w3.org/html/" title="About HTML" target="blank">
-                        <img src="images/html.png" />
-                    </a>
-                    </div>
-                </div>
-
-                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
-                    <div class="skillsListItem">
-                        <a href="https://www.w3.org/Style/CSS/Overview.en.html" title="About CSS" target="blank">
-                        <img src="images/css.png" />
-                    </a>
-                    </div>
-                </div>
-
-                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
-                    <div class="skillsListItem">
-                        <a href="https://www.javascript.com/" title="About JavaScript" target="blank">
-                        <img src="images/js.png" />
-                    </a>
-                    </div>
-                </div>
-
-                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
-                    <div class="skillsListItem">
-                        <a href="https://git-scm.com/" title="About Git" target="blank">
-                        <img src="images/git.png" />
-                    </a>
-                    </div>
-                </div>
-
+    <head>
+        <title>Kailey's Portfolio</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="Stylesheet" href="styles.css" />
+    </head>
+    <body>
+        <div class="heroDiv">
+            <h1 class="fancyText">&lt;Kailey's Portfolio /&gt;</h1>
+            <div class="navButtons">
+                <button><h3 class="contactText">Digital Forensics Skills</h3></button>
+                <a href="writing.html"><button><h3 class="skillsText">Writing Skills</h3></button></a>
+                <a href="code.html"><button><h3 class="aboutText">Programming Skills</h3></button></a>
             </div>
         </div>
-        <div id="experience" class="blackContainer">
-            <h2 class="whiteText">Experience</h2>
-            <div class="hideMeParent experienceListItemHidden">
-                <b>Wiki Team Leader & Co-Instructor |</b>
-                <a href="https://www.rainincubator.org/" title="About RAIN" target="blank" class="textA">
-                    <u>RAIN Incubator</u>
-                </a><br />
-                <button class="toggle visible">
-                    <span class="textChangeMore visible"><img src="images/arrowDownWhite.svg" class="arrowImg" /></span>
-                    <span class="textChangeLess hidden"><img src="images/arrowUpWhite.svg" class="arrowImg"/></span>
-                </button>
-                <p class="hideMe hidden">
-                    
-                    July, 2019 - Nov, 2019 | Tacoma, Washington<br />
-                    <i>&#126; Leading the coding team’s development of RAIN’s iGEM competition wiki<br />
-                        &#126; Teaching the basics of HTML, CSS, & JavaScript to high school students<br />
-                        &#126; Attending weekly biology lab meetings
-                    </i><br />
-                </p>
-            </div>
-            <div class="hideMeParent2 experienceListItemHidden">
-                <b>Machine Learning Undergraduate Research |</b>
-                <a href="https://www.fit.edu/" title="About FIT's REU" target="blank" class="textA">
-                    <u>Florida Institute of Technology</u>
-                </a><br />
-                <button class="toggle2 visible">
-                    <span class="textChangeMore2 visible"><img src="images/arrowDownWhite.svg" class="arrowImg" /></span>
-                    <span class="textChangeLess2 hidden"><img src="images/arrowUpWhite.svg" class="arrowImg"/></span>
-                </button>
-                <p class="hideMe2 hidden">
-                    
-                    May, 2018 - July, 2018 | Melbourne, Florida<br />
-                    <i>&#126; Created a deep-learning-based recommendation system 
-                        <br />
-                        &#126; Worked with deep learning techniques such as CNN's and MLP's while learning about GAN's, Autoencoders, the Wide and Deep Learning Model, etc.
-                        <br />
-                        &#126; Performed data analysis on both the Yelp and MovieLens datasets
-                        <br />
-                        &#126; Used Python, Jupyter Notebook, and Keras with a Tensorflow backend
-                    </i><br />
-                </p>
-            </div>
-            <div class="hideMeParent3 experienceListItemHidden">
-                <b>Web Development Internship |</b>
-                <a href="https://redquarry.com/" title="About Red Quarry" target="blank" class="textA">
-                    <u>Red Quarry</u>
-                </a><br />
-                <button class="toggle3 visible">
-                    <span class="textChangeMore3 visible"><img src="images/arrowDownWhite.svg" class="arrowImg" /></span>
-                    <span class="textChangeLess3 hidden"><img src="images/arrowUpWhite.svg" class="arrowImg"/></span>
-                </button>
-                <p class="hideMe3 hidden">
-                    
-                    June, 2017 - Aug, 2017 | Tacoma, Washington<br />
-                    <i>&#126; Tested the company’s software for bugs and assisted clients with migrating data<br />
-                        &#126; Built new UI for two projects with ReactJS and a new company website with Handlebars<br />
-                        &#126; Learned how to use git, the command line, and JavaScript (including jQuery and React JS)
-                    </i><br />
-                </p>
+        <div class="bubbleTriangle contactTriangle"></div>
+        <div class="bottomBubble bottomBubbleContact">
+            <div id="socialLinks" class="mediaListItemsWrapper"> 
+                <h2>Selected Digital Forensics Labs</h2>
+                    <div class="hideMeParent11 experienceListItemHidden">
+                        <b> Preparing a Water-Damaged Phone </b>| Mobile Digital Forensics I<br />
+                        <button class="toggle11 visible">
+                            <span class="textChangeMore11 visible"><img src="images/arrowDown.svg" class="arrowImg" /></span>
+                            <span class="textChangeLess11 hidden"><img src="images/arrowUp.svg" class="arrowImg"/></span>
+                        </button>
+                        <p class="hideMe11 hidden">
+                            There will often be situations where an examiner will come across a water-damaged phone. In this lab,
+                            the phone is completely destroyed from 5 days of salt water. However, the board can still be prepared
+                            for a chip-off.<br />
+                            <embed src="documents/LG X Charge (M322) Cleaning after Water Exposure.pdf" type="application/pdf" width="100%" height="600px"/>
+                        </p>
+                    </div>
+                    <div class="hideMeParent9 experienceListItemHidden">
+                        <b>Hand Carving </b>| Mobile Digital Forensics I<br />
+                        <button class="toggle9 visible">
+                            <span class="textChangeMore9 visible"><img src="images/arrowDown.svg" class="arrowImg" /></span>
+                            <span class="textChangeLess9 hidden"><img src="images/arrowUp.svg" class="arrowImg"/></span>
+                        </button>
+                        <p class="hideMe9 hidden">
+                            We did hand carving in the first digital forensics class. Though programs like Cellebrite 
+                            can carve files out for you, it is important to understand the underlying techniques that these programs use.
+                            Plus, it's a lot of fun to manually carve things out and can be done with free tools.
+                            <br />
+                            <embed src="documents/Handcarving Lab 3.pdf" type="application/pdf" width="100%" height="600px"/>
+                        </p>
+                    </div>
+                    <div class="hideMeParent12 experienceListItemHidden">
+                        <b>Manually Constructing the IMSI </b>| Mobile Digital Forensics I<br />
+                        <button class="toggle12 visible">
+                            <span class="textChangeMore12 visible"><img src="images/arrowDown.svg" class="arrowImg" /></span>
+                            <span class="textChangeLess12 hidden"><img src="images/arrowUp.svg" class="arrowImg"/></span>
+                        </button>
+                        <p class="hideMe12 hidden">
+                            The IMSI uniquely identifies users on cellular networks. This optional lab explored how IMSI's are 
+                            created, and how one might use known information to construct the IMSI.
+                            <br />
+                            <embed src="documents/Manually Creating the IMSI.pdf" type="application/pdf" width="100%" height="600px"/>
+                        </p>
+                    </div>
+                    <div class="hideMeParent2 experienceListItemHidden">
+                        <b> Cellebrite's Physical Analyzer </b> | Mobile Digital Forensics II<br />
+                        <button class="toggle2 visible">
+                            <span class="textChangeMore2 visible"><img src="images/arrowDown.svg" class="arrowImg" /></span>
+                            <span class="textChangeLess2 hidden"><img src="images/arrowUp.svg" class="arrowImg"/></span>
+                        </button>
+                        <p class="hideMe2 hidden">
+                            
+                            Most of Mobile Digital Forensics II was spent working through a 10-chapter lab book focused solely on 
+                            Cellebrite's Physical Analyzer. This particular lab was an exercise in using bookmarks in Cellebrite's Physical Analyzer to document 
+                            potentially valuable information.<br />
+                            <embed src="documents/Report.pdf" type="application/pdf" width="100%" height="600px"/>
+                        </p>
+                    </div>
+                    <div class="hideMeParent experienceListItemHidden">
+                        <b>Validation Using UltraCompare</b> | Mobile Digital Forensics II <br />
+                        
+                        <button class="toggle visible">
+                            <span class="textChangeMore visible"><img src="images/arrowDown.svg" class="arrowImg" /></span>
+                            <span class="textChangeLess hidden"><img src="images/arrowUp.svg" class="arrowImg"/></span>
+                        </button>
+                        <p class="hideMe hidden">
+                            
+                            In mobile digital forensics, we can't just block writing to the phone like we might with 
+                            regular digital forensics. Therefore, some non-evidential changes might be made. This shows that, 
+                            while some changes might be made, they will not affect the evidence. 
+                            Validation is essential when it comes to court proceedings.<br />
+                            <embed src="documents/Chapter 18 lab.docx.pdf" type="application/pdf" width="100%" height="600px"/>
+                
+                        </p>
+                    </div>
+                    <div class="hideMeParent6 experienceListItemHidden">
+                        <b>Manually Finding Timestamps </b>| Mobile Digital Forensics II<br />
+                        <button class="toggle6 visible">
+                            <span class="textChangeMore6 visible"><img src="images/arrowDown.svg" class="arrowImg" /></span>
+                            <span class="textChangeLess6 hidden"><img src="images/arrowUp.svg" class="arrowImg"/></span>
+                        </button>
+                        <p class="hideMe6 hidden">
+                            We actually spent a good amount of time on timestamps. Timestamps on mobile devices can certainly be very confusing,
+                            and you are sometimes dealing with multiple kinds of timestamps on a single device. This is an example of one of the labs where we were
+                            looking into timestamps.
+                            <br />
+                            <embed src="documents/Cellebrite Lab Report.pdf" type="application/pdf" width="100%" height="600px"/>
+                        </p>
+                    </div>
+                    <div class="hideMeParent4 experienceListItemHidden">
+                        <b>Thermal Chip-Off & Chip Cleaning Lab </b>| Mobile Digital Forensics III<br />
+                        <button class="toggle4 visible">
+                            <span class="textChangeMore4 visible"><img src="images/arrowDown.svg" class="arrowImg" /></span>
+                            <span class="textChangeLess4 hidden"><img src="images/arrowUp.svg" class="arrowImg"/></span>
+                        </button>
+                        <p class="hideMe4 hidden">
+                            
+                            This lab consisted of 16 chip-offs. All of these chip-offs were done from home due to Covid19, 
+                            so I'm proud that I was able to gain familiarity with the rework station all by myself.
+                            The 'after' image is what the chip looks like when it's ready to read.  
+                            The 'before' image is what the chip looks like before it is cleaned.<br />
+                            <embed src="documents/Copy of Final Lab.pdf" type="application/pdf" width="100%" height="600px"/>
+                        </p>
+                    </div>
+                    <div class="hideMeParent3 experienceListItemHidden">
+                        <b>Thermal Chip-Off, Chip Cleaning, & Chip Reading </b>| Mobile Digital Forensics III<br />
+                        <button class="toggle3 visible">
+                            <span class="textChangeMore3 visible"><img src="images/arrowDown.svg" class="arrowImg" /></span>
+                            <span class="textChangeLess3 hidden"><img src="images/arrowUp.svg" class="arrowImg"/></span>
+                        </button>
+                        <p class="hideMe3 hidden">
+                            
+                            This was the lab portion of the final exam. I performed a thermal chip-off, cleaned the removed chip, and read it for contents successfully.
+                            <br />
+                            <embed src="documents/Final Exam.pdf" type="application/pdf" width="100%" height="600px"/>
+                        </p>
+                    </div>
+                    <div class="hideMeParent5 experienceListItemHidden">
+                        <b>Chip Identification Lab </b>| Mobile Digital Forensics III<br />
+                        <button class="toggle5 visible">
+                            <span class="textChangeMore5 visible"><img src="images/arrowDown.svg" class="arrowImg" /></span>
+                            <span class="textChangeLess5 hidden"><img src="images/arrowUp.svg" class="arrowImg"/></span>
+                        </button>
+                        <p class="hideMe5 hidden">
+                            
+                            This lab helped me gain familiarity with the different types of chips in mobile devices, what they do, and 
+                            how to research them.<br />
+                            <embed src="documents/Copy of Lab 26_ Identify Chips Lab.pdf" type="application/pdf" width="100%" height="600px"/>
+                        </p>
+                    </div>
+                    <div class="hideMeParent7 experienceListItemHidden">
+                        <b>Performing a JTAG with a Molex Cable </b>| Mobile Digital Forensics III<br />
+                        <button class="toggle7 visible">
+                            <span class="textChangeMore7 visible"><img src="images/arrowDown.svg" class="arrowImg" /></span>
+                            <span class="textChangeLess7 hidden"><img src="images/arrowUp.svg" class="arrowImg"/></span>
+                        </button>
+                        <p class="hideMe7 hidden">
+                            JTAG techniques can be useful on some older devices. This lab helped me gain familiarity with JTAG software.
+                            <br />
+                            <embed src="documents/Chapter 24_ JTAG with Molex.pdf" type="application/pdf" width="100%" height="600px"/>
+                        </p>
+                    </div>
+                    <div class="hideMeParent8 experienceListItemHidden">
+                        <b>Non-thermal Chip Removal </b>| Mobile Digital Forensics III<br />
+                        <button class="toggle8 visible">
+                            <span class="textChangeMore8 visible"><img src="images/arrowDown.svg" class="arrowImg" /></span>
+                            <span class="textChangeLess8 hidden"><img src="images/arrowUp.svg" class="arrowImg"/></span>
+                        </button>
+                        <p class="hideMe8 hidden">
+                            Non-thermal chip-offs can be less risky in some cases. You can then use lap and polishing or 
+                            milling to get the chip to a readable state.
+                            <br />
+                            <embed src="documents/Chapter 27 Lab.pdf" type="application/pdf" width="100%" height="600px"/>
+                        </p>
+                    </div>
+                    <div class="hideMeParent10 experienceListItemHidden">
+                        <b>Soldering a RIFF Jumper Board </b>| Mobile Digital Forensics III<br />
+                        <button class="toggle10 visible">
+                            <span class="textChangeMore10 visible"><img src="images/arrowDown.svg" class="arrowImg" /></span>
+                            <span class="textChangeLess10 hidden"><img src="images/arrowUp.svg" class="arrowImg"/></span>
+                        </button>
+                        <p class="hideMe10 hidden">
+                            To save time for cases where a RIFF adapter / jumper board is needed for a JTAG, it can be helpful to construct your own.
+                            This lab was instrumental in teaching me how to solder.
+                            <br />
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/XWDGA_Gd2Ug" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <!--embed src="documents/Lab 24_ Soldering the RIFF Box Adapter.pdf" type="application/pdf" width="100%" height="600px"/-->
+                        </p>
+                    </div>
+          </div>
+            <div id="otherWebsites" class="blackContainer">
+                <h2 class="whiteText">Contact Me</h2>
+                <div class="otherWebsitesListItem otherWebsitesListItemFirst">
+                    <img src="images/phone.png" class="paddingTop"/>
+                    <h2 class="whiteText specialWhiteText">(253) 344 8159</h2>
+                </div>
+                <a href="mailto:kaileync@comcast.net" title="Email Me">
+                <div class="otherWebsitesListItem otherWebsitesListItemLast">
+                    <img src="images/email.png" class="paddingTop"/>
+                    <h2 class="whiteText specialWhiteText">kaileycozart@gmail.com</h2>
+                </div>
+                </a>
             </div>
         </div>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="scripts.js" type="text/javascript"></script>
-</body>
-
-</html>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="scripts.js" type="text/javascript"></script>
+    </body> 
+    </html>
