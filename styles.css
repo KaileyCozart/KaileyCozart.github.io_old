@@ -31,7 +31,6 @@ body {
     font-weight: lighter;
     font-size: 12.75px;
     letter-spacing: 1.2px;
-    display: inline;
  }
  
  h5 {
@@ -91,7 +90,7 @@ body {
  }
  
  .skillsText {
-    margin-left: 20px;
+    margin-left: 0px;
     color: black;
     font-weight: bold;
  }
@@ -100,6 +99,7 @@ body {
     margin-right: -110px;
     color: black;
     font-weight: bold;
+    min-width: 100px; 
  }
  
  .websiteText {
@@ -120,7 +120,7 @@ body {
  }
  
  .navButtons {
-    margin-top: 200px;
+    margin-top: 190px;
     text-align: center;
  }
  
@@ -209,17 +209,17 @@ body {
  
  .skillsTriangle {
     position: relative;
-    left: -3px;
+    left: 12px;
  }
  
  .contactTriangle {
     position: relative;
-    left: -170px;
+    left: -138px;
  }
  
  .aboutTriangle {
     position: relative;
-    left: 163px;
+    left: 144px;
  }
  
  /* Skills & About CSS */
