@@ -9,84 +9,37 @@
             <div class="item"><img class="myImg" alt="cute husband" src="photography/GarfeildLedges3.6.2021/IMG_6390.JPG" /></div>
             <div class="item"><img class="myImg" src="photography/GarfeildLedges3.6.2021/IMG_638.JPG" /></div>
             <div class="item"><img class="myImg" src="photography/GarfeildLedges3.6.2021/IMG_6383.JPG" /></div>
-          </div>
+        </div>
 
-<!-- https://stackoverflow.com/questions/41275958/modal-image-galleries-multiple-images -->
+        <!-- The following code is from: https://stackoverflow.com/questions/41275958/modal-image-galleries-multiple-images -->
+        <div id="myModal" class="modal">
+            <span class="close" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
+            <img class="modal-content" id="img01">
+            <div id="caption"></div>
+        </div>
 
-          <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-<!-- Trigger the Modal -->
-<!--img class="myImg" src="http://www.chinabuddhismencyclopedia.com/en/images/thumb/b/b8/Nature.jpg/240px-Nature.jpg" alt="Trolltunga, Norway" width="300" height="200">
-<img class="myImg" src="http://www.worldlandtrust.org/sites/default/files/rainforest-reserve-regua-brazil.jpg" alt="Trolltunga, Norway" width="300" height="200"-->
-
-
-<!-- The Modal -->
-<div id="myModal" class="modal">
-
-  <!-- The Close Button -->
-  <span class="close" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
-
-  <!-- Modal Content (The Image) -->
-  <img class="modal-content" id="img01">
-
-  <!-- Modal Caption (Image Text) -->
-  <div id="caption"></div>
-</div>
-<script>
-
-    // Get the modal
-var modal = document.getElementById('myModal');
-
-// Get the image and insert it inside the modal - use its "alt" text as a caption
-var img = $('.myImg');
-var modalImg = $("#img01");
-var captionText = document.getElementById("caption");
-$('.myImg').click(function(){
-    modal.style.display = "block";
-    var newSrc = this.src;
-    modalImg.attr('src', newSrc);
-    captionText.innerHTML = this.alt;
-});
-
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
-
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() {
-  modal.style.display = "none";
-}
-</script>
-
-       <!-- The Modal >
-<div id="myModal" class="modal">
-    <span class="close">&times;</span>
-    <img class="modal-content" id="img01">
-    <div id="caption"></div>
-  </div-->
-  
-  <!--cript>
-// https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_modal_img
-  // Get the modal
-  var modal = document.getElementById("myModal");
-  
-  // Get the image and insert it inside the modal - use its "alt" text as a caption
-  var img = document.getElementById("myImg");
-  var modalImg = document.getElementById("img01");
-  var captionText = document.getElementById("caption");
-  img.onclick = function(){
-    modal.style.display = "block";
-    modalImg.src = this.src;
-    captionText.innerHTML = this.alt;
-  }
-  
-  // Get the <span> element that closes the modal
-  var span = document.getElementsByClassName("close")[0];
-  
-  // When the user clicks on <span> (x), close the modal
-  span.onclick = function() { 
-    modal.style.display = "none";
-  }
-  </script-->
-<script src="masonry.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+        <script>
+        // Get the modal
+        var modal = document.getElementById('myModal');
+        // Get the image and insert it inside the modal - use its "alt" text as a caption
+        var img = $('.myImg');
+        var modalImg = $("#img01");
+        var captionText = document.getElementById("caption");
+        $('.myImg').click(function(){
+            modal.style.display = "block";
+            var newSrc = this.src;
+            modalImg.attr('src', newSrc);
+            captionText.innerHTML = this.alt;
+        });
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function() {
+        modal.style.display = "none";
+        }
+        </script>
+        <script src="masonry.js"></script>
     </body>
 </html>
 

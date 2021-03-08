@@ -1,11 +1,16 @@
+ /*** CSS File with Code Borrowed from Public Sources. ***/
+
+
+ /** The following code is from: https://stackoverflow.com/questions/41275958/modal-image-galleries-multiple-images **/
+
  /* Style the Image Used to Trigger the Modal */
  .myImg {
-    /*border-radius: 5px;*/
     cursor: pointer;
     transition: 0.3s;
 }
-
-.myImg:hover {opacity: 0.7;}
+.myImg:hover {
+    opacity: 0.7;
+}
 
 /* The Modal (background) */
 .modal {
@@ -51,13 +56,21 @@
 }
 
 @-webkit-keyframes zoom {
-    from {-webkit-transform:scale(0)}
-    to {-webkit-transform:scale(1)}
+    from {
+        -webkit-transform:scale(0)
+    }
+    to {
+        -webkit-transform:scale(1)
+    }
 }
 
 @keyframes zoom {
-    from {transform:scale(0)}
-    to {transform:scale(1)}
+    from {
+        transform:scale(0)
+    }
+    to {
+        transform:scale(1)
+    }
 }
 
 /* The Close Button */
@@ -70,7 +83,6 @@
     font-weight: bold;
     transition: 0.3s;
 }
-
 .close:hover,
 .close:focus {
     color: #bbb;
@@ -86,219 +98,110 @@
 }
 
 
-
-
-/* remove 
-
-body {font-family: Arial, Helvetica, sans-serif;}
-
-#myImg {
-  border-radius: 5px;
-  cursor: pointer;
-  transition: 0.3s;
-}
-
-#myImg:hover {opacity: 0.7;}
-
-// The Modal (background) 
-.modal {
-  display: none; // Hidden by default 
-  position: fixed; // Stay in place 
-  z-index: 1; /* Sit on top 
-  padding-top: 100px; /* Location of the box 
-  left: 0;
-  top: 0;
-  width: 100%; // Full width 
-  height: 100%; /* Full height 
-  overflow: auto; /* Enable scroll if needed 
-  background-color: rgb(0,0,0); /* Fallback color 
-  background-color: rgba(0,0,0,0.9); /* Black w/ opacity 
-}
-
-/* Modal Content (image) 
-.modal-content {
-  margin: auto;
-  display: block;
-  width: 80%;
-  max-width: 700px;
-}
-
-/* Caption of Modal Image 
-#caption {
-  margin: auto;
-  display: block;
-  width: 80%;
-  max-width: 700px;
-  text-align: center;
-  color: #ccc;
-  padding: 10px 0;
-  height: 150px;
-}
-
-/* Add Animation 
-.modal-content, #caption {  
-  -webkit-animation-name: zoom;
-  -webkit-animation-duration: 0.6s;
-  animation-name: zoom;
-  animation-duration: 0.6s;
-}
-
-@-webkit-keyframes zoom {
-  from {-webkit-transform:scale(0)} 
-  to {-webkit-transform:scale(1)}
-}
-
-@keyframes zoom {
-  from {transform:scale(0)} 
-  to {transform:scale(1)}
-}
-
-/* The Close Button 
-.close {
-  position: absolute;
-  top: 15px;
-  right: 35px;
-  color: #f1f1f1;
-  font-size: 40px;
-  font-weight: bold;
-  transition: 0.3s;
-}
-
-.close:hover,
-.close:focus {
-  color: #bbb;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-/* 100% Image Width on Smaller Screens 
-@media only screen and (max-width: 700px){
-  .modal-content {
-    width: 100%;
-  }
-} */
-
-
-
-
-
-
-
-
-/** This css file from https://w3bits.com/css-masonry/ and https://w3bits.com/labs/css-masonry/ **/
+/** The following code is from: https://w3bits.com/css-masonry/ and https://w3bits.com/labs/css-masonry/ **/
 
 /* Defaults */
 body {
-    background: #f9f9f9;
+	background: #f9f9f9;
     color: #465665;
-  }
-  
-  a {
+}
+a {
     color: #5b7083;
     transition: all .25s ease-in-out;
-  }
+}
   
-  /* The title */
-  .title {
+/* The title */
+.title {
     font-weight: 700;
-  }
+}
   
-  /* The description */
-  .desc {
+/* The description */
+.desc {
     font-size: 1em;
     font-style: italic;
     font-family: Georgia, serif;
-  }
+}
   
-  /* Text-centering */
-  .title,
-  .desc,
-  .intro {
+/* Text-centering */
+.title, .desc, .intro {
     text-align: center;
-  }
+}
   
-  /* Intro section */
-  .intro {
+/* Intro section */
+.intro {
     margin: 1.75em 0 .75em;
     border-bottom: 3px double rgba(0, 0, 0, 0.05);
     margin-bottom: 1.75em;
-  }
-  
-  .intro a {
-    opacity: .7;
-  }
-  
-  .intro a:hover {
+}
+.intro a {
+	opacity: .7;
+}
+.intro a:hover {
     opacity: 1;
-  }
-  
-  .intro h3 {
+}
+.intro h3 {
     font-size: .825em;
     font-weight: 700;
     text-transform: uppercase;
     display: inline-block;
     margin: .25em .75em .75em;
-  }
-  
-  .intro h3 a {
+}
+.intro h3 a {
     font-weight: 400;
-  }
+}
   
-  /* Masonry grid */
-  .masonry {
+/* Masonry grid */
+.masonry {
     transition: all .5s ease-in-out;
     column-gap: 30px;
     column-fill: initial;
-  }
+}
   
-  /* Masonry item */
-  .masonry .brick {
+/* Masonry item */
+.masonry .brick {
     margin-bottom: 30px;
     display: inline-block; /* Fix the misalignment of items */
     vertical-align: top; /* Keep the item on the very top */
-  }
+}
   
-  /* Masonry image effects */
-  .masonry .brick img {
+/* Masonry image effects */
+.masonry .brick img {
     transition: all .5s ease-in-out;
     backface-visibility: hidden; /* Remove Image flickering on hover */
-  }
-  
-  .masonry .brick:hover img {
+}
+.masonry .brick:hover img {
     opacity: .75;
-  }
+}
   
-  /* Bordered masonry */
-  .masonry.bordered {
+/* Bordered masonry */
+.masonry.bordered {
     column-rule: 1px solid #eee;
     column-gap: 50px;
-  }
-  
-  .masonry.bordered .brick {
+}
+.masonry.bordered .brick {
     padding-bottom: 25px;
     margin-bottom: 25px;
     border-bottom: 1px solid #eee;
-  }
+}
   
-  /* Gutterless masonry */
-  .masonry.gutterless {
+/* Gutterless masonry */
+.masonry.gutterless {
     column-gap: 0;
-  }
-  
-  .masonry.gutterless .brick {
+}
+.masonry.gutterless .brick {
     margin-bottom: 0;
-  }
+}
   
-  /* Masonry on tablets */
-  @media only screen and (min-width: 768px) and (max-width: 1023px) {
+/* Masonry on tablets */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
     .masonry {
       column-count: 2;
     }
-  }
+}
   
-  /* Masonry on big screens */
-  @media only screen and (min-width: 1024px) {
-    .desc {
+/* Masonry on big screens */
+@media only screen and (min-width: 1024px) {
+	.desc {
       font-size: 1.25em;
     }
   
@@ -309,15 +212,9 @@ body {
     .masonry {
       column-count: 3;
     }
-  }
+}
 
-
-
-  /**
- * RESET
- * Reference: http://meyerweb.com/eric/tools/css/reset/
- */
-
+/* RESET Reference: http://meyerweb.com/eric/tools/css/reset/ */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -376,9 +273,7 @@ code, pre, samp {
 font-family: monospace;
 }
 
-/**
- * BASIC TYPE
- */
+/* BASIC TYPE */
 
 img, video {
   max-width: 100%;
@@ -410,9 +305,7 @@ h4 {
   font-size: 1em;
 }
 
-/**
- * BOX HACKING
- */
+/** BOX HACKING */
 
 html {
   box-sizing: border-box;
@@ -424,10 +317,7 @@ html {
   box-sizing: inherit;
 }
 
-/**
- * CLEAR FLOATS
- * Reference: http://w3bits.com/clearfix
- */
+/* CLEAR FLOATS Reference: http://w3bits.com/clearfix */
 
 .cf:after,
 .lab-grid:after {
@@ -436,9 +326,7 @@ html {
   clear: both;
 }
 
-/**
- * CONTENT WRAPPER
- */
+/* CONTENT WRAPPER */
 
 .wrapper {
   margin-left: auto;
@@ -448,9 +336,7 @@ html {
   max-width: 1080px;
 }
 
-/**
-* ICON SYSTEM
-*/
+/* ICON SYSTEM */
 
 .icon {
   height: 1em;
@@ -460,9 +346,7 @@ html {
   fill: currentColor;
 }
 
-/**
- * BUTTONS
- */
+/* BUTTONS */
 
 .buttons {
   margin: 1.5em 0;
@@ -502,9 +386,7 @@ html {
   background: #e74c3c;
 }
 
-/**
- * HYPERLINKS & NAVIGATION
- */
+/* HYPERLINKS & NAVIGATION */
 
 .lab-nav {
   width: 100%;
@@ -652,9 +534,7 @@ html {
   text-align: center;
 }
 
-/**
- * Grid
- */
+/* Grid */
 .lab-grid {
   width: 100%;
 }
@@ -695,9 +575,7 @@ html {
   width: 25%;
 }
 
-/**
- * Pagination
- */
+/* Pagination */
 
 .labs-pagination {
   display: flex;
@@ -713,9 +591,7 @@ html {
   padding: .5em 1em;
 }
 
-/**
-* MEDIA SETTINGS
-*/
+/* MEDIA SETTINGS */
 
 @media only screen and (min-width: 1024px) {
   h1 {
