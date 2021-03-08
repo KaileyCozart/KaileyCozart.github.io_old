@@ -31,15 +31,15 @@ body {
   }
   
   .gallery {
-    width: 600px;
+    width: 100%; /*change: width: 600px;*/
     margin: auto;
     border-radius: 3px;
     overflow: hidden;
     /* position: relative; */
   }
   .img-c {
-    width: 200px;
-    height: 200px;
+    width: 33.3%;
+    height: 33.3%;
     float: left;
     position: relative;
     overflow: hidden;
