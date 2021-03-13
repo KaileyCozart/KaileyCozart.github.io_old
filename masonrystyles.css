@@ -1,87 +1,6 @@
 /*** CSS File with Code Borrowed from Public Sources. ***/
 
 
-/** The following is code that I wrote. **/
-
-/* See licence in source files. https://www.pixelsurplus.com/freebies/nature-spirit-free-vintage-sans-serif-font */
-@font-face {
-  font-family: 'Nature Spirit';
-  src: url(fonts/NatureSpiritRegular.otf) format('otf'),
-       url(fonts/NatureSpiritRegular.ttf) format('truetype');
-}
-@font-face {
-  font-family: 'Nature Spirit Rough';
-  src: url(fonts/NatureSpiritRough.otf) format('otf'),
-       url(fonts/NatureSpiritRough.ttf) format('truetype');
-}
-/* See licence in source files. https://www.behance.net/gallery/28096233/Aquatico-Free-Typeface */
-@font-face {
-  font-family: 'Aquatico';
-  src: url(fonts/Aquatico-Regular.otf) format('otf'),
-       url(fonts/Aquatico-Regular.ttf) format('truetype');
-}
-/* See licence in source files. https://www.fontspace.com/a-alloy-ink-font-f45503 */
-@font-face {
-  font-family: 'FontForLogo';
-  src: url(fonts/AlloyInk-lgdWw.otf) format('otf'),
-       url(fonts/AlloyInk-nRLyO.ttf) format('truetype');
-}
-/* See licence in source files.  */
-@font-face {
-  font-family: 'FontForLogo2';
-  src: url(fonts/OmegleRegular-gxDaq.otf) format('otf'),
-       url(fonts/OmegleRegular-owopB.ttf) format('truetype');
-}
-.pageHeader {
-  font-family: 'Aquatico', monospace;
-  color: rgba(0, 0, 0, .75);
-  text-align: center;
-  padding-top: 10px;
-  text-transform: capitalize;
-}
-div.masonry {
-  margin-left: 120px;
-  margin-right: 120px;
-  border-top: 3px double rgba(0, 0, 0, 0.05);
-  padding-top: 30px;
-}
-.navbar, .footer {
-  height: 45px;
-  background-color: rgb(228, 228, 228);
-  font-family: 'Aquatico', monospace;
-}
-.navbar h5 {
-  font-family: 'Nature Spirit', monospace;
-  float: left;
-  color: black;
-  padding-top: 12px;
-  padding-left: 30px;
-  letter-spacing: 1.7;
-}
-.footer {
-  text-align: center;
-  color: black;
-  padding-top: 15px;
-  font-size: 10px;
-}
-div.details {
-  border-top: 3px double rgba(0, 0, 0, 0.05);
-  margin-left: 120px;
-  margin-right: 120px;
-  text-align: center;
-  font-family: 'Nature Spirit', monospace;
-  letter-spacing: 1.7;
-  padding-top: 10px;
-  padding-bottom: 5px;
-}
-h5.logo {
-  font-family: 'Nature Spirit', monospace;
-  letter-spacing: 1.7;
-  float: right;
-  padding-right: 30px;
-}
-
-
 /** The following code is from: https://stackoverflow.com/questions/41275958/modal-image-galleries-multiple-images **/
 /** Some changes have been made. **/
 
@@ -128,7 +47,7 @@ h5.logo {
     color: #ccc;
     padding: 20px 0;
     height: 150px;
-    font-family: 'Aquatico', monospace;
+    font-family: 'Nature Spirit', monospace;
 }
 
 /* Add Animation - Zoom in the Modal */

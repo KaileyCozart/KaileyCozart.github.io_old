@@ -1,0 +1,118 @@
+/** The following is code that I wrote. **/
+
+/* See information in source files. https://www.pixelsurplus.com/freebies/nature-spirit-free-vintage-sans-serif-font */
+/* Rounded and Cute */
+@font-face {
+    font-family: 'Nature Spirit';
+    src: url(fonts/NatureSpiritRegular.otf) format('otf'),
+         url(fonts/NatureSpiritRegular.ttf) format('truetype');
+  }
+  @font-face {
+    font-family: 'Nature Spirit Rough';
+    src: url(fonts/NatureSpiritRough.otf) format('otf'),
+         url(fonts/NatureSpiritRough.ttf) format('truetype');
+  }
+  /* See information in source files. https://www.behance.net/gallery/28096233/Aquatico-Free-Typeface */
+  /* Modern and Rounded */
+  @font-face {
+    font-family: 'Aquatico';
+    src: url(fonts/Aquatico-Regular.otf) format('otf'),
+         url(fonts/Aquatico-Regular.ttf) format('truetype');
+  }
+  /* See information in source files.  */
+  /* Like a Signature */
+  @font-face {
+    font-family: 'Amorisa';
+    src: url(fonts/Amorisa\ Free.ttf) format('truetype');
+  }
+  /* See information in source files.  */
+  /* Thick and Sharpie Handwritten */
+  @font-face {
+    font-family: 'Austhind';
+    src: url(fonts/Austhind.otf) format('otf'),
+         url(fonts/Austhind.ttf) format('truetype');
+  }
+  /* See information in source files.  */
+  /* Distinguished and Loopy, Numbers Messed Up */
+  @font-face {
+    font-family: 'Bataler';
+    src: url(fonts/Bataler-Mzav.otf) format('otf'),
+         url(fonts/Bataler-04eP.ttf) format('truetype');
+  }
+  /* See information in source files.  */
+  /* Cute and Thick */
+  @font-face {
+    font-family: 'BesterKeefi';
+    src: url(fonts/BesterKeefi-PersonalUse.otf) format('otf'),
+         url(fonts/BesterKeefi-PersonalUse.ttf) format('truetype');
+  }
+  /* See information in source files.  */
+  /* Graphitti-Like */
+  @font-face {
+    font-family: 'BeyondTheMountains';
+    src: url(fonts/beyond_the_mountains.otf) format('otf'),
+         url(fonts/beyond_the_mountains.ttf) format('truetype');
+  }
+  /* See information in source files.  */
+  /* Thin, Small, Handwritten */
+  @font-face {
+    font-family: 'Routhem';
+    src: url(fonts/Routhem\ -\ Regular.otf) format('otf'),
+         url(fonts/Routhem\ -\ Regular.ttf) format('truetype');
+  }
+  .pageHeader {
+    font-family: 'Nature Spirit', monospace;
+    /*color: rgba(0, 0, 0, .75);*/
+    color: black;
+    text-align: center;
+    padding-top: 10px;
+    text-transform: capitalize;
+  }
+  div.masonry {
+    margin-left: 120px;
+    margin-right: 120px;
+    border-top: 3px double rgba(0, 0, 0, 0.05);
+    padding-top: 30px;
+  }
+  .navbar, .footer {
+    height: 45px;
+    /*background-color: rgb(228, 228, 228);*/
+    background-color: black;
+    font-family: 'Aquatico', monospace;
+  }
+  .navbar h5 {
+    font-family: 'Nature Spirit', monospace;
+    float: left;
+    color: white;
+    padding-top: 10px;
+    padding-left: 30px;
+    letter-spacing: 1.7;
+  }
+  .footer {
+    text-align: center;
+    color: white;
+    padding-top: 15px;
+    font-size: 10px;
+  }
+  div.details {
+    border-top: 3px double rgba(0, 0, 0, 0.05);
+    margin-left: 120px;
+    margin-right: 120px;
+    text-align: center;
+    font-family: 'Nature Spirit', monospace;
+    letter-spacing: 1.7;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    color: grey;
+  }
+  div.details2 {
+      font-family: 'Nature Spirit', monospace;
+  }
+  h5.logo {
+    font-family: 'Nature Spirit', monospace;
+    letter-spacing: 1.7;
+    float: right;
+    padding-right: 30px;
+  }
+  
+  
