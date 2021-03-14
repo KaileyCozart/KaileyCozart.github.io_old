@@ -1,0 +1,78 @@
+<html>
+    <head>
+        <title>Quesada Photography</title>
+        <link rel="Stylesheet" href="sitestyle.css" />
+        <link rel="Stylesheet" href="masonrystyles.css" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+    </head>
+    <body>
+        <!-- Navbar -->
+        <div class="navbar">
+            <a href="bestphotos.html"><h5>Best Photos</h5></a>
+            <a href="photostream.html"><h5>Photo Stream</h5></a>
+            <a href="couplephotos.html"><h5>Couple Photos</h5></a>
+            <a href="adventurelog.html"><h5>Adventure Log</h5></a>
+            <a href="blog.html"><h5>Blog</h5></a>
+            <a href="index.html"><h5 class="logo">Quesada Photography</h5></a>
+        </div>
+
+        <!-- Page Header Information -->
+        <h1 class="pageHeader">  </h1>
+        <div class="details">
+            <h4> Date:  </h4>
+            <h4> Recorded Miles:  </h4>
+            <h4> 52 Hikes Challenge:  </h4>
+        </div>
+
+        <!-- Photo Gallery -->
+        <div class="masonry">
+            <div class="item"><img class="myImg" alt="God's Thumb 12/22/2020" src="photography/22 - God's Thumb/IMG_3641.JPG" /></div>
+            <div class="item"><img class="myImg" alt="God's Thumb 12/22/2020" src="photography/22 - God's Thumb/144211728_412126313198911_104866396384942799_n.jpg" /></div>
+            <div class="item"><img class="myImg" alt="God's Thumb 12/22/2020" src="photography/22 - God's Thumb/143767197_704104803611237_1873925467820425897_n.jpg" /></div>
+            <div class="item"><img class="myImg" alt="God's Thumb 12/22/2020" src="photography/22 - God's Thumb/142862430_486749012341594_3214591897093115587_n.jpg" /></div>
+            <div class="item"><img class="myImg" alt="God's Thumb 12/22/2020" src="photography/22 - God's Thumb/142807646_133519631931432_8626126916114245172_n.jpg" /></div>
+            <div class="item"><img class="myImg" alt="God's Thumb 12/22/2020" src="photography/22 - God's Thumb/142504962_322457799142950_9080627867713224120_n.jpg" /></div>
+            <div class="item"><img class="myImg" alt="God's Thumb 12/22/2020" src="photography/22 - God's Thumb/142433341_3431662406943889_6502847179680466742_n.jpg" /></div>
+            <div class="item"><img class="myImg" alt="God's Thumb 12/22/2020" src="photography/22 - God's Thumb/141930045_1363714903965529_5171643141588147694_n.jpg" /></div>
+            <div class="item"><img class="myImg" alt="God's Thumb 12/22/2020" src="photography/22 - God's Thumb/141826560_174049667853431_2783615798518828922_n.jpg" /></div>
+            <div class="item"><img class="myImg" alt="God's Thumb 12/22/2020" src="photography/22 - God's Thumb/141720930_465475431123611_5361353987357958337_n.jpg" /></div>
+            <div class="item"><img class="myImg" alt="God's Thumb 12/22/2020" src="photography/22 - God's Thumb/133795859_772100743379379_8157194828576524066_n.jpg" /></div>
+            <div class="item"><img class="myImg" alt="God's Thumb 12/22/2020" src="photography/22 - God's Thumb/132782673_466776394715745_2391075087083877400_n.jpg" /></div>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer">&#169; Kailey Cozart Quesada, 2021</div>
+
+        <!-- The following code is from: https://stackoverflow.com/questions/41275958/modal-image-galleries-multiple-images -->
+        <div id="myModal" class="modal">
+            <span class="close" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
+            <img class="modal-content" id="img01">
+            <div id="caption"></div>
+        </div>
+
+        <!-- Scripts -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+        <script>
+        // Get the modal
+        var modal = document.getElementById('myModal');
+        // Get the image and insert it inside the modal - use its "alt" text as a caption
+        var img = $('.myImg');
+        var modalImg = $("#img01");
+        var captionText = document.getElementById("caption");
+        $('.myImg').click(function(){
+            modal.style.display = "block";
+            var newSrc = this.src;
+            modalImg.attr('src', newSrc);
+            captionText.innerHTML = this.alt;
+        });
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function() {
+        modal.style.display = "none";
+        }
+        </script>
+        <script src="masonry.js"></script>
+    </body>
+</html>
+
