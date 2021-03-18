@@ -114,5 +114,12 @@
     float: right;
     padding-right: 30px;
   }
+  .hikelisttext {
+    text-align: center;
+    color: black;
+    font-family: 'Nature Spirit', monospace;
+    font-size: 13px;
+    letter-spacing: 1.7;
+  }
   
   
