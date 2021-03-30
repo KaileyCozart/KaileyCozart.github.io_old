@@ -1,12 +1,23 @@
 
 .uniformGal {
     width: 100%;
-    /* height: 250px;
-    object-fit: cover; /* cover, contain */
+    height: 280px; 
+}
+
+.landscape .uniformGal {
+    object-fit: cover;
+}
+
+.portrait .uniformGal {
+    object-fit: contain;
+}
+.square .uniformGal {
+    object-fit: contain;
 }
 
 .navbar {
 }
+
 
 /* $grid-breakpoints: (
   xs: 0,
