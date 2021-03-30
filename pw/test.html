@@ -1,0 +1,773 @@
+<!-- Source: https://www.w3schools.com/howto/howto_js_portfolio_filter.asp -->
+<html>
+    <head>
+        <title> Photostream </title>
+        <link rel="Stylesheet" href="pg.css" />
+        <link rel="Stylesheet" href="sitestyle.css" />
+    </head>
+    <body>
+        <!-- Navbar -->
+        <div class="navbar">
+            <a href="bestphotos.html"><h5>Best Photos</h5></a>
+            <a href="photostream.html"><h5>Photo Stream</h5></a>
+            <a href="couplephotos.html"><h5>Couple Photos</h5></a>
+            <a href="adventurelog.html"><h5>Adventure Log</h5></a>
+            <a href="blog.html"><h5>Blog</h5></a>
+            <a href="index.html"><h5 class="logo">Quesada Photography</h5></a>
+        </div>
+
+        <h2>Photo Stream</h2>
+        <div id="myBtnContainer">
+        <button class="btn active" onclick="filterSelection('all')"> Show All </button>
+        <!--button class="btn" onclick="filterSelection('landscape')"> All Landscape </button>
+        <button class="btn" onclick="filterSelection('portrait')"> All Portrait </button-->
+        <button class="btn" onclick="filterSelection('best')"> Best Photos </button>
+        <button class="btn" onclick="filterSelection('nature')"> Just Nature </button>
+        <button class="btn" onclick="filterSelection('couple')"> Couple Photos </button>
+        <button class="btn" onclick="filterSelection('taeler')"> Taeler </button>
+        <button class="btn" onclick="filterSelection('kailey')"> Kailey </button>
+        <button class="btn" onclick="filterSelection('gymno')"> Gymnastics </button>
+        </div>
+
+        <!-- Portfolio Gallery Grid -->
+        <div class="row">
+
+
+        <!-- Landscape Photos -->
+        <div class="column kailey landscape">
+            <div class="content">
+                <img class="myImg uniformGal" alt="Ancient Lakes 3/20/2021" src="photography/32 - Ancient Lakes/File1.JPG" >
+            </div>
+        </div>
+        <div class="column kailey landscape">
+            <div class="content">
+                <img class="myImg uniformGal" alt="Ancient Lakes 3/20/2021" src="photography/32 - Ancient Lakes/File3.JPG" >
+            </div>
+        </div>
+        <div class="column taeler landscape">
+            <div class="content">
+                <img class="myImg uniformGal" alt="Ancient Lakes 3/20/2021" src="photography/32 - Ancient Lakes/File4.JPG" >
+            </div>
+        </div>
+        <div class="column taeler landscape">
+            <div class="content">
+                <img class="myImg uniformGal" alt="Ancient Lakes 3/20/2021" src="photography/32 - Ancient Lakes/File5.JPG" >
+            </div>
+        </div>
+        <div class="column taeler landscape">
+            <div class="content">
+                <img class="myImg uniformGal" alt="Ancient Lakes 3/20/2021" src="photography/32 - Ancient Lakes/File6.JPG" >
+            </div>
+        </div>
+        <div class="column taeler landscape">
+            <div class="content">
+                <img class="myImg uniformGal" alt="Ancient Lakes 3/20/2021" src="photography/32 - Ancient Lakes/File7.JPG" >
+            </div>
+        </div>
+        <div class="column nature landscape">
+            <div class="content">
+                <img class="myImg uniformGal" alt="Ancient Lakes 3/20/2021" src="photography/32 - Ancient Lakes/File8.JPG" >
+            </div>
+        </div>
+        <div class="column nature landscape">
+            <div class="content">
+                <img class="myImg uniformGal" alt="Ancient Lakes 3/20/2021" src="photography/32 - Ancient Lakes/File10.JPG" >
+            </div>
+        </div>
+        <div class="column nature landscape">
+            <div class="content">
+                <img class="myImg uniformGal" alt="Ancient Lakes 3/20/2021" src="photography/32 - Ancient Lakes/File11.JPG" >
+            </div>
+        </div>
+        <div class="column kailey landscape">
+            <div class="content">
+                <img class="myImg uniformGal" alt="Ancient Lakes 3/20/2021" src="photography/32 - Ancient Lakes/File12.JPG" >
+            </div>
+        </div>
+        <div class="column kailey landscape">
+            <div class="content">
+                <img class="myImg uniformGal" alt="Ancient Lakes 3/20/2021" src="photography/32 - Ancient Lakes/File13.JPG" >
+            </div>
+        </div>
+        <div class="column kailey landscape">
+            <div class="content">
+                <img class="myImg uniformGal" alt="Ancient Lakes 3/20/2021" src="photography/32 - Ancient Lakes/File15.JPG" >
+            </div>
+        </div>
+        <div class="column kailey best landscape">
+            <div class="content">
+                <img class="myImg uniformGal" alt="Ancient Lakes 3/20/2021" src="photography/32 - Ancient Lakes/File16.JPG" >
+            </div>
+        </div>
+        <div class="column kailey landscape">
+            <div class="content">
+                <img class="myImg uniformGal" alt="Ancient Lakes 3/20/2021" src="photography/32 - Ancient Lakes/File17.JPG" >
+            </div>
+        </div>
+        <div class="column kailey best landscape">
+            <div class="content">
+                <img class="myImg uniformGal" alt="Ancient Lakes 3/20/2021" src="photography/32 - Ancient Lakes/File18.JPG" >
+            </div>
+        </div>
+        <div class="column kailey best landscape">
+            <div class="content">
+                <img class="myImg uniformGal" alt="Ancient Lakes 3/20/2021" src="photography/32 - Ancient Lakes/File19.JPG" >
+            </div>
+        </div>
+        <div class="column kailey landscape">
+            <div class="content">
+                <img class="myImg uniformGal" alt="Ancient Lakes 3/20/2021" src="photography/32 - Ancient Lakes/File21.JPG" >
+            </div>
+        </div>
+        <div class="column kailey best landscape">
+            <div class="content">
+                <img class="myImg uniformGal" alt="Ancient Lakes 3/20/2021" src="photography/32 - Ancient Lakes/File23.JPG" >
+            </div>
+        </div>
+        <div class="column kailey best landscape">
+            <div class="content">
+                <img class="myImg uniformGal" alt="Ancient Lakes 3/20/2021" src="photography/32 - Ancient Lakes/File25.JPG" >
+            </div>
+        </div>
+        <div class="column kailey landscape">
+            <div class="content">
+                <img class="myImg uniformGal" alt="Ancient Lakes 3/20/2021" src="photography/32 - Ancient Lakes/File26.JPG" >
+            </div>
+        </div>
+        <div class="column kailey landscape">
+            <div class="content">
+                <img class="myImg uniformGal" alt="Ancient Lakes 3/20/2021" src="photography/32 - Ancient Lakes/File28.JPG" >
+            </div>
+        </div>
+        <div class="column kailey landscape">
+            <div class="content">
+                <img class="myImg uniformGal" alt="Ancient Lakes 3/20/2021" src="photography/32 - Ancient Lakes/File29.JPG" >
+            </div>
+        </div>
+        <div class="column taeler landscape">
+            <div class="content">
+                <img class="myImg uniformGal" alt="Ancient Lakes 3/20/2021" src="photography/32 - Ancient Lakes/File30.JPG" >
+            </div>
+        </div>
+        <div class="column taeler best landscape">
+            <div class="content">
+                <img class="myImg uniformGal" alt="Ancient Lakes 3/20/2021" src="photography/32 - Ancient Lakes/File31.JPG" >
+            </div>
+        </div>
+        <div class="column taeler landscape">
+            <div class="content">
+                <img class="myImg uniformGal" alt="Ancient Lakes 3/20/2021" src="photography/32 - Ancient Lakes/File33.JPG" >
+            </div>
+        </div>
+        <div class="column kailey landscape">
+            <div class="content">
+                <img class="myImg uniformGal" alt="Ancient Lakes 3/20/2021" src="photography/32 - Ancient Lakes/File35.JPG" >
+            </div>
+        </div>
+        <div class="column nature best landscape">
+            <div class="content">
+                <img class="myImg uniformGal" alt="Ancient Lakes 3/20/2021" src="photography/32 - Ancient Lakes/File37.JPG" >
+            </div>
+        </div>
+        <div class="column kailey landscape">
+            <div class="content">
+                <img class="myImg uniformGal" alt="Ancient Lakes 3/20/2021" src="photography/32 - Ancient Lakes/File39.JPG" >
+            </div>
+        </div>
+        <div class="column kailey best landscape">
+            <div class="content">
+                <img class="myImg uniformGal" alt="Ancient Lakes 3/20/2021" src="photography/32 - Ancient Lakes/File42.JPG" >
+            </div>
+        </div>
+        <div class="column kailey landscape">
+            <div class="content">
+                <img class="myImg uniformGal" alt="Ancient Lakes 3/20/2021" src="photography/32 - Ancient Lakes/File43.JPG" >
+            </div>
+        </div>
+        <div class="column taeler landscape">
+            <div class="content">
+                <img class="myImg uniformGal" alt="Ancient Lakes 3/20/2021" src="photography/32 - Ancient Lakes/File44.JPG" >
+            </div>
+        </div>
+        <div class="column taeler landscape">
+            <div class="content">
+                <img class="myImg uniformGal" alt="Ancient Lakes 3/20/2021" src="photography/32 - Ancient Lakes/File46.JPG" >
+            </div>
+        </div>
+        <div class="column nature landscape">
+            <div class="content">
+                <img class="myImg uniformGal" alt="Dry Gulch 3/20/2021" src="photography/31 - Dry Gulch/File1.JPG" >
+            </div>
+        </div>
+        <div class="column taeler landscape">
+            <div class="content">
+                <img class="myImg uniformGal" alt="Dry Gulch 3/20/2021" src="photography/31 - Dry Gulch/File2.JPG" >
+            </div>
+        </div>
+        <div class="column taeler landscape">
+            <div class="content">
+                <img class="myImg uniformGal" alt="Dry Gulch 3/20/2021" src="photography/31 - Dry Gulch/File3.JPG" >
+            </div>
+        </div>
+        <div class="column taeler landscape">
+            <div class="content">
+                <img class="myImg uniformGal" alt="Dry Gulch 3/20/2021" src="photography/31 - Dry Gulch/File5.JPG" >
+            </div>
+        </div>
+        <div class="column kailey landscape">
+            <div class="content">
+                <img class="myImg uniformGal" alt="Dry Gulch 3/20/2021" src="photography/31 - Dry Gulch/File6.JPG" >
+            </div>
+        </div>
+        <div class="column kailey landscape">
+            <div class="content">
+                <img class="myImg uniformGal" alt="Dry Gulch 3/20/2021" src="photography/31 - Dry Gulch/File7.JPG" >
+            </div>
+        </div>
+        <div class="column taeler landscape">
+            <div class="content">
+                <img class="myImg uniformGal" alt="Dry Gulch 3/20/2021" src="photography/31 - Dry Gulch/File9.JPG" >
+            </div>
+        </div>
+        <div class="column taeler landscape">
+            <div class="content">
+                <img class="myImg uniformGal" alt="Dry Gulch 3/20/2021" src="photography/31 - Dry Gulch/File10.JPG" >
+            </div>
+        </div>
+        <div class="column taeler landscape">
+            <div class="content">
+                <img class="myImg uniformGal" alt="Dry Gulch 3/20/2021" src="photography/31 - Dry Gulch/File11.JPG" >
+            </div>
+        </div>
+        <div class="column nature landscape">
+            <div class="content">
+                <img class="myImg uniformGal" alt="Dry Gulch 3/20/2021" src="photography/31 - Dry Gulch/File12.JPG" >
+            </div>
+        </div>
+        <div class="column couple best landscape">
+            <div class="content">
+                <img class="myImg uniformGal" alt="Dry Gulch 3/20/2021" src="photography/31 - Dry Gulch/File21.JPG" >
+            </div>
+        </div>
+        <div class="column taeler best landscape">
+            <div class="content">
+                <img class="myImg uniformGal" alt="Dry Gulch 3/20/2021" src="photography/31 - Dry Gulch/File22.JPG" >
+            </div>
+        </div>
+        <div class="column taeler landscape">
+            <div class="content">
+                <img class="myImg uniformGal" alt="Dry Gulch 3/20/2021" src="photography/31 - Dry Gulch/File24.JPG" >
+            </div>
+        </div>
+        <div class="column taeler landscape">
+            <div class="content">
+                <img class="myImg uniformGal" alt="Dry Gulch 3/20/2021" src="photography/31 - Dry Gulch/File15.JPG" >
+            </div>
+        </div>
+        <div class="column couple landscape">
+            <div class="content">
+                <img class="myImg uniformGal" alt="Dry Gulch 3/20/2021" src="photography/31 - Dry Gulch/File18.JPG" >
+            </div>
+        </div>
+        <div class="column couple landscape">
+            <div class="content">
+                <img class="myImg uniformGal" alt="Dry Gulch 3/20/2021" src="photography/31 - Dry Gulch/File19.JPG" >
+            </div>
+        </div>
+        <div class="column couple landscape">
+            <div class="content">
+                <img class="myImg uniformGal" alt="Dry Gulch 3/20/2021" src="photography/31 - Dry Gulch/File20.JPG" >
+            </div>
+        </div>
+        <div class="column taeler best landscape">
+            <div class="content">
+                <img class="myImg uniformGal" alt="Dry Gulch 3/20/2021" src="photography/31 - Dry Gulch/File25.JPG" >
+            </div>
+        </div>
+        <div class="column kailey best landscape">
+            <div class="content">
+                <img class="myImg uniformGal" alt="Dry Gulch 3/20/2021" src="photography/31 - Dry Gulch/File26.JPG" >
+            </div>
+        </div>
+        <div class="column kailey landscape">
+            <div class="content">
+                <img class="myImg uniformGal" alt="Dry Gulch 3/20/2021" src="photography/31 - Dry Gulch/File27.JPG" >
+            </div>
+        </div>
+        <div class="column kailey best landscape">
+            <div class="content">
+                <img class="myImg uniformGal" alt="Dry Gulch 3/20/2021" src="photography/31 - Dry Gulch/File29.JPG" >
+            </div>
+        </div>
+        <div class="column kailey best landscape">
+            <div class="content">
+                <img class="myImg uniformGal" alt="Dry Gulch 3/20/2021" src="photography/31 - Dry Gulch/File30.JPG" >
+            </div>
+        </div>
+        <div class="column kailey landscape">
+            <div class="content">
+                <img class="myImg uniformGal" alt="Dry Gulch 3/20/2021" src="photography/31 - Dry Gulch/File34.JPG" >
+            </div>
+        </div>
+        <div class="column kailey best landscape">
+            <div class="content">
+                <img class="myImg uniformGal" alt="Dry Gulch 3/20/2021" src="photography/31 - Dry Gulch/File33.JPG" >
+            </div>
+        </div>
+        <div class="column kailey best landscape">
+            <div class="content">
+                <img class="myImg uniformGal" alt="Dry Gulch 3/20/2021" src="photography/31 - Dry Gulch/File36.JPG" >
+            </div>
+        </div>
+        <div class="column nature landscape">
+            <div class="content">
+                <img class="myImg uniformGal" alt="Dry Gulch 3/20/2021" src="photography/31 - Dry Gulch/File39.JPG" >
+            </div>
+        </div>
+        <div class="column nature landscape">
+            <div class="content">
+                <img class="myImg uniformGal" alt="Dry Gulch 3/20/2021" src="photography/31 - Dry Gulch/File43.JPG" >
+            </div>
+        </div>
+        <div class="column kailey best landscape">
+            <div class="content">
+                <img class="myImg uniformGal" alt="Dry Gulch 3/20/2021" src="photography/31 - Dry Gulch/File45.JPG" >
+            </div>
+        </div>
+        <div class="column kailey best landscape">
+            <div class="content">
+                <img class="myImg uniformGal" alt="Dry Gulch 3/20/2021" src="photography/31 - Dry Gulch/File46.JPG" >
+            </div>
+        </div>
+        <div class="column kailey landscape">
+            <div class="content">
+                <img class="myImg uniformGal" alt="Dry Gulch 3/20/2021" src="photography/31 - Dry Gulch/File47.JPG" >
+            </div>
+        </div>
+        <div class="column kailey best landscape">
+            <div class="content">
+                <img class="myImg uniformGal" alt="Dry Gulch 3/20/2021" src="photography/31 - Dry Gulch/File49.JPG" >
+            </div>
+        </div>
+        <div class="column nature best landscape">
+            <div class="content">
+                <img class="myImg uniformGal" alt="Little Si 3/17/2021" src="photography/30 - Little Si/IMG_6698.JPG" >
+            </div>
+        </div>
+        <div class="column nature best landscape">
+            <div class="content">
+                <img class="myImg uniformGal" alt="Little Si 3/17/2021" src="photography/30 - Little Si/IMG_6701.JPG" >
+            </div>
+        </div>
+        <div class="column kailey best landscape">
+            <div class="content">
+                <img class="myImg uniformGal" alt="Little Si 3/17/2021" src="photography/30 - Little Si/IMG_6712.JPG" >
+            </div>
+        </div>
+        <div class="column kailey landscape">
+            <div class="content">
+                <img class="myImg uniformGal" alt="Little Si 3/17/2021" src="photography/30 - Little Si/IMG_6714.JPG" >
+            </div>
+        </div>
+        <div class="column kailey landscape">
+            <div class="content">
+                <img class="myImg uniformGal" alt="Little Si 3/17/2021" src="photography/30 - Little Si/IMG_6715.JPG" >
+            </div>
+        </div>
+        <div class="column kailey landscape">
+            <div class="content">
+                <img class="myImg uniformGal" alt="Little Si 3/17/2021" src="photography/30 - Little Si/IMG_6719(1).JPG" >
+            </div>
+        </div>
+        <div class="column kailey landscape">
+            <div class="content">
+                <img class="myImg uniformGal" alt="Little Si 3/17/2021" src="photography/30 - Little Si/IMG_6721.JPG" >
+            </div>
+        </div>
+        <div class="column nature best landscape">
+            <div class="content">
+                <img class="myImg uniformGal" alt="Little Si 3/17/2021" src="photography/30 - Little Si/IMG_6724.JPG" >
+            </div>
+        </div>
+        <div class="column kailey landscape">
+            <div class="content">
+                <img class="myImg uniformGal" alt="Little Si 3/17/2021" src="photography/30 - Little Si/IMG_6725.JPG" >
+            </div>
+        </div>
+        <div class="column taeler landscape">
+            <div class="content">
+                <img class="myImg uniformGal" alt="Garfield Ledges 3/6/2021" src="photography/29 - GarfieldLedges/IMG_6448.JPG" >
+            </div>
+        </div>
+        <div class="column couple landscape">
+            <div class="content">
+                <img class="myImg uniformGal" alt="Garfield Ledges 3/6/2021" src="photography/29 - GarfieldLedges/IMG_6436.JPG" >
+            </div>
+        </div>
+        <div class="column taeler landscape">
+            <div class="content">
+                <img class="myImg uniformGal" alt="Garfield Ledges 3/6/2021" src="photography/29 - GarfieldLedges/IMG_6435.JPG" >
+            </div>
+        </div>
+        <div class="column couple landscape">
+            <div class="content">
+                <img class="myImg uniformGal" alt="Garfield Ledges 3/6/2021" src="photography/29 - GarfieldLedges/IMG_6434.JPG" >
+            </div>
+        </div>
+        <div class="column taeler landscape">
+            <div class="content">
+                <img class="myImg uniformGal" alt="Garfield Ledges 3/6/2021" src="photography/29 - GarfieldLedges/IMG_6432.JPG" >
+            </div>
+        </div>
+        <div class="column couple landscape">
+            <div class="content">
+                <img class="myImg uniformGal" alt="Garfield Ledges 3/6/2021" src="photography/29 - GarfieldLedges/IMG_6431.JPG" >
+            </div>
+        </div>
+        <div class="column taeler landscape">
+            <div class="content">
+                <img class="myImg uniformGal" alt="Garfield Ledges 3/6/2021" src="photography/29 - GarfieldLedges/IMG_6428.JPG" >
+            </div>
+        </div>
+        <div class="column kailey best landscape">
+            <div class="content">
+                <img class="myImg uniformGal" alt="Garfield Ledges 3/6/2021" src="photography/29 - GarfieldLedges/IMG_6425.JPG" >
+            </div>
+        </div>
+        <div class="column taeler landscape">
+            <div class="content">
+                <img class="myImg uniformGal" alt="Garfield Ledges 3/6/2021" src="photography/29 - GarfieldLedges/IMG_6397.JPG" >
+            </div>
+        </div>
+        <div class="column couple landscape">
+            <div class="content">
+                <img class="myImg uniformGal" alt="Garfield Ledges 3/6/2021" src="photography/29 - GarfieldLedges/IMG_6395.JPG" >
+            </div>
+        </div>
+        <div class="column couple landscape">
+            <div class="content">
+                <img class="myImg uniformGal" alt="Garfield Ledges 3/6/2021" src="photography/29 - GarfieldLedges/IMG_6394.JPG" >
+            </div>
+        </div>
+        <div class="column kailey best landscape">
+            <div class="content">
+                <img class="myImg uniformGal" alt="Garfield Ledges 3/6/2021" src="photography/29 - GarfieldLedges/IMG_6392.JPG" >
+            </div>
+        </div>
+        <div class="column kailey landscape">
+            <div class="content">
+                <img class="myImg uniformGal" alt="Garfield Ledges 3/6/2021" src="photography/29 - GarfieldLedges/IMG_6391.JPG" >
+            </div>
+        </div>
+        <div class="column taeler landscape">
+            <div class="content">
+                <img class="myImg uniformGal" alt="Garfield Ledges 3/6/2021" src="photography/29 - GarfieldLedges/IMG_6390.JPG" >
+            </div>
+        </div>
+        <div class="column taeler landscape">
+            <div class="content">
+                <img class="myImg uniformGal" alt="Garfield Ledges 3/6/2021" src="photography/29 - GarfieldLedges/IMG_6389.JPG" >
+            </div>
+        </div>
+        <div class="column taeler landscape">
+            <div class="content">
+                <img class="myImg uniformGal" alt="Garfield Ledges 3/6/2021" src="photography/29 - GarfieldLedges/IMG_6387.JPG" >
+            </div>
+        </div>
+        <div class="column nature landscape">
+            <div class="content">
+                <img class="myImg uniformGal" alt="Garfield Ledges 3/6/2021" src="photography/29 - GarfieldLedges/IMG_6386.JPG" >
+            </div>
+        </div>
+        <div class="column nature landscape">
+            <div class="content">
+                <img class="myImg uniformGal" alt="Garfield Ledges 3/6/2021" src="photography/29 - GarfieldLedges/IMG_6385.JPG" >
+            </div>
+        </div>
+        <div class="column kailey landscape">
+            <div class="content">
+                <img class="myImg uniformGal" alt="Big Rock 2/27/2021" src="photography/28 - Big Rock/IMG_6120.JPG" >
+            </div>
+        </div>
+        <div class="column kailey landscape">
+            <div class="content">
+                <img class="myImg uniformGal" alt="Big Rock 2/27/2021" src="photography/28 - Big Rock/IMG_6118.JPG" >
+            </div>
+        </div>
+        <div class="column kailey landscape">
+            <div class="content">
+                <img class="myImg uniformGal" alt="Big Rock 2/27/2021" src="photography/28 - Big Rock/IMG_6117.JPG" >
+            </div>
+        </div>
+        <div class="column kailey landscape">
+            <div class="content">
+                <img class="myImg uniformGal" alt="Big Rock 2/27/2021" src="photography/28 - Big Rock/IMG_6116.JPG" >
+            </div>
+        </div>
+        <div class="column kailey landscape">
+            <div class="content">
+                <img class="myImg uniformGal" alt="Big Rock 2/27/2021" src="photography/28 - Big Rock/IMG_6115.JPG" >
+            </div>
+        </div>
+        <div class="column kailey landscape">
+            <div class="content">
+                <img class="myImg uniformGal" alt="Big Rock 2/27/2021" src="photography/28 - Big Rock/IMG_6112.JPG" >
+            </div>
+        </div>
+        <div class="column taeler landscape">
+            <div class="content">
+                <img class="myImg uniformGal" alt="Big Rock 2/27/2021" src="photography/28 - Big Rock/IMG_6111.JPG" >
+            </div>
+        </div>
+        <div class="column taeler landscape">
+            <div class="content">
+                <img class="myImg uniformGal" alt="Big Rock 2/27/2021" src="photography/28 - Big Rock/IMG_6109.JPG" >
+            </div>
+        </div>
+        <div class="column couple best landscape">
+            <div class="content">
+                <img class="myImg uniformGal" alt="Big Rock 2/27/2021" src="photography/28 - Big Rock/IMG_6108.JPG" >
+            </div>
+        </div>
+        <div class="column couple landscape">
+            <div class="content">
+                <img class="myImg uniformGal" alt="Big Rock 2/27/2021" src="photography/28 - Big Rock/IMG_6107.JPG" >
+            </div>
+        </div>
+        <div class="column kailey landscape">
+            <div class="content">
+                <img class="myImg uniformGal" alt="Big Rock 2/27/2021" src="photography/28 - Big Rock/IMG_6102(1).JPG" >
+            </div>
+        </div>
+        <div class="column taeler landscape">
+            <div class="content">
+                <img class="myImg uniformGal" alt="Big Rock 2/27/2021" src="photography/28 - Big Rock/IMG_6100.JPG" >
+            </div>
+        </div>
+        <div class="column couple landscape">
+            <div class="content">
+                <img class="myImg uniformGal" alt="Big Rock 2/27/2021" src="photography/28 - Big Rock/IMG_6098.JPG" >
+            </div>
+        </div>
+        <div class="column kailey landscape">
+            <div class="content">
+                <img class="myImg uniformGal" alt="Big Rock 2/27/2021" src="photography/28 - Big Rock/IMG_6097.JPG" >
+            </div>
+        </div>
+        <div class="column kailey landscape">
+            <div class="content">
+                <img class="myImg uniformGal" alt="Big Rock 2/27/2021" src="photography/28 - Big Rock/IMG_6096.JPG" >
+            </div>
+        </div>
+        <div class="column couple landscape">
+            <div class="content">
+                <img class="myImg uniformGal" alt="Big Rock 2/27/2021" src="photography/28 - Big Rock/IMG_6094.JPG" >
+            </div>
+        </div>
+        <div class="column couple landscape">
+            <div class="content">
+                <img class="myImg uniformGal" alt="Big Rock 2/27/2021" src="photography/28 - Big Rock/IMG_6093.JPG" >
+            </div>
+        </div>
+        <div class="column couple landscape">
+            <div class="content">
+                <img class="myImg uniformGal" alt="Big Rock 2/27/2021" src="photography/28 - Big Rock/IMG_6090.JPG" >
+            </div>
+        </div>
+        <div class="column taeler landscape">
+            <div class="content">
+                <img class="myImg uniformGal" alt="Big Rock 2/27/2021" src="photography/28 - Big Rock/IMG_6089.JPG" >
+            </div>
+        </div>
+        <div class="column couple landscape">
+            <div class="content">
+                <img class="myImg uniformGal" alt="Big Rock 2/27/2021" src="photography/28 - Big Rock/IMG_6088.JPG" >
+            </div>
+        </div>
+        <div class="column kailey landscape">
+            <div class="content">
+                <img class="myImg uniformGal" alt="Big Rock 2/27/2021" src="photography/28 - Big Rock/IMG_6086.JPG" >
+            </div>
+        </div>
+        <div class="column kailey landscape">
+            <div class="content">
+                <img class="myImg uniformGal" alt="Big Rock 2/27/2021" src="photography/28 - Big Rock/IMG_6076.JPG" >
+            </div>
+        </div>
+
+        
+
+        <!-- Portrait Photos -->
+        <div class="column taeler portrait">
+            <div class="content">
+                <img class="myImg uniformGal" alt="Dry Gulch 3/20/2021" src="photography/31 - Dry Gulch/File8.JPG" >
+            </div>
+        </div>
+        <div class="column nature portrait">
+            <div class="content">
+                <img class="myImg uniformGal" alt="Little Si 3/17/2021" src="photography/30 - Little Si/IMG_6702.JPG" >
+            </div>
+        </div>
+        <div class="column kailey portrait">
+            <div class="content">
+                <img class="myImg uniformGal" alt="Little Si 3/17/2021" src="photography/30 - Little Si/IMG_6705.JPG" >
+            </div>
+        </div>
+        <div class="column taeler best portrait">
+            <div class="content">
+                <img class="myImg uniformGal" alt="Garfield Ledges 3/6/2021" src="photography/29 - GarfieldLedges/IMG_6450.JPG" >
+            </div>
+        </div>
+        <div class="column taeler best portrait">
+            <div class="content">
+                <img class="myImg uniformGal" alt="Garfield Ledges 3/6/2021" src="photography/29 - GarfieldLedges/IMG_6449.JPG" >
+            </div>
+        </div>
+        <div class="column kailey best portrait">
+            <div class="content">
+                <img class="myImg uniformGal" alt="Garfield Ledges 3/6/2021" src="photography/29 - GarfieldLedges/IMG_6446.JPG" >
+            </div>
+        </div>
+        <div class="column kailey portrait">
+            <div class="content">
+                <img class="myImg uniformGal" alt="Garfield Ledges 3/6/2021" src="photography/29 - GarfieldLedges/IMG_6445.JPG" >
+            </div>
+        </div>
+        <div class="column kailey portrait">
+            <div class="content">
+                <img class="myImg uniformGal" alt="Garfield Ledges 3/6/2021" src="photography/29 - GarfieldLedges/IMG_6444.JPG" >
+            </div>
+        </div>
+        <div class="column kailey best portrait">
+            <div class="content">
+                <img class="myImg uniformGal" alt="Garfield Ledges 3/6/2021" src="photography/29 - GarfieldLedges/IMG_6441.JPG" >
+            </div>
+        </div>
+        <div class="column kailey best portrait">
+            <div class="content">
+                <img class="myImg uniformGal" alt="Garfield Ledges 3/6/2021" src="photography/29 - GarfieldLedges/IMG_6440.JPG" >
+            </div>
+        </div>
+        <div class="column kailey best portrait">
+            <div class="content">
+                <img class="myImg uniformGal" alt="Garfield Ledges 3/6/2021" src="photography/29 - GarfieldLedges/IMG_6405.JPG" >
+            </div>
+        </div>
+        <div class="column kailey best portrait">
+            <div class="content">
+                <img class="myImg uniformGal" alt="Garfield Ledges 3/6/2021" src="photography/29 - GarfieldLedges/IMG_6404.JPG" >
+            </div>
+        </div>
+        <div class="column nature portrait">
+            <div class="content">
+                <img class="myImg uniformGal" alt="Garfield Ledges 3/6/2021" src="photography/29 - GarfieldLedges/IMG_638.JPG" >
+            </div>
+        </div>
+        <div class="column kailey best portrait">
+            <div class="content">
+                <img class="myImg uniformGal" alt="Big Rock 2/27/2021" src="photography/28 - Big Rock/IMG_6106.JPG" >
+            </div>
+        </div>
+        <div class="column kailey best portrait">
+            <div class="content">
+                <img class="myImg uniformGal" alt="Big Rock 2/27/2021" src="photography/28 - Big Rock/IMG_6106(1).JPG" >
+            </div>
+        </div>
+        <div class="column kailey best portrait">
+            <div class="content">
+                <img class="myImg uniformGal" alt="Big Rock 2/27/2021" src="photography/28 - Big Rock/IMG_6104(1).JPG" >
+            </div>
+        </div>
+        <div class="column kailey best portrait">
+            <div class="content">
+                <img class="myImg uniformGal" alt="Big Rock 2/27/2021" src="photography/28 - Big Rock/IMG_6104.JPG" >
+            </div>
+        </div>
+
+
+
+
+
+        <!-- END GRID -->
+        </div>
+
+        <!-- The following code is from: https://stackoverflow.com/questions/41275958/modal-image-galleries-multiple-images -->
+        <div id="myModal" class="modal">
+            <span class="close" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
+            <img class="modal-content" id="img01">
+            <div id="caption"></div>
+        </div>
+
+        <script>
+            filterSelection("all") // Execute the function and show all columns
+            function filterSelection(c) {
+            var x, i;
+            x = document.getElementsByClassName("column");
+            if (c == "all") c = "";
+            // Add the "show" class (display:block) to the filtered elements, and remove the "show" class from the elements that are not selected
+            for (i = 0; i < x.length; i++) {
+                w3RemoveClass(x[i], "show");
+                if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+            }
+            }
+
+            // Show filtered elements
+            function w3AddClass(element, name) {
+            var i, arr1, arr2;
+            arr1 = element.className.split(" ");
+            arr2 = name.split(" ");
+            for (i = 0; i < arr2.length; i++) {
+                if (arr1.indexOf(arr2[i]) == -1) {
+                element.className += " " + arr2[i];
+                }
+            }
+            }
+
+            // Hide elements that are not selected
+            function w3RemoveClass(element, name) {
+            var i, arr1, arr2;
+            arr1 = element.className.split(" ");
+            arr2 = name.split(" ");
+            for (i = 0; i < arr2.length; i++) {
+                while (arr1.indexOf(arr2[i]) > -1) {
+                arr1.splice(arr1.indexOf(arr2[i]), 1);
+                }
+            }
+            element.className = arr1.join(" ");
+            }
+
+            // Add active class to the current button (highlight it)
+            var btnContainer = document.getElementById("myBtnContainer");
+            var btns = btnContainer.getElementsByClassName("btn");
+            for (var i = 0; i < btns.length; i++) {
+            btns[i].addEventListener("click", function(){
+                var current = document.getElementsByClassName("active");
+                current[0].className = current[0].className.replace(" active", "");
+                this.className += " active";
+            });
+            }
+        </script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+        
+        <script>
+            // Get the modal
+            var modal = document.getElementById('myModal');
+            // Get the image and insert it inside the modal - use its "alt" text as a caption
+            var img = $('.myImg');
+            var modalImg = $("#img01");
+            var captionText = document.getElementById("caption");
+            $('.myImg').click(function(){
+                modal.style.display = "block";
+                var newSrc = this.src;
+                modalImg.attr('src', newSrc);
+                captionText.innerHTML = this.alt;
+            });
+            // Get the <span> element that closes the modal
+            var span = document.getElementsByClassName("close")[0];
+            // When the user clicks on <span> (x), close the modal
+            span.onclick = function() {
+            modal.style.display = "none";
+            }
+            </script>
+    </body>
+</html>
