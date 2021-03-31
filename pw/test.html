@@ -4,8 +4,13 @@
         <title> Photostream </title>
         <link rel="Stylesheet" href="pg.css" />
         <link rel="Stylesheet" href="sitestyle.css" />
-    </head>
+        <link rel="Stylesheet" href="loadphotosfirst.css" />
+        </head>
     <body>
+        <div id="loadOverlay" style="height: 100%">
+            <p>Application Loading</p>
+        </div>
+
         <!-- Navbar -->
         <div class="navbar">
             <a href="bestphotos.html"><h5>Best Photos</h5></a>
@@ -16,6 +21,7 @@
             <a href="index.html"><h5 class="logo">Quesada Photography</h5></a>
         </div>
 
+        <!-- Photo Navigation Filter -->
         <h2>Photo Stream</h2>
         <div id="myBtnContainer">
         <button class="btn active" onclick="filterSelection('all')"> Show All </button>
@@ -35,7 +41,6 @@
 
         <!-- Portfolio Gallery Grid -->
         <div class="row">
-
 
         <!-- Landscape Photos -->
         <div class="column kailey landscape">
@@ -613,11 +618,6 @@
                 <img class="myImg uniformGal" alt="Dirty Harry's Balcony 2/20/2021" src="photography/27 - Dirty Harry's Balcony/IMG_5783.JPG" >
             </div>
         </div>
-        <div class="column kailey gymnastics landscape">
-            <div class="content">
-                <img class="myImg uniformGal" alt="Dirty Harry's Balcony 2/20/2021" src="photography/27 - Dirty Harry's Balcony/IMG_5783(1) copy.JPG" >
-            </div>
-        </div>
         <div class="column kailey landscape">
             <div class="content">
                 <img class="myImg uniformGal" alt="Dirty Harry's Balcony 2/20/2021" src="photography/27 - Dirty Harry's Balcony/IMG_5781.JPG" >
@@ -668,7 +668,6 @@
                 <img class="myImg uniformGal" alt="Dirty Harry's Balcony 2/20/2021" src="photography/27 - Dirty Harry's Balcony/IMG_5756.JPG" >
             </div>
         </div>
-        <!-- Unique Sizes -->
         <div class="column nature best landscape">
             <div class="content">
                 <img class="myImg uniformGal" alt="Dirty Harry's Balcony 2/20/2021" src="photography/27 - Dirty Harry's Balcony/IMG_5738.JPG" >
@@ -1249,13 +1248,427 @@
                 <img class="myImg uniformGal" alt="Pinnacle Saddle 8/31/2020" src="photography/13 - Pinnacle Saddle/142650292_422986002381885_7717787208354951269_n.jpg" >
             </div>
         </div>
-
-
-
-
-
-
-
+        <div class="column kailey best landscape">
+            <div class="content">
+                <img class="myImg uniformGal" alt="Tinkham and Abiel Peak 8/27/2020" src="photography/12 - Tinkham Peak/DSC_0071.JPG" >
+            </div>
+        </div>
+        <div class="column nature animal landscape">
+            <div class="content">
+                <img class="myImg uniformGal" alt="Tinkham and Abiel Peak 8/27/2020" src="photography/12 - Tinkham Peak/DSC_0084.JPG" >
+            </div>
+        </div>
+        <div class="column nature animal landscape">
+            <div class="content">
+                <img class="myImg uniformGal" alt="Tinkham and Abiel Peak 8/27/2020" src="photography/12 - Tinkham Peak/DSC_0087 2.JPG" >
+            </div>
+        </div>
+        <div class="column kailey landscape">
+            <div class="content">
+                <img class="myImg uniformGal" alt="Tinkham and Abiel Peak 8/27/2020" src="photography/12 - Tinkham Peak/File7.jpeg" >
+            </div>
+        </div>
+        <div class="column kailey best landscape">
+            <div class="content">
+                <img class="myImg uniformGal" alt="Tinkham and Abiel Peak 8/27/2020" src="photography/12 - Tinkham Peak/File39.jpeg" >
+            </div>
+        </div>
+        <div class="column kailey landscape">
+            <div class="content">
+                <img class="myImg uniformGal" alt="Tinkham and Abiel Peak 8/27/2020" src="photography/12 - Tinkham Peak/File27.jpeg" >
+            </div>
+        </div>
+        <div class="column kailey best landscape">
+            <div class="content">
+                <img class="myImg uniformGal" alt="Tinkham and Abiel Peak 8/27/2020" src="photography/12 - Tinkham Peak/File9.jpeg" >
+            </div>
+        </div>
+        <div class="column kailey landscape">
+            <div class="content">
+                <img class="myImg uniformGal" alt="Tinkham and Abiel Peak 8/27/2020" src="photography/12 - Tinkham Peak/File17.jpeg" >
+            </div>
+        </div>
+        <div class="column kailey best landscape">
+            <div class="content">
+                <img class="myImg uniformGal" alt="Tinkham and Abiel Peak 8/27/2020" src="photography/12 - Tinkham Peak/File30.jpeg" >
+            </div>
+        </div>
+        <div class="column kailey landscape">
+            <div class="content">
+                <img class="myImg uniformGal" alt="Tinkham and Abiel Peak 8/27/2020" src="photography/12 - Tinkham Peak/File36.jpeg" >
+            </div>
+        </div>
+        <div class="column kailey landscape">
+            <div class="content">
+                <img class="myImg uniformGal" alt="Tinkham and Abiel Peak 8/27/2020" src="photography/12 - Tinkham Peak/File54.PNG" >
+            </div>
+        </div>
+        <div class="column kailey best landscape">
+            <div class="content">
+                <img class="myImg uniformGal" alt="Tolmie Peak Fire Lookout 8/23/2020" src="photography/11 - Tolmie Peak/File46.jpeg" >
+            </div>
+        </div>
+        <div class="column kailey best landscape">
+            <div class="content">
+                <img class="myImg uniformGal" alt="Tolmie Peak Fire Lookout 8/23/2020" src="photography/11 - Tolmie Peak/File45.jpeg" >
+            </div>
+        </div>
+        <div class="column kailey best landscape">
+            <div class="content">
+                <img class="myImg uniformGal" alt="Tolmie Peak Fire Lookout 8/23/2020" src="photography/11 - Tolmie Peak/File44.jpeg" >
+            </div>
+        </div>
+        <div class="column couple landscape">
+            <div class="content">
+                <img class="myImg uniformGal" alt="Tolmie Peak Fire Lookout 8/23/2020" src="photography/11 - Tolmie Peak/File41.jpeg" >
+            </div>
+        </div>
+        <div class="column nature landscape">
+            <div class="content">
+                <img class="myImg uniformGal" alt="Tolmie Peak Fire Lookout 8/23/2020" src="photography/11 - Tolmie Peak/File39.jpeg" >
+            </div>
+        </div>
+        <div class="column nature landscape">
+            <div class="content">
+                <img class="myImg uniformGal" alt="Tolmie Peak Fire Lookout 8/23/2020" src="photography/11 - Tolmie Peak/File37.jpeg" >
+            </div>
+        </div>
+        <div class="column couple landscape">
+            <div class="content">
+                <img class="myImg uniformGal" alt="Tolmie Peak Fire Lookout 8/23/2020" src="photography/11 - Tolmie Peak/File30.jpeg" >
+            </div>
+        </div>
+        <div class="column couple landscape">
+            <div class="content">
+                <img class="myImg uniformGal" alt="Tolmie Peak Fire Lookout 8/23/2020" src="photography/11 - Tolmie Peak/File29.jpeg" >
+            </div>
+        </div>
+        <div class="column kailey landscape">
+            <div class="content">
+                <img class="myImg uniformGal" alt="Tolmie Peak Fire Lookout 8/23/2020" src="photography/11 - Tolmie Peak/File15.jpeg" >
+            </div>
+        </div>
+        <div class="column taeler landscape">
+            <div class="content">
+                <img class="myImg uniformGal" alt="Tolmie Peak Fire Lookout 8/23/2020" src="photography/11 - Tolmie Peak/File27.jpeg" >
+            </div>
+        </div>
+        <div class="column kailey best landscape">
+            <div class="content">
+                <img class="myImg uniformGal" alt="Tolmie Peak Fire Lookout 8/23/2020" src="photography/11 - Tolmie Peak/File26.jpeg" >
+            </div>
+        </div>
+        <div class="column kailey gymnastics landscape">
+            <div class="content">
+                <img class="myImg uniformGal" alt="Tolmie Peak Fire Lookout 8/23/2020" src="photography/11 - Tolmie Peak/File25.jpeg" >
+            </div>
+        </div>
+        <div class="column couple landscape">
+            <div class="content">
+                <img class="myImg uniformGal" alt="Tolmie Peak Fire Lookout 8/23/2020" src="photography/11 - Tolmie Peak/File24.jpeg" >
+            </div>
+        </div>
+        <div class="column couple landscape">
+            <div class="content">
+                <img class="myImg uniformGal" alt="Tolmie Peak Fire Lookout 8/23/2020" src="photography/11 - Tolmie Peak/File18.jpeg" >
+            </div>
+        </div>
+        <div class="column couple landscape">
+            <div class="content">
+                <img class="myImg uniformGal" alt="Tolmie Peak Fire Lookout 8/23/2020" src="photography/11 - Tolmie Peak/File12.jpeg" >
+            </div>
+        </div>
+        <div class="column couple landscape">
+            <div class="content">
+                <img class="myImg uniformGal" alt="Tolmie Peak Fire Lookout 8/23/2020" src="photography/11 - Tolmie Peak/File13.jpeg" >
+            </div>
+        </div>
+        <div class="column kailey landscape">
+            <div class="content">
+                <img class="myImg uniformGal" alt="Tolmie Peak Fire Lookout 8/23/2020" src="photography/11 - Tolmie Peak/File23.jpeg" >
+            </div>
+        </div>
+        <div class="column kailey landscape">
+            <div class="content">
+                <img class="myImg uniformGal" alt="Tolmie Peak Fire Lookout 8/23/2020" src="photography/11 - Tolmie Peak/File21.jpeg" >
+            </div>
+        </div>
+        <div class="column kailey best landscape">
+            <div class="content">
+                <img class="myImg uniformGal" alt="Tolmie Peak Fire Lookout 8/23/2020" src="photography/11 - Tolmie Peak/File11.jpeg" >
+            </div>
+        </div>
+        <div class="column taeler landscape">
+            <div class="content">
+                <img class="myImg uniformGal" alt="Tolmie Peak Fire Lookout 8/23/2020" src="photography/11 - Tolmie Peak/File22.jpeg" >
+            </div>
+        </div>
+        <div class="column nature best landscape">
+            <div class="content">
+                <img class="myImg uniformGal" alt="Tolmie Peak Fire Lookout 8/23/2020" src="photography/11 - Tolmie Peak/File4.jpeg" >
+            </div>
+        </div>
+        <div class="column taeler best landscape">
+            <div class="content">
+                <img class="myImg uniformGal" alt="Tolmie Peak Fire Lookout 8/23/2020" src="photography/11 - Tolmie Peak/File3.jpeg" >
+            </div>
+        </div>
+        <div class="column taeler best landscape">
+            <div class="content">
+                <img class="myImg uniformGal" alt="Tolmie Peak Fire Lookout 8/23/2020" src="photography/11 - Tolmie Peak/DSC_0257.JPG" >
+            </div>
+        </div>
+        <div class="column taeler best landscape">
+            <div class="content">
+                <img class="myImg uniformGal" alt="Tolmie Peak Fire Lookout 8/23/2020" src="photography/11 - Tolmie Peak/DSC_0253.JPG" >
+            </div>
+        </div>
+        <div class="column couple landscape">
+            <div class="content">
+                <img class="myImg uniformGal" alt="Tolmie Peak Fire Lookout 8/23/2020" src="photography/11 - Tolmie Peak/File2.jpeg" >
+            </div>
+        </div>
+        <div class="column nature landscape">
+            <div class="content">
+                <img class="myImg uniformGal" alt="Tolmie Peak Fire Lookout 8/23/2020" src="photography/11 - Tolmie Peak/File1.jpeg" >
+            </div>
+        </div>
+        <div class="column kailey best landscape">
+            <div class="content">
+                <img class="myImg uniformGal" alt="Tolmie Peak Fire Lookout 8/23/2020" src="photography/11 - Tolmie Peak/DSC_0119(1).JPG" >
+            </div>
+        </div>
+        <div class="column taeler best landscape">
+            <div class="content">
+                <img class="myImg uniformGal" alt="Tolmie Peak Fire Lookout 8/23/2020" src="photography/11 - Tolmie Peak/DSC_0101.JPG" >
+            </div>
+        </div>
+        <div class="column kailey best landscape">
+            <div class="content">
+                <img class="myImg uniformGal" alt="Little Mashel River 8/21/2020" src="photography/10 - Mashel Falls/143553434_239469764469853_3156202138203327350_n.jpg" >
+            </div>
+        </div>
+        <div class="column kailey best landscape">
+            <div class="content">
+                <img class="myImg uniformGal" alt="Twin Falls 6/19/2020" src="photography/8 - Twin Falls/_DSC_0045.JPG" >
+            </div>
+        </div>
+        <div class="column kailey best landscape">
+            <div class="content">
+                <img class="myImg uniformGal" alt="Mt. Storm King 6/18/2020" src="photography/7 - Mt. Storm King/standing.jpg" >
+            </div>
+        </div>
+        <div class="column kailey best landscape">
+            <div class="content">
+                <img class="myImg uniformGal" alt="Mt. Storm King 6/18/2020" src="photography/7 - Mt. Storm King/File17.jpeg" >
+            </div>
+        </div>
+        <div class="column couple landscape">
+            <div class="content">
+                <img class="myImg uniformGal" alt="Mt. Storm King 6/18/2020" src="photography/7 - Mt. Storm King/File15.jpg" >
+            </div>
+        </div>
+        <div class="column taeler landscape">
+            <div class="content">
+                <img class="myImg uniformGal" alt="Mt. Storm King 6/18/2020" src="photography/7 - Mt. Storm King/File10.jpg" >
+            </div>
+        </div>
+        <div class="column taeler landscape">
+            <div class="content">
+                <img class="myImg uniformGal" alt="Mt. Storm King 6/18/2020" src="photography/7 - Mt. Storm King/File1.jpg" >
+            </div>
+        </div>
+        <div class="column kailey best landscape">
+            <div class="content">
+                <img class="myImg uniformGal" alt="Mt. Storm King 6/18/2020" src="photography/7 - Mt. Storm King/cropped_peace.jpg" >
+            </div>
+        </div>
+        <div class="column taeler best landscape">
+            <div class="content">
+                <img class="myImg uniformGal" alt="Mt. Storm King 6/18/2020" src="photography/7 - Mt. Storm King/cropped_tq_looking.jpg" >
+            </div>
+        </div>
+        <div class="column nature best landscape">
+            <div class="content">
+                <img class="myImg uniformGal" alt="Mt. Storm King 6/18/2020" src="photography/7 - Mt. Storm King/birb.jpg" >
+            </div>
+        </div>
+        <div class="column kailey animals landscape">
+            <div class="content">
+                <img class="myImg uniformGal" alt="Melmont Ghost Town 12/14/2019" src="photography/6.1 - Melmont Ghost Town/File17.jpeg" >
+            </div>
+        </div>
+        <div class="column couple landscape">
+            <div class="content">
+                <img class="myImg uniformGal" alt="Melmont Ghost Town 12/14/2019" src="photography/6.1 - Melmont Ghost Town/File4.jpg" >
+            </div>
+        </div>
+        <div class="column taeler animals landscape">
+            <div class="content">
+                <img class="myImg uniformGal" alt="Melmont Ghost Town 12/14/2019" src="photography/6.1 - Melmont Ghost Town/File3.jpg" >
+            </div>
+        </div>
+        <div class="column nature best landscape">
+            <div class="content">
+                <img class="myImg uniformGal" alt="Carbon River Entrance 6/10/2020" src="photography/6 - Hiking with the Girls/e_DSC_0352.jpg" >
+            </div>
+        </div>
+        <div class="column kailey gymnastics landscape">
+            <div class="content">
+                <img class="myImg uniformGal" alt="Carbon River Entrance 6/10/2020" src="photography/6 - Hiking with the Girls/e_DSC_0317.jpg" >
+            </div>
+        </div>
+        <div class="column krista other landscape">
+            <div class="content">
+                <img class="myImg uniformGal" alt="Melmont Ghost Town 6/10/2020" src="photography/6 - Hiking with the Girls/e_DSC_0024.jpg" >
+            </div>
+        </div>
+        <div class="column angie other landscape">
+            <div class="content">
+                <img class="myImg uniformGal" alt="Melmont Ghost Town 6/10/2020" src="photography/6 - Hiking with the Girls/*_DSC_0263.JPG" >
+            </div>
+        </div>
+        <div class="column krista angie other landscape">
+            <div class="content">
+                <img class="myImg uniformGal" alt="Melmont Ghost Town 6/10/2020" src="photography/6 - Hiking with the Girls/*_DSC_0201.JPG" >
+            </div>
+        </div>
+        <div class="column krista angie other landscape">
+            <div class="content">
+                <img class="myImg uniformGal" alt="Melmont Ghost Town 6/10/2020" src="photography/6 - Hiking with the Girls/*_DSC_0016.JPG" >
+            </div>
+        </div>
+        <div class="column kailey best landscape">
+            <div class="content">
+                <img class="myImg uniformGal" alt="Rattlesnake Ledge 2/2/2020" src="photography/5 - Rattlesnake Ledge/Rattlesnake Ridge 2.jpeg" >
+            </div>
+        </div>
+        <div class="column taeler best landscape">
+            <div class="content">
+                <img class="myImg uniformGal" alt="Rattlesnake Ledge 2/2/2020" src="photography/5 - Rattlesnake Ledge/Rattlesnake Ridge.jpeg" >
+            </div>
+        </div>
+        <div class="column taeler best landscape">
+            <div class="content">
+                <img class="myImg uniformGal" alt="Rattlesnake Ledge 2/2/2020" src="photography/5 - Rattlesnake Ledge/File45.jpeg" >
+            </div>
+        </div>
+        <div class="column couple landscape">
+            <div class="content">
+                <img class="myImg uniformGal" alt="Rattlesnake Ledge 2/2/2020" src="photography/5 - Rattlesnake Ledge/File40.jpeg" >
+            </div>
+        </div>
+        <div class="column taeler landscape">
+            <div class="content">
+                <img class="myImg uniformGal" alt="Rattlesnake Ledge 2/2/2020" src="photography/5 - Rattlesnake Ledge/File6.jpeg" >
+            </div>
+        </div>
+        <div class="column couple landscape">
+            <div class="content">
+                <img class="myImg uniformGal" alt="Rattlesnake Ledge 2/2/2020" src="photography/5 - Rattlesnake Ledge/File3.jpeg" >
+            </div>
+        </div>
+        <div class="column couple landscape">
+            <div class="content">
+                <img class="myImg uniformGal" alt="Rattlesnake Ledge 2/2/2020" src="photography/5 - Rattlesnake Ledge/File2.jpeg" >
+            </div>
+        </div>
+        <div class="column couple landscape">
+            <div class="content">
+                <img class="myImg uniformGal" alt="Indian Canyons 1/1/2020" src="photography/4 - Indian Canyons/File15.jpg" >
+            </div>
+        </div>
+        <div class="column couple landscape">
+            <div class="content">
+                <img class="myImg uniformGal" alt="Indian Canyons 1/1/2020" src="photography/4 - Indian Canyons/File13.jpg" >
+            </div>
+        </div>
+        <div class="column couple landscape">
+            <div class="content">
+                <img class="myImg uniformGal" alt="Indian Canyons 1/1/2020" src="photography/4 - Indian Canyons/File12.jpg" >
+            </div>
+        </div>
+        <div class="column couple landscape">
+            <div class="content">
+                <img class="myImg uniformGal" alt="Indian Canyons 1/1/2020" src="photography/4 - Indian Canyons/File10.jpg" >
+            </div>
+        </div>
+        <div class="column couple landscape">
+            <div class="content">
+                <img class="myImg uniformGal" alt="Indian Canyons 1/1/2020" src="photography/4 - Indian Canyons/File7.jpg" >
+            </div>
+        </div>
+        <div class="column kailey gymnastics landscape">
+            <div class="content">
+                <img class="myImg uniformGal" alt="Indian Canyons 1/1/2020" src="photography/4 - Indian Canyons/File6.jpg" >
+            </div>
+        </div>
+        <div class="column couple landscape">
+            <div class="content">
+                <img class="myImg uniformGal" alt="Indian Canyons 1/1/2020" src="photography/4 - Indian Canyons/File5.jpg" >
+            </div>
+        </div>
+        <div class="column couple landscape">
+            <div class="content">
+                <img class="myImg uniformGal" alt="Indian Canyons 1/1/2020" src="photography/4 - Indian Canyons/File2.jpg" >
+            </div>
+        </div>
+        <div class="column nature landscape">
+            <div class="content">
+                <img class="myImg uniformGal" alt="Indian Canyons 1/1/2020" src="photography/4 - Indian Canyons/File3.jpg" >
+            </div>
+        </div>
+        <div class="column couple gymnastics best landscape">
+            <div class="content">
+                <img class="myImg uniformGal" alt="Lake Easton 10/2019" src="photography/3 - Lake Easton/File85.PNG" >
+            </div>
+        </div>
+        <div class="column couple landscape">
+            <div class="content">
+                <img class="myImg uniformGal" alt="Lake Easton 10/2019" src="photography/3 - Lake Easton/IMG_0123.png" >
+            </div>
+        </div>
+        <div class="column couple landscape">
+            <div class="content">
+                <img class="myImg uniformGal" alt="Lake Easton 10/2019" src="photography/3 - Lake Easton/File69.HEIC" >
+            </div>
+        </div>
+        <div class="column couple landscape">
+            <div class="content">
+                <img class="myImg uniformGal" alt="Lake Easton 10/2019" src="photography/3 - Lake Easton/File68.jpg" >
+            </div>
+        </div>
+        <div class="column couple landscape">
+            <div class="content">
+                <img class="myImg uniformGal" alt="Lake Easton 10/2019" src="photography/3 - Lake Easton/File62.jpg" >
+            </div>
+        </div>
+        <div class="column kailey gymnastics landscape">
+            <div class="content">
+                <img class="myImg uniformGal" alt="Skookum Mine Washery 11/3/2019" src="photography/1 - Wilkeson Coke Mines/received_2502947753312504.jpeg" >
+            </div>
+        </div>
+        <div class="column couple landscape">
+            <div class="content">
+                <img class="myImg uniformGal" alt="Skookum Mine Washery 11/3/2019" src="photography/1 - Wilkeson Coke Mines/File12.jpeg" >
+            </div>
+        </div>
+        <div class="column couple landscape">
+            <div class="content">
+                <img class="myImg uniformGal" alt="Skookum Mine Washery 11/3/2019" src="photography/1 - Wilkeson Coke Mines/File7.jpeg" >
+            </div>
+        </div>
+        <div class="column couple landscape">
+            <div class="content">
+                <img class="myImg uniformGal" alt="Skookum Mine Washery 11/3/2019" src="photography/1 - Wilkeson Coke Mines/File6.jpeg" >
+            </div>
+        </div>
+        <div class="column couple landscape">
+            <div class="content">
+                <img class="myImg uniformGal" alt="Enchantments Summer, 2018" src="photography/0 - Enchantments Trail/20180804_114329.jpg" >
+            </div>
+        </div>
+        <!-- End of Landscape Photos -->
 
         <!-- Square Photos -->
         <div class="column kailey square">
@@ -1313,14 +1726,48 @@
                 <img class="myImg uniformGal" alt="Artist and Huntoon Point 10/2/2020" src="photography/16 - Artist and Huntoon Point/IMG_0053 (2).jpg" >
             </div>
         </div>
+        <div class="column kailey best square">
+            <div class="content">
+                <img class="myImg uniformGal" alt="Little Mashel River 8/21/2020" src="photography/10 - Mashel Falls/132736707_863640081128148_7915296098395551450_n.jpg" >
+            </div>
+        </div>
 
-
-
-
-
-
-
-
+        <div class="column kailey gymnastics square">
+            <div class="content">
+                <img class="myImg uniformGal" alt="Skookum Mine Washery 11/3/2019" src="photography/1 - Wilkeson Coke Mines/File1.jpg" >
+            </div>
+        </div>
+        <div class="column couple square">
+            <div class="content">
+                <img class="myImg uniformGal" alt="Skookum Mine Washery 11/3/2019" src="photography/1 - Wilkeson Coke Mines/File2.jpg" >
+            </div>
+        </div>
+        <div class="column kailey square">
+            <div class="content">
+                <img class="myImg uniformGal" alt="Skookum Mine Washery 11/3/2019" src="photography/1 - Wilkeson Coke Mines/IMG_20191108_115902_871.jpg" >
+            </div>
+        </div>
+        <div class="column taeler best square">
+            <div class="content">
+                <img class="myImg uniformGal" alt="Skookum Mine Washery 11/3/2019" src="photography/1 - Wilkeson Coke Mines/IMG_20191108_115902_872.jpg" >
+            </div>
+        </div>
+        <div class="column couple square">
+            <div class="content">
+                <img class="myImg uniformGal" alt="Skookum Mine Washery 11/3/2019" src="photography/1 - Wilkeson Coke Mines/IMG_20191108_115902_886.jpg" >
+            </div>
+        </div>
+        <div class="column taeler square">
+            <div class="content">
+                <img class="myImg uniformGal" alt="Skookum Mine Washery 11/3/2019" src="photography/1 - Wilkeson Coke Mines/IMG_20191108_115902_893.jpg" >
+            </div>
+        </div>
+        <div class="column kailey gymnastics best square">
+            <div class="content">
+                <img class="myImg uniformGal" alt="Murhut Falls 4/28/2019" src="photography/2 - Murhut Falls/61677387_2274912429230960_4613804841758621696_n.jpg" >
+            </div>
+        </div>
+        <!-- End of Square Photos -->
 
         <!-- Portrait Photos -->
         <div class="column taeler portrait">
@@ -1633,14 +2080,395 @@
                 <img class="myImg uniformGal" alt="Pinnacle Saddle 8/31/2020" src="photography/13 - Pinnacle Saddle/File9.JPG" >
             </div>
         </div>
-        <div class="column nature portrait">
+        <div class="column couple portrait">
             <div class="content">
                 <img class="myImg uniformGal" alt="Pinnacle Saddle 8/31/2020" src="photography/13 - Pinnacle Saddle/File3.jpg ">
             </div>
         </div>
-
-        <!-- END GRID -->
+        <div class="column kailey portrait">
+            <div class="content">
+                <img class="myImg uniformGal" alt="Tinkham and Abiel Peak 8/27/2020" src="photography/12 - Tinkham Peak/File1.jpeg" >
+            </div>
         </div>
+        <div class="column kailey portrait">
+            <div class="content">
+                <img class="myImg uniformGal" alt="Tinkham and Abiel Peak 8/27/2020" src="photography/12 - Tinkham Peak/File20.jpg" >
+            </div>
+        </div>
+        <div class="column kailey best portrait">
+            <div class="content">
+                <img class="myImg uniformGal" alt="Tinkham and Abiel Peak 8/27/2020" src="photography/12 - Tinkham Peak/File11.jpeg" >
+            </div>
+        </div>
+        <div class="column angie other best portrait">
+            <div class="content">
+                <img class="myImg uniformGal" alt="Tinkham and Abiel Peak 8/27/2020" src="photography/12 - Tinkham Peak/File3.jpeg" >
+            </div>
+        </div>
+        <div class="column angie other portrait">
+            <div class="content">
+                <img class="myImg uniformGal" alt="Tinkham and Abiel Peak 8/27/2020" src="photography/12 - Tinkham Peak/File26.jpg" >
+            </div>
+        </div>
+        <div class="column couple portrait">
+            <div class="content">
+                <img class="myImg uniformGal" alt="Tolmie Peak Fire Lookout 8/23/2020" src="photography/11 - Tolmie Peak/IMG_0492.jpg" >
+            </div>
+        </div>
+        <div class="column couple portrait">
+            <div class="content">
+                <img class="myImg uniformGal" alt="Tolmie Peak Fire Lookout 8/23/2020" src="photography/11 - Tolmie Peak/File38.jpeg" >
+            </div>
+        </div>
+        <div class="column kailey best portrait">
+            <div class="content">
+                <img class="myImg uniformGal" alt="Tolmie Peak Fire Lookout 8/23/2020" src="photography/11 - Tolmie Peak/File43.jpeg" >
+            </div>
+        </div>
+        <div class="column kailey portrait">
+            <div class="content">
+                <img class="myImg uniformGal" alt="Tolmie Peak Fire Lookout 8/23/2020" src="photography/11 - Tolmie Peak/File16.jpeg" >
+            </div>
+        </div>
+        <div class="column nature best portrait">
+            <div class="content">
+                <img class="myImg uniformGal" alt="Tolmie Peak Fire Lookout 8/23/2020" src="photography/11 - Tolmie Peak/File40.jpeg" >
+            </div>
+        </div>
+        <div class="column nature best portrait">
+            <div class="content">
+                <img class="myImg uniformGal" alt="Tolmie Peak Fire Lookout 8/23/2020" src="photography/11 - Tolmie Peak/File36.jpeg" >
+            </div>
+        </div>
+        <div class="column couple portrait">
+            <div class="content">
+                <img class="myImg uniformGal" alt="Tolmie Peak Fire Lookout 8/23/2020" src="photography/11 - Tolmie Peak/File34.jpeg" >
+            </div>
+        </div>
+        <div class="column couple portrait">
+            <div class="content">
+                <img class="myImg uniformGal" alt="Tolmie Peak Fire Lookout 8/23/2020" src="photography/11 - Tolmie Peak/File32.jpeg" >
+            </div>
+        </div>
+        <div class="column couple portrait">
+            <div class="content">
+                <img class="myImg uniformGal" alt="Tolmie Peak Fire Lookout 8/23/2020" src="photography/11 - Tolmie Peak/File31.jpeg" >
+            </div>
+        </div>
+        <div class="column taeler portrait">
+            <div class="content">
+                <img class="myImg uniformGal" alt="Tolmie Peak Fire Lookout 8/23/2020" src="photography/11 - Tolmie Peak/File9.jpeg" >
+            </div>
+        </div>
+        <div class="column kailey best portrait">
+            <div class="content">
+                <img class="myImg uniformGal" alt="Tolmie Peak Fire Lookout 8/23/2020" src="photography/11 - Tolmie Peak/DSC_0228 (2).JPG" >
+            </div>
+        </div>
+        <div class="column kailey best portrait">
+            <div class="content">
+                <img class="myImg uniformGal" alt="Tolmie Peak Fire Lookout 8/23/2020" src="photography/11 - Tolmie Peak/DSC_0161.JPG" >
+            </div>
+        </div>
+        <div class="column taeler best portrait">
+            <div class="content">
+                <img class="myImg uniformGal" alt="Tolmie Peak Fire Lookout 8/23/2020" src="photography/11 - Tolmie Peak/DSC_0179.JPG" >
+            </div>
+        </div>
+        <div class="column taeler best portrait">
+            <div class="content">
+                <img class="myImg uniformGal" alt="Tolmie Peak Fire Lookout 8/23/2020" src="photography/11 - Tolmie Peak/DSC_0102.JPG" >
+            </div>
+        </div>
+        <div class="column kailey best portrait">
+            <div class="content">
+                <img class="myImg uniformGal" alt="Tolmie Peak Fire Lookout 8/23/2020" src="photography/11 - Tolmie Peak/DSC_0097.JPG" >
+            </div>
+        </div>
+        <div class="column angie other best portrait">
+            <div class="content">
+                <img class="myImg uniformGal" alt="Little Mashel River 8/21/2020" src="photography/10 - Mashel Falls/117771851_2950303108408224_4452099275652509135_n.jpg" >
+            </div>
+        </div>
+        <div class="column nature best portrait">
+            <div class="content">
+                <img class="myImg uniformGal" alt="Little Mashel River 8/21/2020" src="photography/10 - Mashel Falls/*DSC_0041.JPG" >
+            </div>
+        </div>
+        <div class="column nature best portrait">
+            <div class="content">
+                <img class="myImg uniformGal" alt="Little Mashel River 8/21/2020" src="photography/10 - Mashel Falls/*DSC_0006.JPG" >
+            </div>
+        </div>
+        <div class="column kailey best portrait">
+            <div class="content">
+                <img class="myImg uniformGal" alt="Glacier Basin Trail 6/21/2020" src="photography/9 - Father's Day/DSC_0050.JPG" >
+            </div>
+        </div>
+        <div class="column kailey best portrait">
+            <div class="content">
+                <img class="myImg uniformGal" alt="Twin Falls 6/19/2020" src="photography/8 - Twin Falls/*20200619_121248.jpg" >
+            </div>
+        </div>
+        <div class="column couple best portrait">
+            <div class="content">
+                <img class="myImg uniformGal" alt="Twin Falls 7/2019" src="photography/8 - Twin Falls/67071496_390997751537971_6197530945046708224_n.jpg" >
+            </div>
+        </div>
+        <div class="column taeler best portrait">
+            <div class="content">
+                <img class="myImg uniformGal" alt="Mt. Storm King 6/18/2020" src="photography/7 - Mt. Storm King/File18.jpg" >
+            </div>
+        </div>
+        <div class="column taeler best portrait">
+            <div class="content">
+                <img class="myImg uniformGal" alt="Mt. Storm King 6/18/2020" src="photography/7 - Mt. Storm King/File2.JPG" >
+            </div>
+        </div>
+        <div class="column couple portrait">
+            <div class="content">
+                <img class="myImg uniformGal" alt="Mt. Storm King 6/18/2020" src="photography/7 - Mt. Storm King/File4.jpg" >
+            </div>
+        </div>
+        <div class="column couple portrait">
+            <div class="content">
+                <img class="myImg uniformGal" alt="Mt. Storm King 6/18/2020" src="photography/7 - Mt. Storm King/File5.jpg" >
+            </div>
+        </div>
+        <div class="column couple portrait">
+            <div class="content">
+                <img class="myImg uniformGal" alt="Mt. Storm King 6/18/2020" src="photography/7 - Mt. Storm King/File6.jpg" >
+            </div>
+        </div>
+        <div class="column couple portrait">
+            <div class="content">
+                <img class="myImg uniformGal" alt="Carbon River Entrance 11/2019" src="photography/6.2 - Carbon River Entrance/20191103_150733.jpg" >
+            </div>
+        </div>
+        <div class="column taeler portrait">
+            <div class="content">
+                <img class="myImg uniformGal" alt="Melmont Ghost Town 12/14/2019" src="photography/6.1 - Melmont Ghost Town/File26.jpeg" >
+            </div>
+        </div>
+        <div class="column taeler portrait">
+            <div class="content">
+                <img class="myImg uniformGal" alt="Melmont Ghost Town 12/14/2019" src="photography/6.1 - Melmont Ghost Town/File20.jpeg" >
+            </div>
+        </div>
+        <div class="column taeler animals portrait">
+            <div class="content">
+                <img class="myImg uniformGal" alt="Melmont Ghost Town 12/14/2019" src="photography/6.1 - Melmont Ghost Town/File22.jpeg" >
+            </div>
+        </div>
+        <div class="column taeler animals portrait">
+            <div class="content">
+                <img class="myImg uniformGal" alt="Melmont Ghost Town 12/14/2019" src="photography/6.1 - Melmont Ghost Town/File15.jpeg" >
+            </div>
+        </div>
+        <div class="column couple portrait">
+            <div class="content">
+                <img class="myImg uniformGal" alt="Melmont Ghost Town 12/14/2019" src="photography/6.1 - Melmont Ghost Town/File19.jpeg" >
+            </div>
+        </div>
+        <div class="column kailey animals portrait">
+            <div class="content">
+                <img class="myImg uniformGal" alt="Melmont Ghost Town 12/14/2019" src="photography/6.1 - Melmont Ghost Town/File18.jpeg" >
+            </div>
+        </div>
+        <div class="column nature portrait">
+            <div class="content">
+                <img class="myImg uniformGal" alt="Melmont Ghost Town 12/14/2019" src="photography/6.1 - Melmont Ghost Town/File6.jpeg" >
+            </div>
+        </div>
+        <div class="column taeler animals portrait">
+            <div class="content">
+                <img class="myImg uniformGal" alt="Melmont Ghost Town 12/14/2019" src="photography/6.1 - Melmont Ghost Town/File1.jpg" >
+            </div>
+        </div>
+        <div class="column krista other portrait">
+            <div class="content">
+                <img class="myImg uniformGal" alt="Carbon River Entrance 6/10/2020" src="photography/6 - Hiking with the Girls/e_DSC_0233.jpg" >
+            </div>
+        </div>
+        <div class="column kailey portrait">
+            <div class="content">
+                <img class="myImg uniformGal" alt="Rattlesnake Ledge 2/2/2020" src="photography/5 - Rattlesnake Ledge/received_181502223163712.jpeg" >
+            </div>
+        </div>
+        <div class="column taeler portrait">
+            <div class="content">
+                <img class="myImg uniformGal" alt="Rattlesnake Ledge 2/2/2020" src="photography/5 - Rattlesnake Ledge/File43.jpeg" >
+            </div>
+        </div>
+        <div class="column taeler portrait">
+            <div class="content">
+                <img class="myImg uniformGal" alt="Rattlesnake Ledge 2/2/2020" src="photography/5 - Rattlesnake Ledge/File38.jpeg" >
+            </div>
+        </div>
+        <div class="column taeler portrait">
+            <div class="content">
+                <img class="myImg uniformGal" alt="Rattlesnake Ledge 2/2/2020" src="photography/5 - Rattlesnake Ledge/File28.jpeg" >
+            </div>
+        </div>
+        <div class="column taeler portrait">
+            <div class="content">
+                <img class="myImg uniformGal" alt="Rattlesnake Ledge 2/2/2020" src="photography/5 - Rattlesnake Ledge/File29.jpeg" >
+            </div>
+        </div>
+        <div class="column kailey portrait">
+            <div class="content">
+                <img class="myImg uniformGal" alt="Rattlesnake Ledge 2/2/2020" src="photography/5 - Rattlesnake Ledge/File19.jpeg" >
+            </div>
+        </div>
+        <div class="column taeler portrait">
+            <div class="content">
+                <img class="myImg uniformGal" alt="Rattlesnake Ledge 2/2/2020" src="photography/5 - Rattlesnake Ledge/File16.jpeg" >
+            </div>
+        </div>
+        <div class="column taeler portrait">
+            <div class="content">
+                <img class="myImg uniformGal" alt="Rattlesnake Ledge 2/2/2020" src="photography/5 - Rattlesnake Ledge/File1.jpg" >
+            </div>
+        </div>
+        <div class="column taeler gymnastics portrait">
+            <div class="content">
+                <img class="myImg uniformGal" alt="Indian Canyons 1/1/2020" src="photography/4 - Indian Canyons/File19.jpg" >
+            </div>
+        </div>
+        <div class="column kailey gymnastics portrait">
+            <div class="content">
+                <img class="myImg uniformGal" alt="Indian Canyons 1/1/2020" src="photography/4 - Indian Canyons/File18.jpg" >
+            </div>
+        </div>
+        <div class="column kailey gymnastics portrait">
+            <div class="content">
+                <img class="myImg uniformGal" alt="Indian Canyons 1/1/2020" src="photography/4 - Indian Canyons/File16.jpg" >
+            </div>
+        </div>
+        <div class="column kailey gymnastics portrait">
+            <div class="content">
+                <img class="myImg uniformGal" alt="Indian Canyons 1/1/2020" src="photography/4 - Indian Canyons/File14.jpg" >
+            </div>
+        </div>
+        <div class="column couple portrait">
+            <div class="content">
+                <img class="myImg uniformGal" alt="Indian Canyons 1/1/2020" src="photography/4 - Indian Canyons/File17.jpg" >
+            </div>
+        </div>
+        <div class="column nature portrait">
+            <div class="content">
+                <img class="myImg uniformGal" alt="Indian Canyons 1/1/2020" src="photography/4 - Indian Canyons/File9.jpg" >
+            </div>
+        </div>
+        <div class="column taeler best portrait">
+            <div class="content">
+                <img class="myImg uniformGal" alt="Indian Canyons 1/1/2020" src="photography/4 - Indian Canyons/File8.jpg" >
+            </div>
+        </div>
+        <div class="column taeler best portrait">
+            <div class="content">
+                <img class="myImg uniformGal" alt="Indian Canyons 1/1/2020" src="photography/4 - Indian Canyons/File4.jpg" >
+            </div>
+        </div>
+        <div class="column kailey best portrait">
+            <div class="content">
+                <img class="myImg uniformGal" alt="Lake Easton 10/2019" src="photography/3 - Lake Easton/IMG_0112.png" >
+            </div>
+        </div>
+        <div class="column taeler best portrait">
+            <div class="content">
+                <img class="myImg uniformGal" alt="Lake Easton 10/2019" src="photography/3 - Lake Easton/IMG_0106.png" >
+            </div>
+        </div>
+        <div class="column couple portrait">
+            <div class="content">
+                <img class="myImg uniformGal" alt="Lake Easton 10/2019" src="photography/3 - Lake Easton/IMG_0081.png" >
+            </div>
+        </div>
+        <div class="column kailey gymnastics portrait">
+            <div class="content">
+                <img class="myImg uniformGal" alt="Lake Easton 10/2019" src="photography/3 - Lake Easton/File90.PNG" >
+            </div>
+        </div>
+        <div class="column kailey gymnastics portrait">
+            <div class="content">
+                <img class="myImg uniformGal" alt="Lake Easton 10/2019" src="photography/3 - Lake Easton/File89.PNG" >
+            </div>
+        </div>
+        <div class="column kailey gymnastics portrait">
+            <div class="content">
+                <img class="myImg uniformGal" alt="Lake Easton 10/2019" src="photography/3 - Lake Easton/File81.PNG" >
+            </div>
+        </div>
+        <div class="column kailey gymnastics portrait">
+            <div class="content">
+                <img class="myImg uniformGal" alt="Lake Easton 10/2019" src="photography/3 - Lake Easton/File79.PNG" >
+            </div>
+        </div>
+        <div class="column taeler portrait">
+            <div class="content">
+                <img class="myImg uniformGal" alt="Lake Easton 10/2019" src="photography/3 - Lake Easton/File39.jpg" >
+            </div>
+        </div>
+        <div class="column couple portrait">
+            <div class="content">
+                <img class="myImg uniformGal" alt="Lake Easton 10/2019" src="photography/3 - Lake Easton/File18.jpg" >
+            </div>
+        </div>
+        <div class="column couple portrait">
+            <div class="content">
+                <img class="myImg uniformGal" alt="Lake Easton 10/2019" src="photography/3 - Lake Easton/File16.jpg" >
+            </div>
+        </div>
+        <div class="column couple portrait">
+            <div class="content">
+                <img class="myImg uniformGal" alt="Lake Easton 10/2019" src="photography/3 - Lake Easton/File12.jpg" >
+            </div>
+        </div>
+        <div class="column couple portrait">
+            <div class="content">
+                <img class="myImg uniformGal" alt="Lake Easton 10/2019" src="photography/3 - Lake Easton/File10.jpg" >
+            </div>
+        </div>
+        <div class="column couple portrait">
+            <div class="content">
+                <img class="myImg uniformGal" alt="Lake Easton 10/2019" src="photography/3 - Lake Easton/File7.jpg" >
+            </div>
+        </div>
+        <div class="column couple portrait">
+            <div class="content">
+                <img class="myImg uniformGal" alt="Lake Easton 10/2019" src="photography/3 - Lake Easton/File4.jpg" >
+            </div>
+        </div>
+        <div class="column kailey portrait">
+            <div class="content">
+                <img class="myImg uniformGal" alt="Skookum Mine Washery 11/3/2019" src="photography/1 - Wilkeson Coke Mines/received_1338991522945203.jpeg" >
+            </div>
+        </div>
+        <div class="column taeler portrait">
+            <div class="content">
+                <img class="myImg uniformGal" alt="Skookum Mine Washery 11/3/2019" src="photography/1 - Wilkeson Coke Mines/File10.jpeg" >
+            </div>
+        </div>
+        <div class="column taeler portrait">
+            <div class="content">
+                <img class="myImg uniformGal" alt="Skookum Mine Washery 11/3/2019" src="photography/1 - Wilkeson Coke Mines/File5.jpeg" >
+            </div>
+        </div>
+        <div class="column taeler portrait">
+            <div class="content">
+                <img class="myImg uniformGal" alt="Skookum Mine Washery 11/3/2019" src="photography/1 - Wilkeson Coke Mines/File3.jpeg" >
+            </div>
+        </div>
+        <div class="column nature portrait">
+            <div class="content">
+                <img class="myImg uniformGal" alt="Murhut Falls 4/28/2019" src="photography/2 - Murhut Falls/20190428_151916.jpg" >
+            </div>
+        </div>
+        <!-- End of Portrait Photos -->
+
+        </div>
+        <!-- END GRID -->
 
         <!-- The following code is from: https://stackoverflow.com/questions/41275958/modal-image-galleries-multiple-images -->
         <div id="myModal" class="modal">
@@ -1648,7 +2476,12 @@
             <img class="modal-content" id="img01">
             <div id="caption"></div>
         </div>
-
+        <!-- The following script is from: https://stackoverflow.com/questions/4172281/force-browsers-to-load-css-before-showing-the-page -->
+        <script>
+            document.addEventListener('load',function(){
+                document.getElementById("loadOverlay").style.display="none";
+            });
+        </script>
         <script>
             filterSelection("all") // Execute the function and show all columns
             function filterSelection(c) {
