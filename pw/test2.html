@@ -1,0 +1,162 @@
+<!-- Source: https://w3bits.com/labs/css-grid-masonry-images/ -->
+<!doctype html>
+<html lang="en-US" class="lab-theme-light">
+    <head>
+        <title> Photo Gallery </title>   
+        <link rel="Stylesheet" href="test2.css" />
+        <link rel="Stylesheet" href="pg.css" />
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+    </head>
+    <body class="labs-template-default single single-labs postid-3785">
+        <div class="container">
+            <nav class="cf lab-nav lab-nav--light">    
+                <a href="" title="Back to the article" class="lab-article-link">
+                    <span> Article</span>
+                </a>
+            </nav>
+            <div class="wrapper">
+                <div class="masonry">
+                    <div class="masonry-item"><img src="photography/32 - Ancient Lakes/File1.JPG" alt="Ancient Lakes 3/20/2021" class="masonry-content myImg"></div>
+                    <div class="masonry-item"><img src="photography/32 - Ancient Lakes/File3.JPG" alt="Ancient Lakes 3/20/2021" class="masonry-content myImg"></div>
+                    <div class="masonry-item"><img src="photography/32 - Ancient Lakes/File4.JPG" alt="Ancient Lakes 3/20/2021" class="masonry-content myImg"></div>
+
+                    <div class="masonry-item"><img src="photography/20 - Waterfall Day/141997138_3264384870328495_4626101258355504388_n.jpg" alt="Panther Falls 11/22/2020" class="masonry-content myImg"></div>
+                    
+                    <div class="masonry-item"><img src="photography/31 - Dry Gulch/File8.JPG" alt="Dry Gulch 3/20/2021" class="masonry-content myImg"></div>
+
+                    </div>
+            </div>
+
+
+             <!-- The following code is from: https://stackoverflow.com/questions/41275958/modal-image-galleries-multiple-images -->
+            <div id="myModal" class="modal">
+                <span class="close" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
+                <img class="modal-content" id="img01">
+                <div id="caption"></div>
+            </div>
+
+            <!-- The following script is from: https://stackoverflow.com/questions/4172281/force-browsers-to-load-css-before-showing-the-page -->
+            <script>
+                document.addEventListener('load',function(){
+                    document.getElementById("loadOverlay").style.display="none";
+                });
+            </script>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+            <script>
+                // Get the modal
+                var modal = document.getElementById('myModal');
+                // Get the image and insert it inside the modal - use its "alt" text as a caption
+                var img = $('.myImg');
+                var modalImg = $("#img01");
+                var captionText = document.getElementById("caption");
+                $('.myImg').click(function(){
+                    modal.style.display = "block";
+                    var newSrc = this.src;
+                    modalImg.attr('src', newSrc);
+                    captionText.innerHTML = this.alt;
+                });
+                // Get the <span> element that closes the modal
+                var span = document.getElementsByClassName("close")[0];
+                // When the user clicks on <span> (x), close the modal
+                span.onclick = function() {
+                modal.style.display = "none";
+                }
+            </script>
+
+            <script src="min.js"></script>
+            <!--script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.1/imagesloaded.pkgd.min.js"></script>
+            <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script-->
+            <!-- https://imagesloaded.desandro.com/ -->
+            <script>
+                /**
+                 * Set appropriate spanning to any masonry item
+                 *
+                 * Get different properties we already set for the masonry, calculate 
+                 * height or spanning for any cell of the masonry grid based on its 
+                 * content-wrapper's height, the (row) gap of the grid, and the size 
+                 * of the implicit row tracks.
+                 *
+                 * @param item Object A brick/tile/cell inside the masonry
+                 */
+                function resizeMasonryItem(item){
+                /* Get the grid object, its row-gap, and the size of its implicit rows */
+                var grid = document.getElementsByClassName('masonry')[0],
+                    rowGap = parseInt(window.getComputedStyle(grid).getPropertyValue('grid-row-gap')),
+                    rowHeight = parseInt(window.getComputedStyle(grid).getPropertyValue('grid-auto-rows'));
+
+                /*
+                * Spanning for any brick = S
+                * Grid's row-gap = G
+                * Size of grid's implicitly create row-track = R
+                * Height of item content = H
+                * Net height of the item = H1 = H + G
+                * Net height of the implicit row-track = T = G + R
+                * S = H1 / T
+                */
+                var rowSpan = Math.ceil((item.querySelector('.masonry-content').getBoundingClientRect().height+rowGap)/(rowHeight+rowGap));
+
+                /* Set the spanning as calculated above (S) */
+                item.style.gridRowEnd = 'span '+rowSpan;
+
+                /* Make the images take all the available space in the cell/item */
+                item.querySelector('.masonry-content').style.height = rowSpan * 10 + "px";
+                }
+
+                /**
+                 * Apply spanning to all the masonry items
+                 *
+                 * Loop through all the items and apply the spanning to them using 
+                 * `resizeMasonryItem()` function.
+                 *
+                 * @uses resizeMasonryItem
+                 */
+                function resizeAllMasonryItems(){
+                // Get all item class objects in one list
+                var allItems = document.getElementsByClassName('masonry-item');
+
+                /*
+                * Loop through the above list and execute the spanning function to
+                * each list-item (i.e. each masonry item)
+                */
+                for(var i=0;i>allItems.length;i++){
+                    resizeMasonryItem(allItems[i]);
+                }
+                }
+
+                /**
+                 * Resize the items when all the images inside the masonry grid 
+                 * finish loading. This will ensure that all the content inside our
+                 * masonry items is visible.
+                 *
+                 * @uses ImagesLoaded
+                 * @uses resizeMasonryItem
+                 */
+                function waitForImages() {
+                var allItems = document.getElementsByClassName('masonry-item');
+                for(var i=0;i<allItems.length;i++){
+                    imagesLoaded( allItems[i], function(instance) {
+                    var item = instance.elements[0];
+                    resizeMasonryItem(item);
+                    } );
+                }
+                }
+
+                /* Resize all the grid items on the load and resize events */
+                var masonryEvents = ['load', 'resize'];
+                masonryEvents.forEach( function(event) {
+                window.addEventListener(event, resizeAllMasonryItems);
+                } );
+
+                /* Do a resize once more when all the images finish loading */
+                waitForImages();
+            </script>          
+                <!--script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');ga('create', 'UA-10703354-8', 'w3bits.com');ga('require', 'displayfeatures');ga('send', 'pageview');</script><script type='text/javascript' src='https://w3bits.com/wp-content/themes/w/assets/js/prettify.js'></script>
+                <script type='text/javascript'>
+                prettyPrint()
+                </script-->
+        </div>
+    </body>
+</html>

@@ -4,12 +4,8 @@
         <title> Photostream </title>
         <link rel="Stylesheet" href="pg.css" />
         <link rel="Stylesheet" href="sitestyle.css" />
-        <link rel="Stylesheet" href="loadphotosfirst.css" />
         </head>
     <body>
-        <div id="loadOverlay" style="height: 100%">
-            <p>Application Loading</p>
-        </div>
 
         <!-- Navbar -->
         <div class="navbar">
@@ -24,11 +20,11 @@
         <!-- Photo Navigation Filter -->
         <h2>Photo Stream</h2>
         <div id="myBtnContainer">
-        <button class="btn active" onclick="filterSelection('all')"> Show All </button>
-        <!--button class="btn" onclick="filterSelection('landscape')"> All Landscape </button>
+        <!--button class="btn" onclick="filterSelection('all')"> Show All </button-->
+        <button class="btn" onclick="filterSelection('landscape')"> All Landscape </button>
         <button class="btn" onclick="filterSelection('square')"> All Square </button>
-        <button class="btn" onclick="filterSelection('portrait')"> All Portrait </button-->
-        <button class="btn" onclick="filterSelection('best')"> Best Photos </button>
+        <button class="btn" onclick="filterSelection('portrait')"> All Portrait </button>
+        <button class="btn active" onclick="filterSelection('best')"> Best Photos </button>
         <button class="btn" onclick="filterSelection('nature')"> Just Nature </button>
         <button class="btn" onclick="filterSelection('couple')"> Couple Photos </button>
         <button class="btn" onclick="filterSelection('taeler')"> Taeler </button>
@@ -60,11 +56,6 @@
         </div>
         <div class="column taeler landscape">
             <div class="content">
-                <img class="myImg uniformGal" alt="Ancient Lakes 3/20/2021" src="photography/32 - Ancient Lakes/File5.JPG" >
-            </div>
-        </div>
-        <div class="column taeler landscape">
-            <div class="content">
                 <img class="myImg uniformGal" alt="Ancient Lakes 3/20/2021" src="photography/32 - Ancient Lakes/File6.JPG" >
             </div>
         </div>
@@ -78,16 +69,6 @@
                 <img class="myImg uniformGal" alt="Ancient Lakes 3/20/2021" src="photography/32 - Ancient Lakes/File8.JPG" >
             </div>
         </div>
-        <div class="column nature landscape">
-            <div class="content">
-                <img class="myImg uniformGal" alt="Ancient Lakes 3/20/2021" src="photography/32 - Ancient Lakes/File10.JPG" >
-            </div>
-        </div>
-        <div class="column nature landscape">
-            <div class="content">
-                <img class="myImg uniformGal" alt="Ancient Lakes 3/20/2021" src="photography/32 - Ancient Lakes/File11.JPG" >
-            </div>
-        </div>
         <div class="column kailey landscape">
             <div class="content">
                 <img class="myImg uniformGal" alt="Ancient Lakes 3/20/2021" src="photography/32 - Ancient Lakes/File12.JPG" >
@@ -96,11 +77,6 @@
         <div class="column kailey landscape">
             <div class="content">
                 <img class="myImg uniformGal" alt="Ancient Lakes 3/20/2021" src="photography/32 - Ancient Lakes/File13.JPG" >
-            </div>
-        </div>
-        <div class="column kailey landscape">
-            <div class="content">
-                <img class="myImg uniformGal" alt="Ancient Lakes 3/20/2021" src="photography/32 - Ancient Lakes/File15.JPG" >
             </div>
         </div>
         <div class="column kailey best landscape">
@@ -1565,12 +1541,12 @@
         </div>
         <div class="column couple landscape">
             <div class="content">
-                <img class="myImg uniformGal" alt="Rattlesnake Ledge 2/2/2020" src="photography/5 - Rattlesnake Ledge/File3.jpeg" >
+                <img class="myImg uniformGal" alt="Rattlesnake Ledge 2/2/2020" src="photography/5 - Rattlesnake Ledge/File3.jpg" >
             </div>
         </div>
         <div class="column couple landscape">
             <div class="content">
-                <img class="myImg uniformGal" alt="Rattlesnake Ledge 2/2/2020" src="photography/5 - Rattlesnake Ledge/File2.jpeg" >
+                <img class="myImg uniformGal" alt="Rattlesnake Ledge 2/2/2020" src="photography/5 - Rattlesnake Ledge/File2.jpg" >
             </div>
         </div>
         <div class="column couple landscape">
@@ -1640,7 +1616,7 @@
         </div>
         <div class="column couple landscape">
             <div class="content">
-                <img class="myImg uniformGal" alt="Lake Easton 10/2019" src="photography/3 - Lake Easton/File62.jpg" >
+                <img class="myImg uniformGal" alt="Lake Easton 10/2019" src="photography/3 - Lake Easton/File62.heic" >
             </div>
         </div>
         <div class="column kailey gymnastics landscape">
@@ -2483,7 +2459,7 @@
             });
         </script>
         <script>
-            filterSelection("all") // Execute the function and show all columns
+            filterSelection("best") // Execute the function and show all columns
             function filterSelection(c) {
             var x, i;
             x = document.getElementsByClassName("column");
