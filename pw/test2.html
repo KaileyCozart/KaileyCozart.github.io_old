@@ -8,22 +8,753 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width">
     </head>
+
+        <!-- Photo Navigation Filter -->
+        <h2>Photo Stream</h2>
+        <div id="myBtnContainer">
+        <button class="btn" onclick="filterSelection('all')"> Photostream </button>
+        <button class="btn" onclick="filterSelection('best')"> Best Photos </button>
+        <button class="btn" onclick="filterSelection('nature')"> Just Nature </button>
+        <button class="btn" onclick="filterSelection('animals')"> Animals </button>
+        <button class="btn" onclick="filterSelection('couple')"> Taeler & Kailey </button>
+        <button class="btn" onclick="filterSelection('taeler')"> Taeler </button>
+        <button class="btn" onclick="filterSelection('kailey')"> Kailey </button>
+        <!--button class="btn" onclick="filterSelection('angie')"> Angie </button-->
+        <button class="btn" onclick="filterSelection('other')"> Other People </button>
+        <button class="btn" onclick="filterSelection('gymnastics')"> Gymnastics </button>
+        </div>
+
     <body class="labs-template-default single single-labs postid-3785">
         <div class="container">
-            <nav class="cf lab-nav lab-nav--light">    
+            <!--nav class="cf lab-nav lab-nav--light">    
                 <a href="" title="Back to the article" class="lab-article-link">
                     <span> Article</span>
                 </a>
-            </nav>
+            </nav-->
             <div class="wrapper">
                 <div class="masonry">
-                    <div class="masonry-item"><img src="photography/32 - Ancient Lakes/File1.JPG" alt="Ancient Lakes 3/20/2021" class="masonry-content myImg"></div>
-                    <div class="masonry-item"><img src="photography/32 - Ancient Lakes/File3.JPG" alt="Ancient Lakes 3/20/2021" class="masonry-content myImg"></div>
-                    <div class="masonry-item"><img src="photography/32 - Ancient Lakes/File4.JPG" alt="Ancient Lakes 3/20/2021" class="masonry-content myImg"></div>
 
-                    <div class="masonry-item"><img src="photography/20 - Waterfall Day/141997138_3264384870328495_4626101258355504388_n.jpg" alt="Panther Falls 11/22/2020" class="masonry-content myImg"></div>
+                    <!-- Wallace Falls -->
+                    <div class="getpic nature masonry-item content">
+                        <img src="photography/33 - Wallace Falls/IMG_7670.JPG" alt="Wallace Falls 4/3/2021" class="myImg masonry-content">
+                    </div>
+                    <div class="getpic nature masonry-item content">
+                        <img src="photography/33 - Wallace Falls/IMG_7672.JPG" alt="Wallace Falls 4/3/2021" class="myImg masonry-content">
+                    </div>
+                    <div class="getpic nature masonry-item content">
+                        <img src="photography/33 - Wallace Falls/IMG_7671.JPG" alt="Wallace Falls 4/3/2021" class="myImg masonry-content">
+                    </div>
+                    <div class="getpic taeler best masonry-item content">
+                        <img src="photography/33 - Wallace Falls/IMG_7673.JPG" alt="Wallace Falls 4/3/2021" class="myImg masonry-content">
+                    </div>
+                    <div class="getpic couple masonry-item content">
+                        <img src="photography/33 - Wallace Falls/IMG_7493.jpg" alt="Wallace Falls 4/3/2021" class="myImg masonry-content">
+                    </div>
+
+                    <!-- Ancient Lakes -->
+                    <div class="getpic kailey masonry-item content">
+                        <img src="photography/32 - Ancient Lakes/File1.JPG" alt="Ancient Lakes 3/20/2021" class="myImg masonry-content">
+                    </div>
+                    <div class="getpic taeler masonry-item content">
+                        <img src="photography/32 - Ancient Lakes/File6.JPG" alt="Ancient Lakes 3/20/2021" class="myImg masonry-content">
+                    </div>
+                    <div class="getpic taeler masonry-item content">
+                        <img src="photography/32 - Ancient Lakes/File7.JPG" alt="Ancient Lakes 3/20/2021" class="myImg masonry-content">
+                    </div>
+                    <div class="getpic nature masonry-item content">
+                        <img src="photography/32 - Ancient Lakes/File8.JPG" alt="Ancient Lakes 3/20/2021" class="myImg masonry-content">
+                    </div>
+                    <div class="getpic kailey masonry-item content">
+                        <img src="photography/32 - Ancient Lakes/File13.JPG" alt="Ancient Lakes 3/20/2021" class="myImg masonry-content">
+                    </div>
+                    <div class="getpic kailey best masonry-item content">
+                        <img src="photography/32 - Ancient Lakes/File16.JPG" alt="Ancient Lakes 3/20/2021" class="myImg masonry-content">
+                    </div>
+                    <div class="getpic kailey best masonry-item content">
+                        <img src="photography/32 - Ancient Lakes/File18.JPG" alt="Ancient Lakes 3/20/2021" class="myImg masonry-content">
+                    </div>
+                    <div class="getpic kailey best masonry-item content">
+                        <img src="photography/32 - Ancient Lakes/File19.JPG" alt="Ancient Lakes 3/20/2021" class="myImg masonry-content">
+                    </div>
+                    <div class="getpic kailey best masonry-item content">
+                        <img src="photography/32 - Ancient Lakes/File23.JPG" alt="Ancient Lakes 3/20/2021" class="myImg masonry-content">
+                    </div>
+                    <div class="getpic kailey best masonry-item content">
+                        <img src="photography/32 - Ancient Lakes/File25.JPG" alt="Ancient Lakes 3/20/2021" class="myImg masonry-content">
+                    </div>
+                    <div class="getpic kailey masonry-item content">
+                        <img src="photography/32 - Ancient Lakes/File26.JPG" alt="Ancient Lakes 3/20/2021" class="myImg masonry-content">
+                    </div>
+                    <div class="getpic kailey masonry-item content">
+                        <img src="photography/32 - Ancient Lakes/File28.JPG" alt="Ancient Lakes 3/20/2021" class="myImg masonry-content">
+                    </div>
+                    <div class="getpic kailey masonry-item content">
+                        <img src="photography/32 - Ancient Lakes/File29.JPG" alt="Ancient Lakes 3/20/2021" class="myImg masonry-content">
+                    </div>
+                    <div class="getpic taeler masonry-item content">
+                        <img src="photography/32 - Ancient Lakes/File30.JPG" alt="Ancient Lakes 3/20/2021" class="myImg masonry-content">
+                    </div>
+                    <div class="getpic taeler best masonry-item content">
+                        <img src="photography/32 - Ancient Lakes/File31.JPG" alt="Ancient Lakes 3/20/2021" class="myImg masonry-content">
+                    </div>
+                    <div class="getpic taeler masonry-item content">
+                        <img src="photography/32 - Ancient Lakes/File33.JPG" alt="Ancient Lakes 3/20/2021" class="myImg masonry-content">
+                    </div>
+                    <div class="getpic kailey masonry-item content">
+                        <img src="photography/32 - Ancient Lakes/File35.JPG" alt="Ancient Lakes 3/20/2021" class="myImg masonry-content">
+                    </div>
+                    <div class="getpic nature masonry-item content">
+                        <img src="photography/32 - Ancient Lakes/File37.JPG" alt="Ancient Lakes 3/20/2021" class="myImg masonry-content">
+                    </div>
+                    <div class="getpic kailey masonry-item content">
+                        <img src="photography/32 - Ancient Lakes/File39.JPG" alt="Ancient Lakes 3/20/2021" class="myImg masonry-content">
+                    </div>
+                    <div class="getpic kailey best masonry-item content">
+                        <img src="photography/32 - Ancient Lakes/File42.JPG" alt="Ancient Lakes 3/20/2021" class="myImg masonry-content">
+                    </div>
+                    <div class="getpic taeler masonry-item content">
+                        <img src="photography/32 - Ancient Lakes/File44.JPG" alt="Ancient Lakes 3/20/2021" class="myImg masonry-content">
+                    </div>
+                    <div class="getpic taeler masonry-item content">
+                        <img src="photography/32 - Ancient Lakes/File46.JPG" alt="Ancient Lakes 3/20/2021" class="myImg masonry-content">
+                    </div>
+
+                    <!-- Dry Gulch -->
+                    <div class="getpic taeler masonry-item content">
+                        <img src="photography/31 - Dry Gulch/File8.JPG" alt="Dry Gulch 3/20/2021" class="myImg masonry-content">
+                    </div>
+                    <div class="getpic nature masonry-item content">
+                        <img src="photography/31 - Dry Gulch/File1.JPG" alt="Dry Gulch 3/20/2021" class="myImg masonry-content">
+                    </div>
+                    <div class="getpic taeler masonry-item content">
+                        <img src="photography/31 - Dry Gulch/File3.JPG" alt="Dry Gulch 3/20/2021" class="myImg masonry-content">
+                    </div>
+                    <div class="getpic taeler masonry-item content">
+                        <img src="photography/31 - Dry Gulch/File5.JPG" alt="Dry Gulch 3/20/2021" class="myImg masonry-content">
+                    </div>
+                    <div class="getpic kailey masonry-item content">
+                        <img src="photography/31 - Dry Gulch/File6.JPG" alt="Dry Gulch 3/20/2021" class="myImg masonry-content">
+                    </div>
+                    <div class="getpic kailey masonry-item content">
+                        <img src="photography/31 - Dry Gulch/File7.JPG" alt="Dry Gulch 3/20/2021" class="myImg masonry-content">
+                    </div>
+                    <div class="getpic taeler masonry-item content">
+                        <img src="photography/31 - Dry Gulch/File9.JPG" alt="Dry Gulch 3/20/2021" class="myImg masonry-content">
+                    </div>
+                    <div class="getpic nature masonry-item content">
+                        <img src="photography/31 - Dry Gulch/File12.JPG" alt="Dry Gulch 3/20/2021" class="myImg masonry-content">
+                    </div>
+                    <div class="getpic couple best masonry-item content">
+                        <img src="photography/31 - Dry Gulch/File21.JPG" alt="Dry Gulch 3/20/2021" class="myImg masonry-content">
+                    </div>
+                    <div class="getpic taeler best masonry-item content">
+                        <img src="photography/31 - Dry Gulch/File22.JPG" alt="Dry Gulch 3/20/2021" class="myImg masonry-content">
+                    </div>
+                    <div class="getpic taeler masonry-item content">
+                        <img src="photography/31 - Dry Gulch/File24.JPG" alt="Dry Gulch 3/20/2021" class="myImg masonry-content">
+                    </div>
+                    <div class="getpic taeler masonry-item content">
+                        <img src="photography/31 - Dry Gulch/File15.JPG" alt="Dry Gulch 3/20/2021" class="myImg masonry-content">
+                    </div>
+                    <div class="getpic couple masonry-item content">
+                        <img src="photography/31 - Dry Gulch/File18.JPG" alt="Dry Gulch 3/20/2021" class="myImg masonry-content">
+                    </div>
+                    <div class="getpic couple masonry-item content">
+                        <img src="photography/31 - Dry Gulch/File19.JPG" alt="Dry Gulch 3/20/2021" class="myImg masonry-content">
+                    </div>
+                    <div class="getpic couple masonry-item content">
+                        <img src="photography/31 - Dry Gulch/File20.JPG" alt="Dry Gulch 3/20/2021" class="myImg masonry-content">
+                    </div>
+                    <div class="getpic taeler best masonry-item content">
+                        <img src="photography/31 - Dry Gulch/File25.JPG" alt="Dry Gulch 3/20/2021" class="myImg masonry-content">
+                    </div>
+                    <div class="getpic kailey best masonry-item content">
+                        <img src="photography/31 - Dry Gulch/File26.JPG" alt="Dry Gulch 3/20/2021" class="myImg masonry-content">
+                    </div>
+                    <div class="getpic kailey masonry-item content">
+                        <img src="photography/31 - Dry Gulch/File27.JPG" alt="Dry Gulch 3/20/2021" class="myImg masonry-content">
+                    </div>
+                    <div class="getpic kailey best masonry-item content">
+                        <img src="photography/31 - Dry Gulch/File29.JPG" alt="Dry Gulch 3/20/2021" class="myImg masonry-content">
+                    </div>
+                    <div class="getpic kailey best masonry-item content">
+                        <img src="photography/31 - Dry Gulch/File30.JPG" alt="Dry Gulch 3/20/2021" class="myImg masonry-content">
+                    </div>
+                    <div class="getpic kailey best masonry-item content">
+                        <img src="photography/31 - Dry Gulch/File33.JPG" alt="Dry Gulch 3/20/2021" class="myImg masonry-content">
+                    </div>
+                    <div class="getpic kailey masonry-item content">
+                        <img src="photography/31 - Dry Gulch/File34.JPG" alt="Dry Gulch 3/20/2021" class="myImg masonry-content">
+                    </div>
+                    <div class="getpic kailey best masonry-item content">
+                        <img src="photography/31 - Dry Gulch/File36.JPG" alt="Dry Gulch 3/20/2021" class="myImg masonry-content">
+                    </div>
+                    <div class="getpic nature best masonry-item content">
+                        <img src="photography/31 - Dry Gulch/File39.JPG" alt="Dry Gulch 3/20/2021" class="myImg masonry-content">
+                    </div>
+                    <div class="getpic nature best masonry-item content">
+                        <img src="photography/31 - Dry Gulch/File43.JPG" alt="Dry Gulch 3/20/2021" class="myImg masonry-content">
+                    </div>
+                    <div class="getpic kailey best masonry-item content">
+                        <img src="photography/31 - Dry Gulch/File45.JPG" alt="Dry Gulch 3/20/2021" class="myImg masonry-content">
+                    </div>
+                    <div class="getpic kailey best masonry-item content">
+                        <img src="photography/31 - Dry Gulch/File46.JPG" alt="Dry Gulch 3/20/2021" class="myImg masonry-content">
+                    </div>
+                    <div class="getpic kailey best masonry-item content">
+                        <img src="photography/31 - Dry Gulch/File49.JPG" alt="Dry Gulch 3/20/2021" class="myImg masonry-content">
+                    </div>
+                    <div class="getpic kailey masonry-item content">
+                        <img src="photography/31 - Dry Gulch/File47.JPG" alt="Dry Gulch 3/20/2021" class="myImg masonry-content">
+                    </div>
+
+                    <!-- Little Si -->
+                    <div class="getpic nature best masonry-item content">
+                        <img src="photography/30 - Little Si/IMG_6698.JPG" alt="Little Si 3/17/2021" class="myImg masonry-content">
+                    </div>
+                    <div class="getpic nature best masonry-item content">
+                        <img src="photography/30 - Little Si/IMG_6701.JPG" alt="Little Si 3/17/2021" class="myImg masonry-content">
+                    </div>
+                    <div class="getpic kailey best masonry-item content">
+                        <img src="photography/30 - Little Si/IMG_6712.JPG" alt="Little Si 3/17/2021" class="myImg masonry-content">
+                    </div>
+                    <div class="getpic kailey masonry-item content">
+                        <img src="photography/30 - Little Si/IMG_6714.JPG" alt="Little Si 3/17/2021" class="myImg masonry-content">
+                    </div>
+                    <div class="getpic kailey masonry-item content">
+                        <img src="photography/30 - Little Si/IMG_6715.JPG" alt="Little Si 3/17/2021" class="myImg masonry-content">
+                    </div>
+                    <div class="getpic kailey masonry-item content">
+                        <img src="photography/30 - Little Si/IMG_6719(1).JPG" alt="Little Si 3/17/2021" class="myImg masonry-content">
+                    </div>
+                    <div class="getpic kailey masonry-item content">
+                        <img src="photography/30 - Little Si/IMG_6721.JPG" alt="Little Si 3/17/2021" class="myImg masonry-content">
+                    </div>
+                    <div class="getpic nature best masonry-item content">
+                        <img src="photography/30 - Little Si/IMG_6724.JPG" alt="Little Si 3/17/2021" class="myImg masonry-content">
+                    </div>
+                    <div class="getpic kailey masonry-item content">
+                        <img src="photography/30 - Little Si/IMG_6725.JPG" alt="Little Si 3/17/2021" class="myImg masonry-content">
+                    </div>
+
+                    <!-- Garfield Ledges -->
+                    <div class="getpic taeler masonry-item content">
+                        <img src="photography/29 - GarfieldLedges/IMG_6448.JPG" alt="Garfield Ledges 3/6/2021" class="myImg masonry-content">
+                    </div>
+                    <div class="getpic taeler masonry-item content">
+                        <img src="photography/29 - GarfieldLedges/IMG_6435.JPG" alt="Garfield Ledges 3/6/2021" class="myImg masonry-content">
+                    </div>
+                    <div class="getpic couple masonry-item content">
+                        <img src="photography/29 - GarfieldLedges/IMG_6436.JPG" alt="Garfield Ledges 3/6/2021" class="myImg masonry-content">
+                    </div>
+                    <div class="getpic couple masonry-item content">
+                        <img src="photography/29 - GarfieldLedges/IMG_6434.JPG" alt="Garfield Ledges 3/6/2021" class="myImg masonry-content">
+                    </div>
+                    <div class="getpic taeler masonry-item content">
+                        <img src="photography/29 - GarfieldLedges/IMG_6432.JPG" alt="Garfield Ledges 3/6/2021" class="myImg masonry-content">
+                    </div>
+                    <div class="getpic taeler masonry-item content">
+                        <img src="photography/29 - GarfieldLedges/IMG_6428.JPG" alt="Garfield Ledges 3/6/2021" class="myImg masonry-content">
+                    </div>
+                    <div class="getpic couple masonry-item content">
+                        <img src="photography/29 - GarfieldLedges/IMG_6431.JPG" alt="Garfield Ledges 3/6/2021" class="myImg masonry-content">
+                    </div>
+                    <div class="getpic kailey masonry-item content">
+                        <img src="photography/29 - GarfieldLedges/IMG_6425.JPG" alt="Garfield Ledges 3/6/2021" class="myImg masonry-content">
+                    </div>
+                    <div class="getpic taeler masonry-item content">
+                        <img src="photography/29 - GarfieldLedges/IMG_6397.JPG" alt="Garfield Ledges 3/6/2021" class="myImg masonry-content">
+                    </div>
+                    <div class="getpic couple masonry-item content">
+                        <img src="photography/29 - GarfieldLedges/IMG_6395.JPG" alt="Garfield Ledges 3/6/2021" class="myImg masonry-content">
+                    </div>
+                    <div class="getpic couple masonry-item content">
+                        <img src="photography/29 - GarfieldLedges/IMG_6394.JPG" alt="Garfield Ledges 3/6/2021" class="myImg masonry-content">
+                    </div>
+                    <div class="getpic kailey best masonry-item content">
+                        <img src="photography/29 - GarfieldLedges/IMG_6392.JPG" alt="Garfield Ledges 3/6/2021" class="myImg masonry-content">
+                    </div>
+                    <div class="getpic kailey masonry-item content">
+                        <img src="photography/29 - GarfieldLedges/IMG_6391.JPG" alt="Garfield Ledges 3/6/2021" class="myImg masonry-content">
+                    </div>
+                    <div class="getpic taeler masonry-item content">
+                        <img src="photography/29 - GarfieldLedges/IMG_6390.JPG" alt="Garfield Ledges 3/6/2021" class="myImg masonry-content">
+                    </div>
+                    <div class="getpic taeler masonry-item content">
+                        <img src="photography/29 - GarfieldLedges/IMG_6389.JPG" alt="Garfield Ledges 3/6/2021" class="myImg masonry-content">
+                    </div>
+                    <div class="getpic taeler masonry-item content">
+                        <img src="photography/29 - GarfieldLedges/IMG_6387.JPG" alt="Garfield Ledges 3/6/2021" class="myImg masonry-content">
+                    </div>
+                    <div class="getpic nature masonry-item content">
+                        <img src="photography/29 - GarfieldLedges/IMG_6385.JPG" alt="Garfield Ledges 3/6/2021" class="myImg masonry-content">
+                    </div>
+
+                    <!-- Big Rock -->
+                    <div class="getpic kailey masonry-item content">
+                        <img src="photography/28 - Big Rock/IMG_6120.JPG" alt="Big Rock 2/27/2021" class="myImg masonry-content">
+                    </div>
+                    <div class="getpic kailey masonry-item content">
+                        <img src="photography/28 - Big Rock/IMG_6118.JPG" alt="Big Rock 2/27/2021" class="myImg masonry-content">
+                    </div>
+                    <div class="getpic kailey masonry-item content">
+                        <img src="photography/28 - Big Rock/IMG_6117.JPG" alt="Big Rock 2/27/2021" class="myImg masonry-content">
+                    </div>
+                    <div class="getpic kailey masonry-item content">
+                        <img src="photography/28 - Big Rock/IMG_6116.JPG" alt="Big Rock 2/27/2021" class="myImg masonry-content">
+                    </div>
+                    <div class="getpic kailey masonry-item content">
+                        <img src="photography/28 - Big Rock/IMG_6115.JPG" alt="Big Rock 2/27/2021" class="myImg masonry-content">
+                    </div>
+                    <div class="getpic kailey masonry-item content">
+                        <img src="photography/28 - Big Rock/IMG_6112.JPG" alt="Big Rock 2/27/2021" class="myImg masonry-content">
+                    </div>
+                    <div class="getpic taeler masonry-item content">
+                        <img src="photography/28 - Big Rock/IMG_6111.JPG" alt="Big Rock 2/27/2021" class="myImg masonry-content">
+                    </div>
+                    <div class="getpic taeler masonry-item content">
+                        <img src="photography/28 - Big Rock/IMG_6109.JPG" alt="Big Rock 2/27/2021" class="myImg masonry-content">
+                    </div>
+                    <div class="getpic couple masonry-item content">
+                        <img src="photography/28 - Big Rock/IMG_6108.JPG" alt="Big Rock 2/27/2021" class="myImg masonry-content">
+                    </div>
+                    <div class="getpic couple masonry-item content">
+                        <img src="photography/28 - Big Rock/IMG_6107.JPG" alt="Big Rock 2/27/2021" class="myImg masonry-content">
+                    </div>
+                    <div class="getpic kailey masonry-item content">
+                        <img src="photography/28 - Big Rock/IMG_6102(1).JPG" alt="Big Rock 2/27/2021" class="myImg masonry-content">
+                    </div>
+                    <div class="getpic taeler masonry-item content">
+                        <img src="photography/28 - Big Rock/IMG_6100.JPG" alt="Big Rock 2/27/2021" class="myImg masonry-content">
+                    </div>
+                    <div class="getpic couple masonry-item content">
+                        <img src="photography/28 - Big Rock/IMG_6098.JPG" alt="Big Rock 2/27/2021" class="myImg masonry-content">
+                    </div>
+                    <div class="getpic kailey masonry-item content">
+                        <img src="photography/28 - Big Rock/IMG_6097.JPG" alt="Big Rock 2/27/2021" class="myImg masonry-content">
+                    </div>
+                    <div class="getpic kailey masonry-item content">
+                        <img src="photography/28 - Big Rock/IMG_6096.JPG" alt="Big Rock 2/27/2021" class="myImg masonry-content">
+                    </div>
+                    <div class="getpic couple masonry-item content">
+                        <img src="photography/28 - Big Rock/IMG_6094.JPG" alt="Big Rock 2/27/2021" class="myImg masonry-content">
+                    </div>
+                    <div class="getpic couple masonry-item content">
+                        <img src="photography/28 - Big Rock/IMG_6093.JPG" alt="Big Rock 2/27/2021" class="myImg masonry-content">
+                    </div>
+                    <div class="getpic couple masonry-item content">
+                        <img src="photography/28 - Big Rock/IMG_6090.JPG" alt="Big Rock 2/27/2021" class="myImg masonry-content">
+                    </div>
+                    <div class="getpic couple masonry-item content">
+                        <img src="photography/28 - Big Rock/IMG_6088.JPG" alt="Big Rock 2/27/2021" class="myImg masonry-content">
+                    </div>
+                    <div class="getpic taeler masonry-item content">
+                        <img src="photography/28 - Big Rock/IMG_6089.JPG" alt="Big Rock 2/27/2021" class="myImg masonry-content">
+                    </div>
+                    <div class="getpic kailey masonry-item content">
+                        <img src="photography/28 - Big Rock/IMG_6086.JPG" alt="Big Rock 2/27/2021" class="myImg masonry-content">
+                    </div>
+                    <div class="getpic kailey masonry-item content">
+                        <img src="photography/28 - Big Rock/IMG_6076.JPG" alt="Big Rock 2/27/2021" class="myImg masonry-content">
+                    </div>
+                    <div class="getpic kailey gymnastics masonry-item content">
+                        <img src="photography/27 - Dirty Harry's Balcony/IMG_5787.JPG" alt="Dirty Harry's Balcony 2/20/2021" class="myImg masonry-content">
+                    </div>
+                    <div class="getpic kailey gymnastics masonry-item content">
+                        <img src="photography/27 - Dirty Harry's Balcony/IMG_5787(1).JPG" alt="Dirty Harry's Balcony 2/20/2021" class="myImg masonry-content">
+                    </div>
+                    <div class="getpic kailey gymnastics masonry-item content">
+                        <img src="photography/27 - Dirty Harry's Balcony/IMG_5783.JPG" alt="Dirty Harry's Balcony 2/20/2021" class="myImg masonry-content">
+                    </div>
+                    <div class="getpic kailey masonry-item content">
+                        <img src="photography/27 - Dirty Harry's Balcony/IMG_5781.JPG" alt="Dirty Harry's Balcony 2/20/2021" class="myImg masonry-content">
+                    </div>
+                    <div class="getpic kailey masonry-item content">
+                        <img src="photography/27 - Dirty Harry's Balcony/IMG_5774.JPG" alt="Dirty Harry's Balcony 2/20/2021" class="myImg masonry-content">
+                    </div>
+                    <div class="getpic kailey best masonry-item content">
+                        <img src="photography/27 - Dirty Harry's Balcony/IMG_5776(2).JPG" alt="Dirty Harry's Balcony 2/20/2021" class="myImg masonry-content">
+                    </div>
+                    <div class="getpic taeler best masonry-item content">
+                        <img src="photography/27 - Dirty Harry's Balcony/IMG_5770 copy.JPG" alt="Dirty Harry's Balcony 2/20/2021" class="myImg masonry-content">
+                    </div>
+                    <div class="getpic taeler best masonry-item content">
+                        <img src="photography/27 - Dirty Harry's Balcony/IMG_5768 copy.JPG" alt="Dirty Harry's Balcony 2/20/2021" class="myImg masonry-content">
+                    </div>
+                    <div class="getpic kailey masonry-item content">
+                        <img src="photography/27 - Dirty Harry's Balcony/IMG_5763.JPG" alt="Dirty Harry's Balcony 2/20/2021" class="myImg masonry-content">
+                    </div>
+                    <div class="getpic kailey masonry-item content">
+                        <img src="photography/27 - Dirty Harry's Balcony/IMG_5761(1).JPG" alt="Dirty Harry's Balcony 2/20/2021" class="myImg masonry-content">
+                    </div>
+                    <div class="getpic couple masonry-item content">
+                        <img src="photography/27 - Dirty Harry's Balcony/IMG_5758(1).JPG" alt="Dirty Harry's Balcony 2/20/2021" class="myImg masonry-content">
+                    </div>
+                    <div class="getpic couple masonry-item content">
+                        <img src="photography/27 - Dirty Harry's Balcony/IMG_5757.JPG" alt="Dirty Harry's Balcony 2/20/2021" class="myImg masonry-content">
+                    </div>
+                    <div class="getpic couple masonry-item content">
+                        <img src="photography/27 - Dirty Harry's Balcony/IMG_5756.JPG" alt="Dirty Harry's Balcony 2/20/2021" class="myImg masonry-content">
+                    </div>
+                    <div class="getpic nature best masonry-item content">
+                        <img src="photography/27 - Dirty Harry's Balcony/IMG_5738.JPG" alt="Dirty Harry's Balcony 2/20/2021" class="myImg masonry-content">
+                    </div>
+                    <div class="getpic taeler masonry-item content">
+                        <img src="photography/27 - Dirty Harry's Balcony/IMG_5720.JPG" alt="Dirty Harry's Balcony 2/20/2021" class="myImg masonry-content">
+                    </div>
+                    <div class="getpic taeler masonry-item content">
+                        <img src="photography/27 - Dirty Harry's Balcony/File_003(2).jpeg" alt="Dirty Harry's Balcony 2/20/2021" class="myImg masonry-content">
+                    </div>
+
+                    <!-- Lena Lake -->
+                    <div class="getpic couple masonry-item content">
+                        <img src="photography/26 - LenaLake/IMG_5092.JPG" alt="Lena Lake 1/30/2021" class="myImg masonry-content">
+                    </div>
+                    <div class="getpic couple masonry-item content">
+                        <img src="photography/26 - LenaLake/IMG_5085.JPG" alt="Lena Lake 1/30/2021" class="myImg masonry-content">
+                    </div>
+
+                    <!-- Mitchell Point -->
+                    <div class="getpic taeler masonry-item content">
+                        <img src="photography/25 - Mitchell Point/IMG_4875.jpg" alt="Mitchell Point 1/23/2021" class="myImg masonry-content">
+                    </div>
+                    <div class="getpic taeler masonry-item content">
+                        <img src="photography/25 - Mitchell Point/146350261_2801611603426314_4314034757374888588_n.jpg" alt="Mitchell Point 1/23/2021" class="myImg masonry-content">
+                    </div>
+                    <div class="getpic taeler masonry-item content">
+                        <img src="photography/25 - Mitchell Point/145721627_222171736306430_5450826275876146071_n.jpg" alt="Mitchell Point 1/23/2021" class="myImg masonry-content">
+                    </div>
+                    <div class="getpic taeler best masonry-item content">
+                        <img src="photography/25 - Mitchell Point/144924191_4205722102775315_6259535749741388501_n.jpg" alt="Mitchell Point 1/23/2021" class="myImg masonry-content">
+                    </div>
+                    <div class="getpic kailey best masonry-item content">
+                        <img src="photography/25 - Mitchell Point/143553430_1345306325802178_6450310854622417311_n.jpg" alt="Mitchell Point 1/23/2021" class="myImg masonry-content">
+                    </div>
+                    <div class="getpic kailey masonry-item content">
+                        <img src="photography/25 - Mitchell Point/143512863_1129186710885333_8455641075369687831_n.jpg" alt="Mitchell Point 1/23/2021" class="myImg masonry-content">
+                    </div>
+                    <div class="getpic couple masonry-item content">
+                        <img src="photography/25 - Mitchell Point/142792801_413552669725306_740766081941154608_n.jpg" alt="Mitchell Point 1/23/2021" class="myImg masonry-content">
+                    </div>
+                    <div class="getpic kailey masonry-item content">
+                        <img src="photography/25 - Mitchell Point/142474252_445372126506824_3489586581833877837_n.jpg" alt="Mitchell Point 1/23/2021" class="myImg masonry-content">
+                    </div>
+                    <div class="getpic kailey best masonry-item content">
+                        <img src="photography/25 - Mitchell Point/141203839_1957329871084422_4252465657337850408_n.jpg" alt="Mitchell Point 1/23/2021" class="myImg masonry-content">
+                    </div>
+
+                    <!-- Saddlerock -->
+                    <div class="getpic kailey best masonry-item content">
+                        <img src="photography/24 - Saddlerock/IMG_4690.JPG" alt="Saddlerock 1/18/2021" class="myImg masonry-content">
+                    </div>
+                    <div class="getpic kailey best masonry-item content">
+                        <img src="photography/24 - Saddlerock/IMG_4673.JPG" alt="Saddlerock 1/18/2021" class="myImg masonry-content">
+                    </div>
+                    <div class="getpic kailey best masonry-item content">
+                        <img src="photography/24 - Saddlerock/IMG_4679(1).JPG" alt="Saddlerock 1/18/2021" class="myImg masonry-content">
+                    </div>
+                    <div class="getpic kailey masonry-item content">
+                        <img src="photography/24 - Saddlerock/IMG_4661.JPG" alt="Saddlerock 1/18/2021" class="myImg masonry-content">
+                    </div>
+                    <div class="getpic kailey masonry-item content">
+                        <img src="photography/24 - Saddlerock/IMG_4658.JPG" alt="Saddlerock 1/18/2021" class="myImg masonry-content">
+                    </div>
+                    <div class="getpic taeler best masonry-item content">
+                        <img src="photography/24 - Saddlerock/IMG_4649.JPG" alt="Saddlerock 1/18/2021" class="myImg masonry-content">
+                    </div>
+                    <div class="getpic nature best masonry-item content">
+                        <img src="photography/24 - Saddlerock/DSC_0468.JPG" alt="Saddlerock 1/18/2021" class="myImg masonry-content">
+                    </div>
+                    <div class="getpic taeler best masonry-item content">
+                        <img src="photography/24 - Saddlerock/142631453_1221260664941977_263744802606733293_n.jpg" alt="Saddlerock 1/18/2021" class="myImg masonry-content">
+                    </div>
+                    <div class="getpic couple best masonry-item content">
+                        <img src="photography/24 - Saddlerock/142488327_231831615184950_3641968783015615333_n.jpg" alt="Saddlerock 1/18/2021" class="myImg masonry-content">
+                    </div>
+                    <div class="getpic couple best masonry-item content">
+                        <img src="photography/24 - Saddlerock/142321268_1552931744900974_1983198845366403920_n.jpg" alt="Saddlerock 1/18/2021" class="myImg masonry-content">
+                    </div>
+                    <div class="getpic couple best masonry-item content">
+                        <img src="photography/24 - Saddlerock/142004624_764664947465339_2148011312622446942_n.jpg" alt="Saddlerock 1/18/2021" class="myImg masonry-content">
+                    </div>
+                    <div class="getpic kailey best masonry-item content">
+                        <img src="photography/24 - Saddlerock/141741914_1518740798317985_525966354030387601_n.jpg" alt="Saddlerock 1/18/2021" class="myImg masonry-content">
+                    </div>
+                    <div class="getpic couple best masonry-item content">
+                        <img src="photography/24 - Saddlerock/141725460_766629240902102_7626525583986803162_n.jpg" alt="Saddlerock 1/18/2021" class="myImg masonry-content">
+                    </div>
+                    <div class="getpic taeler best masonry-item content">
+                        <img src="photography/24 - Saddlerock/140320143_2834572720148194_6447264949587288649_n.jpg" alt="Saddlerock 1/18/2021" class="myImg masonry-content">
+                    </div>
+                    <div class="getpic kailey best masonry-item content">
+                        <img src="photography/24 - Saddlerock/139724874_440574493645709_8215186223412682_n.jpg" alt="Saddlerock 1/18/2021" class="myImg masonry-content">
+                    </div>
+                    <div class="getpic taeler best masonry-item content">
+                        <img src="photography/24 - Saddlerock/139391604_779178306143119_2785862379620864666_n.jpg" alt="Saddlerock 1/18/2021" class="myImg masonry-content">
+                    </div>
+                    <div class="getpic kailey best masonry-item content">
+                        <img src="photography/24 - Saddlerock/139203383_414407713165333_6581303835053578445_n.jpg" alt="Saddlerock 1/18/2021" class="myImg masonry-content">
+                    </div>
+
+                    <!-- Chelan Butte -->
+                    <div class="getpic couple best masonry-item content">
+                        <img src="photography/23 - Chelan Butte/IMG_4889.JPG" alt="Chelan Butte 1/17/2021" class="myImg masonry-content">
+                    </div>
+                    <div class="getpic couple best masonry-item content">
+                        <img src="photography/23 - Chelan Butte/IMG_4884.JPG" alt="Chelan Butte 1/17/2021" class="myImg masonry-content">
+                    </div>
+                    <div class="getpic taeler masonry-item content">
+                        <img src="photography/23 - Chelan Butte/IMG_4629.JPG" alt="Chelan Butte 1/17/2021" class="myImg masonry-content">
+                    </div>
+                    <div class="getpic kailey masonry-item content">
+                        <img src="photography/23 - Chelan Butte/IMG_4630(1).JPG" alt="Chelan Butte 1/17/2021" class="myImg masonry-content">
+                    </div>
+                    <div class="getpic kailey masonry-item content">
+                        <img src="photography/23 - Chelan Butte/IMG_4618.JPG" alt="Chelan Butte 1/17/2021" class="myImg masonry-content">
+                    </div>
+                    <div class="getpic kailey masonry-item content">
+                        <img src="photography/23 - Chelan Butte/IMG_4611.JPG" alt="Chelan Butte 1/17/2021" class="myImg masonry-content">
+                    </div>
+                    <div class="getpic kailey masonry-item content">
+                        <img src="photography/23 - Chelan Butte/143630802_3327580354012939_714861341924014328_n.jpg" alt="Chelan Butte 1/17/2021" class="myImg masonry-content">
+                    </div>
+                    <div class="getpic taeler masonry-item content">
+                        <img src="photography/23 - Chelan Butte/File_001(3).jpeg" alt="Chelan Butte 1/17/2021" class="myImg masonry-content">
+                    </div>
+                    <div class="getpic nature best masonry-item content">
+                        <img src="photography/23 - Chelan Butte/142835928_1329438054080703_7833211058553811744_n.jpg" alt="Chelan Butte 1/17/2021" class="myImg masonry-content">
+                    </div>
+                    <div class="getpic taeler masonry-item content">
+                        <img src="photography/23 - Chelan Butte/141589041_135351615078361_5026605328144281549_n.jpg" alt="Chelan Butte 1/17/2021" class="myImg masonry-content">
+                    </div>
+
+                    <!-- God's Thumb -->
+                    <div class="getpic kailey best masonry-item content">
+                        <img src="photography/22 - God's Thumb/IMG_3641.JPG" alt="God's Thumb 12/22/2020" class="myImg masonry-content">
+                    </div>
+                    <div class="getpic nature masonry-item content">
+                        <img src="photography/22 - God's Thumb/144211728_412126313198911_104866396384942799_n.jpg" alt="God's Thumb 12/22/2020" class="myImg masonry-content">
+                    </div>
+                    <div class="getpic kailey best masonry-item content">
+                        <img src="photography/22 - God's Thumb/142807646_133519631931432_8626126916114245172_n.jpg" alt="God's Thumb 12/22/2020" class="myImg masonry-content">
+                    </div>
+                    <div class="getpic kailey best masonry-item content">
+                        <img src="photography/22 - God's Thumb/142504962_322457799142950_9080627867713224120_n.jpg" alt="God's Thumb 12/22/2020" class="myImg masonry-content">
+                    </div>
+                    <div class="getpic kailey masonry-item content">
+                        <img src="photography/22 - God's Thumb/142433341_3431662406943889_6502847179680466742_n.jpg" alt="God's Thumb 12/22/2020" class="myImg masonry-content">
+                    </div>
+                    <div class="getpic kailey gymnastics masonry-item content">
+                        <img src="photography/22 - God's Thumb/141930045_1363714903965529_5171643141588147694_n.jpg" alt="God's Thumb 12/22/2020" class="myImg masonry-content">
+                    </div>
+                    <div class="getpic kailey masonry-item content">
+                        <img src="photography/22 - God's Thumb/141826560_174049667853431_2783615798518828922_n.jpg" alt="God's Thumb 12/22/2020" class="myImg masonry-content">
+                    </div>
+                    <div class="getpic kailey best masonry-item content">
+                        <img src="photography/22 - God's Thumb/141720930_465475431123611_5361353987357958337_n.jpg" alt="God's Thumb 12/22/2020" class="myImg masonry-content">
+                    </div>
+                    <div class="getpic kailey best masonry-item content">
+                        <img src="photography/22 - God's Thumb/133795859_772100743379379_8157194828576524066_n.jpg" alt="God's Thumb 12/22/2020" class="myImg masonry-content">
+                    </div>
+
+                    <!-- Gold Creek Pond -->
+                    <div class="getpic kailey best masonry-item content">
+                        <img src="photography/21 - Gold Creek Pond/128163405_417952522910187_6815822909184991949_n.jpg" alt="Gold Creek Pond 11/29/2020" class="myImg masonry-content">
+                    </div>
+                    <div class="getpic taeler best masonry-item content">
+                        <img src="photography/21 - Gold Creek Pond/127889074_689607661942624_1958998755222610857_n.jpg" alt="Gold Creek Pond 11/29/2020" class="myImg masonry-content">
+                    </div>
+                    <div class="getpic nature best masonry-item content">
+                        <img src="photography/21 - Gold Creek Pond/127282548_1062734590841800_424979440704723351_n.jpg" alt="Gold Creek Pond 11/29/2020" class="myImg masonry-content">
+                    </div>
+                    <div class="getpic couple best masonry-item content">
+                        <img src="photography/21 - Gold Creek Pond/127282434_857349015032562_7967307428775959199_n.jpg" alt="Gold Creek Pond 11/29/2020" class="myImg masonry-content">
+                    </div>
+                    <div class="getpic taeler best masonry-item content">
+                        <img src="photography/21 - Gold Creek Pond/127272058_4220149991333684_5565514457926658105_n.jpg" alt="Gold Creek Pond 11/29/2020" class="myImg masonry-content">
+                    </div>
+
+                    <!-- Moulton Falls Bridge -->
+                    <div class="getpic couple masonry-item content">
+                        <img src="photography/20 - Waterfall Day/File_001.jpeg" alt="Moulton Falls Bridge 11/22/2020" class="myImg masonry-content">
+                    </div>
+                    <div class="getpic couple masonry-item content">
+                        <img src="photography/20 - Waterfall Day/File_003(6).jpeg" alt="Moulton Falls Bridge 11/22/2020" class="myImg masonry-content">
+                    </div>
+
+                    <!-- Panther Falls -->
+                    <div class="getpic kailey best masonry-item content">
+                        <img src="photography/20 - Waterfall Day/IMG_2052.JPG" alt="Panther Falls 11/22/2020" class="myImg masonry-content">
+                    </div>
+                    <div class="getpic kailey best masonry-item content">
+                        <img src="photography/20 - Waterfall Day/IMG_2041.JPG" alt="Panther Falls 11/22/2020" class="myImg masonry-content">
+                    </div>
+
+                    <!-- Spirit Falls -->
+                    <div class="getpic taeler best masonry-item content">
+                        <img src="photography/20 - Waterfall Day/IMG_2028.jpg" alt="Spirit Falls 11/22/2020" class="myImg masonry-content">
+                    </div>
+                    <div class="getpic kailey best masonry-item content">
+                        <img src="photography/20 - Waterfall Day/IMG_2023.JPG" alt="Spirit Falls 11/22/2020" class="myImg masonry-content">
+                    </div>
+
+                    <!-- Multnomah Falls -->
+                    <div class="getpic nature masonry-item content">
+                        <img src="photography/20 - Waterfall Day/File_000(9).jpeg" alt="Multnomah Falls 11/22/2020" class="myImg masonry-content">
+                    </div>
+
+                    <!-- Lake Serene and Bridal Veil Falls -->
+                    <div class="getpic kailey best masonry-item content">
+                        <img src="photography/19 - Lake Serene and Bridal Veil Falls/IMG_1550.JPG" alt="Lake Serene and Bridal Veil Falls 11/15/2020" class="myImg masonry-content">
+                    </div>
+                    <div class="getpic kailey best masonry-item content">
+                        <img src="photography/19 - Lake Serene and Bridal Veil Falls/IMG_1550 copy.JPG" alt="Lake Serene and Bridal Veil Falls 11/15/2020" class="myImg masonry-content">
+                    </div>
+                    <div class="getpic nature masonry-item content">
+                        <img src="photography/19 - Lake Serene and Bridal Veil Falls/143527241_254810429335826_735611214626065379_n.jpg" alt="Lake Serene and Bridal Veil Falls 11/15/2020" class="myImg masonry-content">
+                    </div>
+                    <div class="getpic nature best masonry-item content">
+                        <img src="photography/19 - Lake Serene and Bridal Veil Falls/125285132_287203415942764_2238906562213559167_n.jpg" alt="Lake Serene and Bridal Veil Falls 11/15/2020" class="myImg masonry-content">
+                    </div>
+
+                    <!-- High Rock Lookout -->
+                    <div class="getpic angie other best masonry-item content">
+                        <img src="photography/18 - Paradise and High Rock Lookout/File11.JPG" alt="High Rock Lookout 10/29/2020" class="myImg masonry-content">
+                    </div>
+                    <div class="getpic kailey best masonry-item content">
+                        <img src="photography/18 - Paradise and High Rock Lookout/File9.JPG" alt="High Rock Lookout 10/29/2020" class="myImg masonry-content">
+                    </div>
+                    <div class="getpic nature best masonry-item content">
+                        <img src="photography/18 - Paradise and High Rock Lookout/File8.JPG" alt="High Rock Lookout 10/29/2020" class="myImg masonry-content">
+                    </div>
+                    <div class="getpic angie other masonry-item content">
+                        <img src="photography/18 - Paradise and High Rock Lookout/File7.JPG" alt="High Rock Lookout 10/29/2020" class="myImg masonry-content">
+                    </div>
+                    <div class="getpic angie other masonry-item content">
+                        <img src="photography/18 - Paradise and High Rock Lookout/File5.JPG" alt="High Rock Lookout 10/29/2020" class="myImg masonry-content">
+                    </div>
+                    <div class="getpic nature masonry-item content">
+                        <img src="photography/18 - Paradise and High Rock Lookout/143745853_162927748924779_4894735940398830068_n.jpg" alt="Paradise 10/29/2020" class="myImg masonry-content">
+                    </div>
+                    <div class="getpic kailey masonry-item content">
+                        <img src="photography/18 - Paradise and High Rock Lookout/142419676_834558790746778_5805624549155678127_nsmall.jpg" alt="Paradise 10/29/2020" class="myImg masonry-content">
+                    </div>
+
+                    <!-- Park Butte Lookout -->
+                    <div class="getpic kailey masonry-item content">
+                        <img src="photography/17 - Park Butte Lookout/File16.jpg" alt="Park Butte Lookout 10/24/2020" class="myImg masonry-content">
+                    </div>
+                    <div class="getpic taeler best masonry-item content">
+                        <img src="photography/17 - Park Butte Lookout/File15.jpg" alt="Park Butte Lookout 10/24/2020" class="myImg masonry-content">
+                    </div>
+                    <div class="getpic kailey masonry-item content">
+                        <img src="photography/17 - Park Butte Lookout/File12.jpg" alt="Park Butte Lookout 10/24/2020" class="myImg masonry-content">
+                    </div>
+                    <div class="getpic taeler masonry-item content">
+                        <img src="photography/17 - Park Butte Lookout/File11.jpg" alt="Park Butte Lookout 10/24/2020" class="myImg masonry-content">
+                    </div>
+                    <div class="getpic kailey masonry-item content">
+                        <img src="photography/17 - Park Butte Lookout/File9.jpg" alt="Park Butte Lookout 10/24/2020" class="myImg masonry-content">
+                    </div>
+                    <div class="getpic kailey masonry-item content">
+                        <img src="photography/17 - Park Butte Lookout/File7.jpg" alt="Park Butte Lookout 10/24/2020" class="myImg masonry-content">
+                    </div>
+                    <div class="getpic kailey masonry-item content">
+                        <img src="photography/17 - Park Butte Lookout/File2.jpg" alt="Park Butte Lookout 10/24/2020" class="myImg masonry-content">
+                    </div>
+                    <div class="getpic taeler masonry-item content">
+                        <img src="photography/17 - Park Butte Lookout/File5.jpg" alt="Park Butte Lookout 10/24/2020" class="myImg masonry-content">
+                    </div>
+                    <div class="getpic taeler masonry-item content">
+                        <img src="photography/17 - Park Butte Lookout/File3.jpg" alt="Park Butte Lookout 10/24/2020" class="myImg masonry-content">
+                    </div>
+                    <div class="getpic taeler masonry-item content">
+                        <img src="photography/17 - Park Butte Lookout/File1.jpg" alt="Park Butte Lookout 10/24/2020" class="myImg masonry-content">
+                    </div>
+                    <div class="getpic taeler best masonry-item content">
+                        <img src="photography/17 - Park Butte Lookout/DSC_0419.JPG" alt="Park Butte Lookout 10/24/2020" class="myImg masonry-content">
+                    </div>
+                    <div class="getpic taeler best masonry-item content">
+                        <img src="photography/17 - Park Butte Lookout/142444219_1115678528857378_3150877427029511815_n.jpg" alt="Park Butte Lookout 10/24/2020" class="myImg masonry-content">
+                    </div>
+                    <div class="getpic taeler best masonry-item content">
+                        <img src="photography/17 - Park Butte Lookout/142329514_1356506908017132_4412298002527153333_n.jpg" alt="Park Butte Lookout 10/24/2020" class="myImg masonry-content">
+                    </div>
+                    <div class="getpic kailey best masonry-item content">
+                        <img src="photography/17 - Park Butte Lookout/DSC_0269.JPG" alt="Park Butte Lookout 10/24/2020" class="myImg masonry-content">
+                    </div>
+                    <div class="getpic nature masonry-item content">
+                        <img src="photography/17 - Park Butte Lookout/142427104_425532755456361_601917188109763475_n.jpg" alt="Park Butte Lookout 10/24/2020" class="myImg masonry-content">
+                    </div>
+
+                    <!-- Artist and Huntoon Point -->
+                    <div class="getpic taeler masonry-item content">
+                        <img src="photography/16 - Artist and Huntoon Point/DSC_0583.JPG" alt="Artist and Huntoon Point 10/2/2020" class="myImg masonry-content">
+                    </div>
+                    <div class="getpic kailey masonry-item content">
+                        <img src="photography/16 - Artist and Huntoon Point/DSC_0545_ notEdited.JPG" alt="Artist and Huntoon Point 10/2/2020" class="myImg masonry-content">
+                    </div>
+                    <div class="getpic kailey masonry-item content">
+                        <img src="photography/16 - Artist and Huntoon Point/DSC_0476_ notEdited.JPG" alt="Artist and Huntoon Point 10/2/2020" class="myImg masonry-content">
+                    </div>
+                    <div class="getpic taeler best masonry-item content">
+                        <img src="photography/16 - Artist and Huntoon Point/DSC_0418.JPG" alt="Artist and Huntoon Point 10/2/2020" class="myImg masonry-content">
+                    </div>
+                    <div class="getpic taeler best masonry-item content">
+                        <img src="photography/16 - Artist and Huntoon Point/DSC_0375.JPG" alt="Artist and Huntoon Point 10/2/2020" class="myImg masonry-content">
+                    </div>
+                    <div class="getpic taeler best masonry-item content">
+                        <img src="photography/16 - Artist and Huntoon Point/DSC_0229.JPG" alt="Artist and Huntoon Point 10/2/2020" class="myImg masonry-content">
+                    </div>
+                    <div class="getpic kailey masonry-item content">
+                        <img src="photography/16 - Artist and Huntoon Point/ap3.JPG" alt="Artist and Huntoon Point 10/2/2020" class="myImg masonry-content">
+                    </div>
+                    <div class="getpic kailey best masonry-item content">
+                        <img src="photography/16 - Artist and Huntoon Point/146203112_1530146323862177_2756489660335017173_n.jpg" alt="Artist and Huntoon Point 10/2/2020" class="myImg masonry-content">
+                    </div>
+                    <div class="getpic nature best masonry-item content">
+                        <img src="photography/16 - Artist and Huntoon Point/144003633_418656079466957_7453928144694880379_n.jpg" alt="Artist and Huntoon Point 10/2/2020" class="myImg masonry-content">
+                    </div>
+                    <div class="getpic taeler best masonry-item content">
+                        <img src="photography/16 - Artist and Huntoon Point/143936919_244655027102333_2631357287942678649_n.jpg" alt="Artist and Huntoon Point 10/2/2020" class="myImg masonry-content">
+                    </div>
+                    <div class="getpic kailey gymnastics masonry-item content">
+                        <img src="photography/16 - Artist and Huntoon Point/143471720_407634813650211_6271612397419012281_n.jpg" alt="Artist and Huntoon Point 10/2/2020" class="myImg masonry-content">
+                    </div>
+                    <div class="getpic nature best masonry-item content">
+                        <img src="photography/16 - Artist and Huntoon Point/143133520_462503668489330_184967673474252829_n.jpg" alt="Artist and Huntoon Point 10/2/2020" class="myImg masonry-content">
+                    </div>
+                    <div class="getpic nature best masonry-item content">
+                        <img src="photography/16 - Artist and Huntoon Point/143119907_515168222796365_9201716325326394997_n.jpg" alt="Artist and Huntoon Point 10/2/2020" class="myImg masonry-content">
+                    </div>
+                    <div class="getpic kailey best masonry-item content">
+                        <img src="photography/16 - Artist and Huntoon Point/142079114_3930697183703921_109201794052247907_n.jpg" alt="Artist and Huntoon Point 10/2/2020" class="myImg masonry-content">
+                    </div>
+
+                    <!-- Tipsoo Lake -->
+                    <div class="getpic kailey gymnastics best masonry-item content">
+                        <img src="photography/15 - Tipsoo Lake/IMG_3133.jpg" alt="Tipsoo Lake 10/1/2020" class="myImg masonry-content">
+                    </div>
+                    <div class="getpic angie other best masonry-item content">
+                        <img src="photography/15 - Tipsoo Lake/DSC_0086*.JPG" alt="Tipsoo Lake 10/1/2020" class="myImg masonry-content">
+                    </div>
+                    <div class="getpic angie other best masonry-item content">
+                        <img src="photography/15 - Tipsoo Lake/DSC_0068*.JPG" alt="Tipsoo Lake 10/1/2020" class="myImg masonry-content">
+                    </div>
+                    <div class="getpic angie other best masonry-item content">
+                        <img src="photography/15 - Tipsoo Lake/DSC_0055*.JPG" alt="Tipsoo Lake 10/1/2020" class="myImg masonry-content">
+                    </div>
+
+                    <!-- Mt. Rainier National Park -->
+
+
+
+
+                    <div class="getpic  masonry-item content">
+                        <img src="photography" alt="" class="myImg masonry-content">
+                    </div>
                     
-                    <div class="masonry-item"><img src="photography/31 - Dry Gulch/File8.JPG" alt="Dry Gulch 3/20/2021" class="masonry-content myImg"></div>
+                    
 
                     </div>
             </div>
@@ -35,6 +766,66 @@
                 <img class="modal-content" id="img01">
                 <div id="caption"></div>
             </div>
+
+            <!-- The following script is from: https://stackoverflow.com/questions/4172281/force-browsers-to-load-css-before-showing-the-page -->
+        <!--script>
+            document.addEventListener('load',function(){
+                document.getElementById("loadOverlay").style.display="none";
+            });
+        </script-->
+        <script>
+            filterSelection("all") // Execute the function and show all columns
+            function filterSelection(c) {
+            var x, i;
+            x = document.getElementsByClassName("getpic");
+            if (c == "all") c = "";
+            // Add the "show" class (display:block) to the filtered elements, and remove the "show" class from the elements that are not selected
+            for (i = 0; i < x.length; i++) {
+                w3RemoveClass(x[i], "show");
+                if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+            }
+            }
+
+            // Show filtered elements
+            function w3AddClass(element, name) {
+            var i, arr1, arr2;
+            arr1 = element.className.split(" ");
+            arr2 = name.split(" ");
+            for (i = 0; i < arr2.length; i++) {
+                if (arr1.indexOf(arr2[i]) == -1) {
+                element.className += " " + arr2[i];
+                }
+            }
+            }
+
+            // Hide elements that are not selected
+            function w3RemoveClass(element, name) {
+            var i, arr1, arr2;
+            arr1 = element.className.split(" ");
+            arr2 = name.split(" ");
+            for (i = 0; i < arr2.length; i++) {
+                while (arr1.indexOf(arr2[i]) > -1) {
+                arr1.splice(arr1.indexOf(arr2[i]), 1);
+                }
+            }
+            element.className = arr1.join(" ");
+            }
+
+            // Add active class to the current button (highlight it)
+            var btnContainer = document.getElementById("myBtnContainer");
+            var btns = btnContainer.getElementsByClassName("btn");
+            for (var i = 0; i < btns.length; i++) {
+            btns[i].addEventListener("click", function(){
+                var current = document.getElementsByClassName("active");
+                current[0].className = current[0].className.replace(" active", "");
+                this.className += " active";
+            });
+            }
+        </script>
+
+
+
+
 
             <!-- The following script is from: https://stackoverflow.com/questions/4172281/force-browsers-to-load-css-before-showing-the-page -->
             <script>
