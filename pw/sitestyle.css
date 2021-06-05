@@ -106,7 +106,9 @@
     color: grey;
   }
   div.details2 {
-      font-family: 'Nature Spirit', monospace;
+      font-family: 'Routhem', monospace, sans-serif;
+      line-height: 1;
+      text-align: center;
   }
   h5.logo {
     font-family: 'Nature Spirit', monospace;
@@ -122,4 +124,82 @@
     letter-spacing: 1.7;
   }
   
+/* CSS That Controls Page Elements */
+
+  html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, details2, embed, figure, figcaption, footer, header, hgroup, main, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+  }
   
+  .navbar h5 , .footer {
+    padding-top: 16px;
+  }
+  .pageheader {
+    margin: 0 0 0;
+    line-height: 1.3;
+    font-size: 5em;
+    letter-spacing: 4;
+    color: black;
+    font-weight: bolder;
+    font-family: 'Routhem', monospace, sans-serif;
+  }
+  .white {
+    color: white;
+    padding-top: 10%;
+  }
+  .footer {
+    margin-top: 70px;
+    height: 15px;
+    padding-bottom: 13px;
+  }
+
+.hero {
+  height: 50%;
+  /*background-color: rgba(97, 179, 97, 0.05);*/
+  background-image: url("photography/36\ -\ Dalles\ Mountain\ Car\,\ Rowena\ Crest\,\ Lower\ Falls\ Creek\ Trail\ /IMG_8432.JPG");
+  /* 9815 mt si, */
+  background-position-x: 0em;
+  background-position-y: 0em;
+  background-size: cover;
+}
+
+/** Pagination https://www.w3schools.com/Css/tryit.asp?filename=trycss_ex_pagination_transition**/
+
+.pagination {
+  display: inline-block;
+  margin-top: 50px;
+  margin-bottom: -25px;
+}
+
+.pagination a {
+  color: black;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+  transition: background-color .3s;
+}
+
+.pagination a.active {
+  background-color: black;
+  color: white;
+}
+
+.pagination a:hover:not(.active) {
+  background-color: #ddd;
+}
+
+.center {
+  text-align: center;
+}
+
+.inactive {
+  color: grey !important; 
+}
+
+.pagination a:hover:not(.active), .inactive {
+  background-color: white; 
+}
